@@ -20,7 +20,7 @@ export default function CaseStudyHero({ navigate, project }) {
 
         <aside className="case-study-hero__meta">
           <div className="detail-card">
-            <span>Role</span>
+            <span>Role / focus</span>
             <strong>{project.role}</strong>
           </div>
           <div className="detail-card">
@@ -36,4 +36,3 @@ export default function CaseStudyHero({ navigate, project }) {
     </section>
   );
 }
-

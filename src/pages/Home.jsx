@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import ProjectCard from "../components/ProjectCard";
 import Section from "../components/Section";
-import { featuredProjects } from "../data/projects";
+import { primaryProjects, secondaryProjects } from "../data/projects";
 import {
   actionLinks,
   caseStudyPrompt,
@@ -10,6 +10,7 @@ import {
   featuredWorkContent,
   footerContent,
   heroContent,
+  supportingWorkContent,
 } from "../data/siteContent";
 
 export default function Home({ navigate }) {
@@ -24,7 +25,19 @@ export default function Home({ navigate }) {
         title={featuredWorkContent.title}
       >
         <div className="project-grid">
-          {featuredProjects.map((project) => (
+          {primaryProjects.map((project) => (
+            <ProjectCard key={project.slug} navigate={navigate} project={project} />
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        eyebrow={supportingWorkContent.eyebrow}
+        intro={supportingWorkContent.intro}
+        title={supportingWorkContent.title}
+      >
+        <div className="project-grid">
+          {secondaryProjects.map((project) => (
             <ProjectCard key={project.slug} navigate={navigate} project={project} />
           ))}
         </div>
@@ -54,8 +67,8 @@ export default function Home({ navigate }) {
       >
         <div className="case-study-prompt">
           <p>
-            Start with one flagship project, then roll the same structure forward as final media and
-            writing are approved.
+            Start with Call of Duty as the flagship, then deepen Rebel Future, Snoopy's Soapbox
+            Racers, and the strongest secondary projects as final assets and writing come together.
           </p>
           <button
             className="button button--primary"
@@ -71,4 +84,3 @@ export default function Home({ navigate }) {
     </>
   );
 }
-

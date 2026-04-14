@@ -1,8 +1,8 @@
 export const siteMeta = {
-  title: "Dela | UI / UX and Interactive Portfolio",
+  title: "Dela | UX Designer and Coder",
   owner: "Dela",
   brand: "Drive Fast Take Chances",
-  descriptor: "UI / UX, game systems, and interactive product work",
+  descriptor: "UX, UI, game systems, and immersive product work",
 };
 
 export const navigationItems = [
@@ -13,30 +13,30 @@ export const navigationItems = [
 ];
 
 export const heroContent = {
-  eyebrow: "Modern portfolio rebuild",
-  title: "Clear, shippable interfaces for games, tools, and complex products.",
+  eyebrow: "UX designer and coder",
+  title: "Interface work for games, immersive tools, and original worlds.",
   intro:
-    "Dela builds UI and UX systems that make dense experiences feel deliberate, readable, and ready to ship.",
+    "Dela has been designing and coding games since age 14, with shipped work spanning five Call of Duty releases and VR or AR projects for clients including Google, the NBA, and the U.S. Air Force.",
   positioning:
-    "This first pass is designed to hold stronger case studies, screenshots, and video without changing the structure later.",
+    "The throughline is systems-minded UX: work that connects interaction design, gameplay thinking, and implementation-aware execution without losing clarity.",
   primaryAction: {
-    label: "View Selected Work",
+    label: "View Featured Work",
     target: "/#work",
   },
   secondaryAction: {
-    label: "Jump to Contact",
-    target: "/#contact",
+    label: "Open Call of Duty",
+    target: "/projects/call-of-duty",
   },
   highlights: [
-    "AAA and live-service game UI",
-    "Immersive and workflow-heavy tool design",
-    "Prototype-to-implementation collaboration",
+    "5 shipped Call of Duty releases",
+    "VR and AR work for Google, the NBA, and the U.S. Air Force",
+    "Original IP, interface systems, and prototype direction",
   ],
   spotlight: {
-    eyebrow: "Starter case study",
+    eyebrow: "Flagship case study",
     title: "Call of Duty",
     summary:
-      "A reusable detail-page pattern built to support approved screenshots, videos, and outcome-focused storytelling.",
+      "The strongest first-pass case study in the set: shipped features, UX flows, content pipelines, and teammate-facing documentation.",
     target: "/projects/call-of-duty",
   },
 };
@@ -44,12 +44,12 @@ export const heroContent = {
 export const actionLinks = [
   {
     label: "Resume",
-    note: "PDF slot ready",
+    note: "Add final PDF link",
     kind: "placeholder",
   },
   {
     label: "Contact",
-    note: "Footer CTA is wired",
+    note: "Jump to the footer CTA",
     kind: "internal",
     target: "/#contact",
   },
@@ -60,58 +60,65 @@ export const actionLinks = [
   },
   {
     label: "GitHub",
-    note: "Add profile URL",
+    note: "Optional profile link",
     kind: "placeholder",
   },
 ];
 
 export const featuredWorkContent = {
   eyebrow: "Selected work",
-  title: "Five starter projects, shaped for fast recruiter scanning.",
+  title: "A tighter first impression built around shipped AAA work and stronger visual projects.",
   intro:
-    "The cards below combine shipped game work, immersive UX, and exploratory technical projects into one consistent portfolio language.",
+    "The homepage now leads with the projects that best show range, polish, and point of view: franchise-scale UI, original IP, and visually stronger game-facing demos.",
+};
+
+export const supportingWorkContent = {
+  eyebrow: "Supporting work",
+  title: "Additional projects that add product, VR, and client-side range.",
+  intro:
+    "These projects still belong in the portfolio, but they sit behind the primary featured set so the first scan stays sharper and more intentional.",
 };
 
 export const experienceContent = {
   eyebrow: "Experience",
-  title: "Comfortable where product clarity meets complicated systems.",
+  title: "AAA releases, immersive client work, and self-directed game development.",
   intro:
-    "The common thread across these projects is reducing friction without sanding off ambition.",
+    "The portfolio sits at the overlap of UX design, gameplay-adjacent thinking, and practical implementation.",
   pillars: [
     {
-      title: "Game UI and feature systems",
+      title: "Call of Duty at scale",
       body:
-        "Player-facing flows, progression surfaces, and interface behaviors tuned for fast comprehension under pressure.",
+        "Shipped UI and UX work across Black Ops 6, Vanguard, MW2, MW3, and Warzone, with feature flows, pipeline thinking, and documentation built for large teams.",
     },
     {
-      title: "Tools and immersive workflows",
+      title: "VR and AR product work",
       body:
-        "Interfaces for training, simulation, and workflow-heavy experiences that need both precision and approachability.",
+        "Experience designing and prototyping immersive workflows for clients such as Google, the NBA, and the U.S. Air Force across tablets, headsets, and backend tools.",
     },
     {
-      title: "Cross-discipline delivery",
+      title: "Original worlds and demos",
       body:
-        "Work that can move from concept to implementation without losing the original interaction intent.",
+        "Independent projects like Rebel Future and companion demos show game direction, product framing, and interaction concepts outside of client or franchise constraints.",
     },
   ],
 };
 
 export const caseStudyPrompt = {
-  eyebrow: "Detail pattern",
-  title: "Each project is ready for screenshots, walkthroughs, and outcome-focused writing.",
+  eyebrow: "Flagship detail",
+  title: "The content model is now seeded with real starter material, not generic placeholders.",
   intro:
-    "The detail layout keeps structure consistent so future content updates can focus on story quality rather than page plumbing.",
+    "Call of Duty leads as the most fully grounded case study, while the other projects now have clearer summaries, more honest scope, and better ordering.",
   action: {
-    label: "Open the Call of Duty pattern",
+    label: "Read the Call of Duty case study",
     target: "/projects/call-of-duty",
   },
 };
 
 export const footerContent = {
   eyebrow: "Contact",
-  title: "Ready to turn this shell into a media-complete portfolio.",
+  title: "Ready for final assets, sharper writing, and approved links.",
   intro:
-    "The structure is in place for final copy, approved screenshots, embedded video, and real resume or social links.",
+    "The portfolio structure is now seeded with stronger project choices and real source material, so the next passes can focus on media, editing, and polish.",
   contactCards: [
     {
       label: "Resume",
@@ -131,4 +138,3 @@ export const footerContent = {
     },
   ],
 };
-
