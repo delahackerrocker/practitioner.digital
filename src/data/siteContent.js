@@ -33,10 +33,10 @@ export const heroContent = {
     "Original IP, interface systems, and prototype direction",
   ],
   spotlight: {
-    eyebrow: "Flagship case study",
+    eyebrow: "Flagship cluster",
     title: "Call of Duty",
     summary:
-      "The strongest first-pass case study in the set: shipped features, UX flows, content pipelines, and teammate-facing documentation.",
+      "Now structured as a hub plus five dedicated AAA case-study pages with in-site slideshows, video, and artifact-specific stories.",
     target: "/projects/call-of-duty",
   },
 };
@@ -66,10 +66,21 @@ export const actionLinks = [
 ];
 
 export const featuredWorkContent = {
-  eyebrow: "Selected work",
-  title: "A tighter first impression built around shipped AAA work and stronger visual projects.",
+  eyebrow: "Selected work beyond COD",
+  title: "The rest of the portfolio stays curated around strong visual range and original-world work.",
   intro:
-    "The homepage now leads with the projects that best show range, polish, and point of view: franchise-scale UI, original IP, and visually stronger game-facing demos.",
+    "With Call of Duty elevated into its own flagship cluster, the supporting featured set can stay focused on original IP, visually led projects, and product-thinking range.",
+};
+
+export const callOfDutyClusterContent = {
+  eyebrow: "Flagship AAA cluster",
+  title: "Five Call of Duty case studies now lead the portfolio.",
+  intro:
+    "Instead of one oversized franchise page, the strongest artifacts are broken into dedicated case studies for MW3 Exfil, the BO6 Keypad Mini Game, the Warzone / Cold War Design Guide, Play Again With Team, and the BO6 Stealth System.",
+  action: {
+    label: "Open the Call of Duty hub",
+    target: "/projects/call-of-duty",
+  },
 };
 
 export const supportingWorkContent = {
@@ -104,12 +115,12 @@ export const experienceContent = {
 };
 
 export const caseStudyPrompt = {
-  eyebrow: "Flagship detail",
-  title: "The content model is now seeded with real starter material, not generic placeholders.",
+  eyebrow: "Editorial structure",
+  title: "The strongest work can now grow as modular case studies instead of giant catch-all pages.",
   intro:
-    "Call of Duty leads as the most fully grounded case study, while the other projects now have clearer summaries, more honest scope, and better ordering.",
+    "Call of Duty now sets the model: richer artifact handling where it matters most, while the rest of the site stays simple and maintainable.",
   action: {
-    label: "Read the Call of Duty case study",
+    label: "Browse the COD hub",
     target: "/projects/call-of-duty",
   },
 };

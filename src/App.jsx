@@ -1,5 +1,7 @@
 import { startTransition, useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
+import CallOfDutyCaseStudyPage from "./pages/CallOfDutyCaseStudyPage";
+import CallOfDutyHubPage from "./pages/CallOfDutyHubPage";
 import Home from "./pages/Home";
 import ProjectDetail from "./pages/ProjectDetail";
 import { getProjectBySlug } from "./data/projects";
@@ -93,6 +95,10 @@ export default function App() {
       <main className="app-main">
         {isHome ? (
           <Home navigate={navigate} />
+        ) : project?.pageType === "call-of-duty-hub" ? (
+          <CallOfDutyHubPage navigate={navigate} project={project} />
+        ) : project?.pageType === "call-of-duty-case-study" ? (
+          <CallOfDutyCaseStudyPage navigate={navigate} project={project} />
         ) : (
           <ProjectDetail navigate={navigate} project={project} />
         )}

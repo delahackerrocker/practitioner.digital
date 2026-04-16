@@ -1,101 +1,8 @@
-export const projects = [
-  {
-    slug: "call-of-duty",
-    title: "Call of Duty",
-    featuredTier: "primary",
-    accent: "#8fb7ff",
-    eyebrow: "AAA game UI / UX technical design",
-    tagline:
-      "Shipped UI systems, feature flows, and content pipelines across five major Call of Duty releases.",
-    summary:
-      "UI/UX Technical Designer work spanning Black Ops 6, Vanguard, MW2, MW3, and Warzone. This first-pass case study focuses on shipped features, implementation-minded UX flows, and the documentation needed to move work across a large multi-discipline team.",
-    role: "UI/UX Technical Designer",
-    projectType: "AAA live-service and premium releases",
-    timeframe: "Black Ops 6, Vanguard, MW2, MW3, and Warzone",
-    previewNote:
-      "AAR flows, HUD work, map screens, in-world UI, style guides, and teammate training docs.",
-    focusTags: [
-      "5 shipped releases",
-      "UI systems and documentation",
-      "Large team collaboration",
-    ],
-    context:
-      "The legacy site describes Dela shipping five major Call of Duty releases, designing and implementing multiple features, and engineering content pipelines inside a very large production environment.",
-    challenge: [
-      "Design player-facing UX that stays readable in fast, content-heavy multiplayer and live-service contexts.",
-      "Balance design intent, implementation constraints, and team coordination across a project landscape with hundreds of contributors.",
-      "Create documentation and training material that helps features scale beyond a single designer or prototype.",
-    ],
-    approach: [
-      "Worked across shipped feature work, including AAR flows, in-world UI, map screens, contextual messaging, and event-specific UX.",
-      "Paired interface design with implementation-aware systems thinking so features could survive contact with production realities.",
-      "Produced style guides, UX flow documents, and training materials to keep teams aligned on behavior, hierarchy, and execution.",
-    ],
-    outcome: [
-      "Shipped work across Black Ops 6, Vanguard, MW2, MW3, and Warzone.",
-      "Built a stronger flagship portfolio entry that shows both feature design and technical execution habits.",
-      "Established the clearest foundation for a future media-rich case study with screenshots, docs, and walkthrough clips.",
-    ],
-    deliverables: [
-      "Warzone style guide",
-      "AAR UX flow documents",
-      "HUD and in-world UI samples",
-      "Ghostbusters LTM design doc",
-      "Teammate training documentation",
-    ],
-    media: [
-      {
-        type: "image",
-        label: "Feature set 01",
-        title: "Stealth meter and in-world UI",
-        caption:
-          "Reserved for approved captures of in-world interface work, including the stealth meter material shown on the legacy page.",
-      },
-      {
-        type: "image",
-        label: "Feature set 02",
-        title: "AAR and exfil flow samples",
-        caption:
-          "Prepared for successful exfil, Jupiter AAR, or multiplayer AAR flows with concise annotations.",
-      },
-      {
-        type: "image",
-        label: "Feature set 03",
-        title: "Map, HUD, and messaging systems",
-        caption:
-          "A strong slot for tactical map screens, health and armor UI, contextual messaging, or event-specific surfaces.",
-      },
-      {
-        type: "video",
-        label: "Walkthrough slot",
-        title: "Flagship feature walkthrough",
-        caption:
-          "Ready for a short video showing motion, state changes, or the rhythm of a player-facing flow in context.",
-      },
-    ],
-    links: [
-      {
-        label: "Legacy Call of Duty portfolio page",
-        href: "https://www.drive-fast-take-chances.com/callofduty",
-      },
-      {
-        label: "Warzone style guide",
-        href: "https://drive.google.com/file/d/1TZOi4f8A8vAHMNNgfT-z0Jif2pHTnlYP/view?usp=sharing",
-      },
-      {
-        label: "AAR UX document for successful exfil",
-        href: "https://drive.google.com/file/d/1gKhWJ2U-C3YQ9YQldPcsW1fX23E70FD-/view?usp=sharing",
-      },
-      {
-        label: "Ghostbusters LTM UX design document",
-        href: "https://drive.google.com/file/d/1TQurkvqA9kMMpWSXv1to7majzDCd5dfQ/view?usp=sharing",
-      },
-      {
-        label: "Example UX training document",
-        href: "https://drive.google.com/file/d/1ctQ4uG6E_u9RGOp4Vl49r71BlF4OHZyd/view?usp=sharing",
-      },
-    ],
-  },
+import { callOfDutyCaseStudies, callOfDutyHub } from "./callOfDuty";
+
+const portfolioProjects = [
+  callOfDutyHub,
+  ...callOfDutyCaseStudies,
   {
     slug: "snoopys-soapbox-racers",
     title: "Snoopy's Soapbox Racers",
@@ -376,8 +283,7 @@ export const projects = [
     featuredTier: "secondary",
     accent: "#b68eff",
     eyebrow: "Focused Rebel Future entry",
-    tagline:
-      "A more concrete UI case study inside the larger Rebel Future world.",
+    tagline: "A more concrete UI case study inside the larger Rebel Future world.",
     summary:
       "The live portfolio describes Glave Gunner iPad UI as an iPad game for one or two players that Dela directed and developed. Keeping it as a secondary entry lets the site show a more specific interface artifact from the Rebel Future universe without splitting the main project family too early.",
     role: "Direction, development, and UI/UX",
@@ -619,16 +525,23 @@ export const projects = [
   },
 ];
 
-export const primaryProjects = projects.filter(
-  (project) => project.featuredTier === "primary"
+export const projects = portfolioProjects;
+
+export const primaryProjects = portfolioProjects.filter(
+  (project) =>
+    project.featuredTier === "primary" &&
+    !project.parentSlug &&
+    project.slug !== "call-of-duty"
 );
 
-export const secondaryProjects = projects.filter(
-  (project) => project.featuredTier === "secondary"
+export const secondaryProjects = portfolioProjects.filter(
+  (project) => project.featuredTier === "secondary" && !project.parentSlug
 );
 
 export const featuredProjects = primaryProjects;
 
+export { callOfDutyHub, callOfDutyCaseStudies };
+
 export function getProjectBySlug(slug) {
-  return projects.find((project) => project.slug === slug) ?? null;
+  return portfolioProjects.find((project) => project.slug === slug) ?? null;
 }

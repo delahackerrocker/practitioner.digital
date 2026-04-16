@@ -1,6 +1,14 @@
 export default function ProjectCard({ project, navigate }) {
+  const visualStyle = {
+    "--project-accent": project.accent,
+  };
+
+  if (project.cardImage) {
+    visualStyle["--project-image"] = `url(${project.cardImage})`;
+  }
+
   return (
-    <article className="project-card" style={{ "--project-accent": project.accent }}>
+    <article className="project-card" style={visualStyle}>
       <div className="project-card__visual">
         <div className="project-card__visual-overlay">
           <span>{project.eyebrow}</span>
