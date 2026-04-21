@@ -26,21 +26,21 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Modern Warfare 3 Exfil",
     title: "MW3 Exfil",
     tagline:
-      "A cinematic AAR flow focused on reward reveal, inventory clarity, and post-extraction pacing.",
+      "A post-extraction flow focused on reward reveal, inventory clarity, and pacing.",
     summary:
-      "This case study reframes the successful extraction After Action Report as a premium flow piece rather than a buried PDF attachment. The deck shows how reward reveal, gained-loot presentation, XP breakdown, and sequencing logic were shaped to feel dramatic while staying readable.",
+      "This After Action Report work shows how reward reveal, loot presentation, XP breakdown, and screen sequencing were shaped to feel dramatic without sacrificing readability.",
     role: "UI/UX Technical Designer",
     projectType: "After Action Report flow",
     timeframe: "Modern Warfare 3",
     previewNote:
-      "A 49-page deck plus supporting flow diagrams covering screen sequencing, inventory reveal, and progression communication.",
+      "49-page deck plus supporting flow diagrams for sequencing, inventory reveal, and progression communication.",
     focusTags: [
       "AAR flow design",
       "Reward reveal",
       "Animation and sequencing logic",
     ],
     context:
-      "The Exfil deck is one of the strongest artifact-driven proof points in the entire Call of Duty set, so it now stands as its own dedicated case study under the franchise hub.",
+      "The artifact centers on a core Call of Duty UX problem: making a successful extraction feel clear, high-value, and readable across multiple information-dense states.",
     challenge: [
       "Make a successful extraction feel rewarding and readable across multiple information-dense screens.",
       "Balance cinematic reveal with practical clarity for inventory, XP, loot, and progression breakdowns.",
@@ -48,11 +48,11 @@ export const callOfDutyCaseStudies = [
     approach: [
       "Used the AAR deck to stage the player journey from extraction success through inventory, rewards, and summary states.",
       "Supported the deck with flow diagrams that make timing, hierarchy, and sequencing logic easier to scan.",
-      "Reframed the artifact as a polished in-site slideshow so the presentation feels like a case study, not a file download.",
+      "Structured the artifact for a page-by-page review that keeps the flow readable.",
     ],
     outcome: [
-      "Promotes one of the best Call of Duty artifacts into a flagship portfolio page.",
-      "Shows how reward flow, pacing, and screen logic can be communicated in a production-friendly design deck.",
+      "Highlights post-match UX thinking through a dense but readable reward flow.",
+      "Shows how pacing, hierarchy, and screen logic can be communicated in a production-ready design deck.",
     ],
     deliverables: [
       "49-page Exfil deck",
@@ -64,7 +64,7 @@ export const callOfDutyCaseStudies = [
         eyebrow: "Primary deck",
         title: "Exfil After Action Report slideshow",
         intro:
-          "The full deck is rendered page by page in-site so the work can be reviewed like a presentation rather than a raw PDF.",
+          "The full deck is rendered page by page for a readable walkthrough of the flow.",
         items: createPageGallery(
           "/assets/projects/call-of-duty/exfil/pages",
           49,
@@ -76,7 +76,7 @@ export const callOfDutyCaseStudies = [
         eyebrow: "Supporting flows",
         title: "Flow and sequencing support",
         intro:
-          "These supporting diagrams help explain how the screen logic scales from the big-picture reward sequence down to the individual user journey.",
+          "Supporting diagrams clarify the logic from big-picture reward sequencing down to the individual user journey.",
         items: [
           {
             type: "image",
@@ -122,21 +122,21 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Black Ops 6 Keypad Mini Game",
     title: "BO6 Keypad Mini Game",
     tagline:
-      "A highly visual interaction case study about legibility, state feedback, and puzzle readability.",
+      "An interaction case study about puzzle readability, state feedback, and player guidance.",
     summary:
-      "The keypad mini game works best as an interaction-design case study: the pacing is short, the states are clear, and the artifact set naturally supports video plus flow explanation. This page puts the playable-feeling clip first, then backs it up with the flow chart that explains how the puzzle communicates progression and feedback.",
+      "This mini-game centers on a compact interaction loop: helping players understand state changes, progression, and feedback at a glance while preserving tension.",
     role: "UI/UX Technical Designer",
     projectType: "Mini-game interaction design",
     timeframe: "Black Ops 6",
     previewNote:
-      "Video-first presentation with flow support for state changes, feedback beats, and puzzle readability.",
+      "Video-first case study with flow support for state changes, feedback beats, and puzzle readability.",
     focusTags: [
       "Mini-game UX",
       "Feedback and progression",
       "Interaction clarity",
     ],
     context:
-      "The uploaded keypad video and flow image are strong enough to carry their own focused page, especially because the interaction is easier to understand in motion than inside a generic project summary.",
+      "The artifact set shows how a short, high-pressure interaction can still benefit from clear UX framing and well-structured feedback.",
     challenge: [
       "Make a puzzle interaction readable at a glance while still preserving tension and progression.",
       "Communicate state changes, success cues, and player feedback clearly inside a compact mini-game loop.",
@@ -147,7 +147,7 @@ export const callOfDutyCaseStudies = [
       "Kept the authored text short so the case study stays centered on interaction clarity, not over-explanation.",
     ],
     outcome: [
-      "Adds a distinctly interaction-driven case study to the top of the portfolio.",
+      "Adds a concise interaction-design proof point to the Call of Duty cluster.",
       "Shows how compact mechanics can still benefit from thoughtful UX framing and state communication.",
     ],
     deliverables: [
@@ -160,7 +160,7 @@ export const callOfDutyCaseStudies = [
         eyebrow: "Video artifact",
         title: "Keypad interaction in motion",
         intro:
-          "The video leads here because motion, timing, and feedback beats are the core of the case study.",
+          "Motion leads because timing and feedback are central to the case study.",
         items: [
           {
             type: "video",
@@ -202,33 +202,33 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Warzone / Cold War Design Guide",
     title: "Warzone / Cold War Design Guide",
     tagline:
-      "A systems-thinking case study about brand balance, UI consistency, and visual targets.",
+      "A visual-systems case study about consistency, brand balance, and UI targets.",
     summary:
-      "The style guide is one of the strongest proof points for systems thinking in the portfolio. Instead of linking out to the PDF, this page turns the guide into a browsable in-site slideshow and frames it as a case study about visual leadership, consistency, and the balancing act between shared content and premium product identity.",
+      "This style guide shows system-level UI thinking: balancing shared-content needs with premium product identity across typography, color, item branding, and visual tone.",
     role: "UI/UX Technical Designer",
     projectType: "Style guide and visual system design",
     timeframe: "Warzone / Cold War",
     previewNote:
-      "40 pages of visual targets, typography, color, item branding, and consistency guidance presented as an editorial slideshow.",
+      "40 pages of visual targets, typography, color, item branding, and consistency guidance.",
     focusTags: [
       "Visual systems",
       "Typography and color",
       "Brand balancing",
     ],
     context:
-      "This deck is especially valuable because it shows not just one feature, but the system-level thinking needed to align tone, branding, and UI consistency across a large content ecosystem.",
+      "The deck demonstrates how UI direction can scale beyond single features into a coherent franchise-wide visual system.",
     challenge: [
       "Create visual guidance that balances shared-content needs with premium product identity.",
       "Document typography, color, branding, and consistency targets in a form teams can actually use.",
     ],
     approach: [
-      "Let the document itself remain central while giving it a cleaner in-site presentation and stronger portfolio framing.",
+      "Let the document itself remain central while giving it a cleaner, more readable presentation.",
       "Focused the authored story on visual leadership, consistency targets, and brand-system balancing rather than on generic design-process filler.",
-      "Curated the surrounding stills so the deck remains the backbone of the page.",
+      "Curated the surrounding stills so the deck remains the backbone of the case study.",
     ],
     outcome: [
-      "Elevates a strong systems artifact into one of the top franchise proof points in the portfolio.",
-      "Shows leadership around tone, consistency, and visual decision-making at scale.",
+      "Shows visual leadership around tone, consistency, and decision-making at scale.",
+      "Demonstrates how a design guide can align teams around a shared visual target.",
     ],
     deliverables: [
       "40-page style guide",
@@ -240,7 +240,7 @@ export const callOfDutyCaseStudies = [
         eyebrow: "Primary deck",
         title: "In-site style guide slideshow",
         intro:
-          "Every page of the style guide is available directly in the site so the artifact reads like a portfolio presentation instead of a detached document.",
+          "Every page of the guide is available in-site for a readable review of the artifact.",
         items: createPageGallery(
           "/assets/projects/call-of-duty/warzone-cold-war-design-guide/pages",
           40,
@@ -252,7 +252,7 @@ export const callOfDutyCaseStudies = [
         eyebrow: "Supporting stills",
         title: "Visual tone and brand targets",
         intro:
-          "A few supporting stills keep the page grounded in outcome-facing visuals without overwhelming the guide itself.",
+          "Supporting stills help connect the guide to outcome-facing visuals.",
         items: [
           {
             type: "image",
@@ -297,33 +297,33 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Play Again With Team",
     title: "Play Again With Team",
     tagline:
-      "A crisp social and post-match UX case study about decision flow, team continuity, and reward framing.",
+      "A social UX case study about post-match decisions, team continuity, and progression context.",
     summary:
-      "Play Again With Team is a tight, readable artifact that turns post-match decision-making into a clearer social UX story. This page keeps the slideshow backbone, but frames the deck around team continuity, progression context, and the moment when players choose whether to stay together.",
+      "This deck focuses on the moment after a match when players review rewards, decide whether to stay together, and move into the next session.",
     role: "UI/UX Technical Designer",
     projectType: "Post-match and social UX flow",
     timeframe: "Warzone",
     previewNote:
-      "A concise 7-page deck supported by a strong still image and a tighter authored framing around social retention and post-match clarity.",
+      "Concise 7-page deck framed around social continuity, post-match clarity, and player decision flow.",
     focusTags: [
       "Social UX",
       "Post-match decisions",
       "Progression framing",
     ],
     context:
-      "Because the deck is already concise, it works especially well as a self-contained page that can be scanned quickly by recruiters and hiring managers.",
+      "The artifact shows how post-match UX can support both progression communication and socially meaningful choices without clutter.",
     challenge: [
       "Make the post-match handoff between rewards, decisions, and team continuity easy to understand.",
       "Support a socially meaningful choice without cluttering the AAR with too many competing messages.",
     ],
     approach: [
-      "Framed the page around decision flow, social continuity, and readability rather than treating the PDF like a generic attachment.",
+      "Centered the case study on decision flow, social continuity, and readability rather than treating the PDF like a generic attachment.",
       "Let the slideshow stay concise and easy to step through, which matches the artifact itself.",
-      "Used one strong supporting still so the page still has a quick visual read before the user starts paging through the deck.",
+      "Used one strong supporting still so the work lands quickly before the user starts paging through the deck.",
     ],
     outcome: [
-      "Adds a clear social UX case study to the flagship Call of Duty cluster.",
-      "Shows thinking around retention, team continuity, and post-match framing without overclaiming outcomes.",
+      "Adds a clear social UX case study to the Call of Duty cluster.",
+      "Shows thinking around team continuity and post-match framing without overclaiming outcomes.",
     ],
     deliverables: [
       "7-page Play Again deck",
@@ -335,7 +335,7 @@ export const callOfDutyCaseStudies = [
         eyebrow: "Primary deck",
         title: "Play Again With Team slideshow",
         intro:
-          "The smaller deck stays intentionally lightweight here so users can move through the full artifact quickly.",
+          "The smaller deck keeps the story compact and easy to move through.",
         items: createPageGallery(
           "/assets/projects/call-of-duty/play-again-with-team/pages",
           7,
@@ -347,7 +347,7 @@ export const callOfDutyCaseStudies = [
         eyebrow: "Supporting still",
         title: "Social and AAR framing",
         intro:
-          "A supporting still helps the page land quickly before the user opens the deck itself.",
+          "A supporting still helps the work land before the user opens the deck itself.",
         items: [
           {
             type: "image",
@@ -383,33 +383,33 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Black Ops 6 Stealth System",
     title: "BO6 Stealth System",
     tagline:
-      "A focused case study in awareness-state readability, icon exploration, and combat communication.",
+      "A communication-design case study about awareness states, iconography, and combat readability.",
     summary:
-      "The stealth-system artifact is a strong visual proof point because it concentrates the problem into one core question: how clearly can enemy awareness and escalation states be communicated to the player? This page treats the exploration as a serious communication-design case study instead of a supporting image buried on a larger page.",
+      "This exploration focuses on a clear gameplay question: how to communicate enemy awareness and escalation states quickly enough to support stealth play under pressure.",
     role: "UI/UX Technical Designer",
     projectType: "Awareness-state communication system",
     timeframe: "Black Ops 6",
     previewNote:
-      "A focused visual artifact centered on enemy awareness states, escalation clarity, and iconography direction.",
+      "Visual artifact centered on awareness states, escalation clarity, and icon direction.",
     focusTags: [
       "State readability",
       "Icon exploration",
       "Combat communication",
     ],
     context:
-      "Even with a smaller artifact set, the stealth system deserves its own page because the exploration is specific, visually legible, and easy to discuss at a systems level.",
+      "Even as a compact artifact, it shows systems thinking through state communication, icon exploration, and player-readable combat feedback.",
     challenge: [
       "Communicate awareness escalation clearly enough for players to understand stealth status at a glance.",
       "Explore iconography and state treatment that can survive combat pressure without adding noise.",
     ],
     approach: [
-      "Framed the page around enemy awareness states and the communication problem they create for players.",
-      "Kept the supporting copy concise so the artifact stays the hero of the page.",
-      "Used the larger COD cluster to give this smaller but sharper proof point a proper editorial home.",
+      "Centered the case study on enemy awareness states and the communication problem they create for players.",
+      "Kept the supporting copy concise so the artifact stays central.",
+      "Positioned the exploration as a focused proof point within the broader Call of Duty work.",
     ],
     outcome: [
-      "Adds a communication-design-focused case study to the flagship Call of Duty cluster.",
-      "Shows how a tightly scoped UI problem can still become a compelling portfolio page when the framing is clear.",
+      "Adds a communication-design-focused case study to the Call of Duty cluster.",
+      "Shows how a tightly scoped UI problem can still reveal strong systems and communication design.",
     ],
     deliverables: [
       "Stealth meter exploration",
@@ -421,7 +421,7 @@ export const callOfDutyCaseStudies = [
         eyebrow: "Primary artifact",
         title: "Stealth awareness exploration",
         intro:
-          "This visual does the heavy lifting: it makes state progression, alert behavior, and escalation readability easy to discuss.",
+          "The artifact does the heavy lifting here, making state progression and alert behavior easy to review.",
         items: [
           {
             type: "image",
@@ -453,33 +453,33 @@ export const callOfDutyHub = {
   eyebrow: "Flagship AAA cluster",
   title: "Call of Duty",
   tagline:
-    "Five dedicated case studies spanning flows, systems, social UX, and combat communication across shipped releases.",
+    "Five case studies spanning feature flows, systems work, social UX, and combat communication across shipped releases.",
   summary:
-    "Dela shipped UI and UX work across Black Ops 6, Vanguard, MW2, MW3, and Warzone. This hub reframes that body of work as a curated cluster of flagship case studies rather than one oversized page.",
+    "Dela shipped UI and UX work across Black Ops 6, Vanguard, MW2, MW3, and Warzone. This hub brings the strongest artifacts together in one recruiter-friendly view.",
   role: "UI/UX Technical Designer",
   projectType: "AAA franchise UI/UX",
   timeframe: "Black Ops 6, Vanguard, MW2, MW3, and Warzone",
   previewNote:
-    "A hub page for MW3 Exfil, BO6 Keypad Mini Game, Warzone / Cold War Design Guide, Play Again With Team, and BO6 Stealth System.",
+    "Hub for MW3 Exfil, the BO6 Keypad Mini Game, the Warzone / Cold War Design Guide, Play Again With Team, and the BO6 Stealth System.",
   focusTags: [
     "5 shipped releases",
     "Flagship AAA cluster",
     "Feature, systems, and documentation work",
   ],
   context:
-    "The goal of the hub is to give the overall franchise work a quick, professional framing and then route visitors directly into the five strongest artifact-driven pages.",
+    "The page gives the franchise work a concise overview, then routes directly into the strongest artifact-led case studies.",
   challenge: [
     "Present a broad body of franchise work without collapsing everything into one giant catch-all page.",
     "Make the strongest case studies easier to scan, compare, and revisit individually.",
   ],
   approach: [
-    "Pulled the most compelling artifacts into five dedicated sub-case-study pages with their own media treatment.",
-    "Kept the hub concise so it functions as editorial framing rather than as another oversized case study.",
+    "Organized the strongest artifacts into five dedicated case studies with tailored media treatment.",
+    "Kept the hub concise so it frames the body of work without repeating the full case-study material.",
     "Moved PDF decks from dead attachments to in-site slideshows rendered page by page.",
   ],
   outcome: [
-    "Turns the Call of Duty section into the clearest flagship cluster in the portfolio.",
-    "Improves hierarchy, recruiter scanning, and media presentation while keeping the overall site maintainable.",
+    "Makes a broad body of franchise work easier to scan.",
+    "Surfaces feature design, systems thinking, documentation, and communication design across shipped releases.",
   ],
   deliverables: [
     "Call of Duty hub page",

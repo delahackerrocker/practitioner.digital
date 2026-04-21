@@ -52,8 +52,8 @@ export default function CallOfDutyHubPage({ navigate, project }) {
 
       <Section
         eyebrow="Featured case studies"
-        intro="These five pages now carry the strongest artifact-driven Call of Duty work in the site. Each one has its own media treatment instead of living as a subsection on a giant franchise page."
-        title="The franchise work, broken into clearer editorial pieces"
+        intro="These five case studies cover the strongest artifact-driven UI and UX work from Dela's Call of Duty experience."
+        title="Five focused case studies"
       >
         <div className="project-grid">
           {callOfDutyCaseStudies.map((entry) => (
@@ -65,8 +65,8 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Challenge"
-        intro="The hub exists to simplify recruiter scanning and put the strongest artifacts closer to the surface."
-        title="Why the structure changed"
+        intro="The hub makes a broad body of franchise work easier to scan."
+        title="Why the hub exists"
       >
         <DetailList items={project.challenge} />
       </Section>
@@ -74,7 +74,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="The hub stays intentionally concise and hands off to dedicated case-study pages for the deeper material."
+        intro="The overview stays concise and hands off to dedicated case-study pages for the deeper material."
         title="How the cluster is organized"
       >
         <DetailList items={project.approach} />
@@ -82,7 +82,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
 
       <Section
         eyebrow="Artifacts"
-        intro="The sub-pages mix in-site PDF slideshows, local video, flow diagrams, and focused stills."
+        intro="The cluster combines slideshows, video, diagrams, and supporting stills."
         title="What this cluster now supports"
       >
         <div className="tag-row">
@@ -98,4 +98,3 @@ export default function CallOfDutyHubPage({ navigate, project }) {
     </>
   );
 }
-

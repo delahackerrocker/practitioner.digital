@@ -75,7 +75,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Challenge"
-        intro="Each page keeps the writing short and lets the artifact load most of the meaning."
+        intro="The core communication or interaction problem at the center of this case study."
         title="What needed to work"
       >
         <DetailList items={project.challenge} />
@@ -84,7 +84,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="The page structure is deliberately modular so future stills, videos, or extra notes can be added without a redesign."
+        intro="How the work was framed, structured, and supported by the artifact set."
         title="How the case study is framed"
       >
         <DetailList items={project.approach} />
@@ -92,8 +92,8 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
 
       <Section
         eyebrow="Artifacts"
-        intro="A quick summary of the media and documentation types this page is built around."
-        title="What this page includes"
+        intro="The media and documentation that anchor this case study."
+        title="Included artifacts"
       >
         <div className="tag-row">
           {project.deliverables.map((deliverable) => (
@@ -107,7 +107,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       {project.links.length ? (
         <Section
           eyebrow="Supporting links"
-          intro="The original PDFs remain available as references, but the in-site presentation is now the primary way to review the work."
+          intro="Original decks and supporting references."
           title="Source material"
         >
           <div className="link-grid">
@@ -128,7 +128,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
 
       <Section
         eyebrow="More COD work"
-        intro="The Call of Duty hub is meant to be explored as a cluster, so each page still points to the other flagship artifacts."
+        intro="More flagship Call of Duty case studies from the same cluster."
         title="Continue through the cluster"
       >
         <div className="project-grid project-grid--compact">

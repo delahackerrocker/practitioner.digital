@@ -42,8 +42,8 @@ export default function ProjectDetail({ navigate, project }) {
 
       <Section
         eyebrow="Media gallery"
-        intro="A lightweight gallery is already in place so screenshots, diagrams, and video can drop in without redesigning the page."
-        title="Media-ready from the first pass"
+        intro="Screenshots, diagrams, and video are grouped here for a quick read on the work."
+        title="Project media"
       >
         <MediaGallery media={project.media} projectTitle={project.title} />
       </Section>
@@ -51,7 +51,7 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Challenge"
-        intro="Frame the problem clearly before expanding the narrative in later content passes."
+        intro="The core UX, interface, or product problem this project needed to solve."
         title="What needed to work"
       >
         <DetailList items={project.challenge} />
@@ -60,7 +60,7 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="This section is already structured for short, credible process notes instead of long walls of text."
+        intro="The key decisions, systems, and production thinking behind the work."
         title="How the work was shaped"
       >
         <DetailList items={project.approach} />
@@ -69,15 +69,15 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Outcome"
-        intro="The portfolio can grow these bullets into stronger proof points without changing the layout pattern."
-        title="What this page is prepared to show"
+        intro="What the work demonstrates and why it matters."
+        title="What the project shows"
       >
         <DetailList items={project.outcome} />
       </Section>
 
       <Section
         eyebrow="Deliverables"
-        intro="A simple supporting block for flowboards, decks, screenshots, docs, or implementation notes."
+        intro="Key artifacts tied to the case study."
         title="Artifacts this case study can hold"
       >
         <div className="tag-row">
@@ -92,7 +92,7 @@ export default function ProjectDetail({ navigate, project }) {
       {project.links.length ? (
         <Section
           eyebrow="Supporting links"
-          intro="A ready-made slot for decks, writeups, embedded references, or approved external destinations."
+          intro="Original decks, demos, and supporting references."
           title="Additional material"
         >
           <div className="link-grid">
@@ -119,8 +119,8 @@ export default function ProjectDetail({ navigate, project }) {
 
       <Section
         eyebrow="More work"
-        intro="Related entries reuse the same content model so future case studies stay consistent."
-        title="Other starter projects"
+        intro="A few related projects from the broader body of work."
+        title="More selected work"
       >
         <div className="project-grid project-grid--compact">
           {relatedProjects.map((entry) => (

@@ -51,12 +51,9 @@ export default function MediaGallery({ media, projectTitle }) {
       </div>
 
       <div className="media-gallery__summary">
-        <p className="section-eyebrow">Media ready</p>
+        <p className="section-eyebrow">Media</p>
         <h3>{activeItem.title}</h3>
-        <p>
-          {activeItem.caption} This gallery can swap directly to real captures for{" "}
-          {projectTitle}.
-        </p>
+        <p>Selected media from {projectTitle}. {activeItem.caption}</p>
       </div>
 
       <div className="media-gallery__controls">
@@ -76,4 +73,3 @@ export default function MediaGallery({ media, projectTitle }) {
     </div>
   );
 }
-
