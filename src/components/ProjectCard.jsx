@@ -9,17 +9,11 @@ export default function ProjectCard({ project, navigate }) {
 
   return (
     <article className="project-card" style={visualStyle}>
-      <div className="project-card__visual">
-        <div className="project-card__visual-overlay">
-          <span>{project.eyebrow}</span>
-          <strong>{project.title}</strong>
-          <p>{project.previewNote}</p>
-        </div>
-      </div>
+      <div aria-hidden="true" className="project-card__visual" />
 
       <div className="project-card__body">
         <div className="project-card__copy">
-          <p className="project-card__eyebrow">{project.tagline}</p>
+          <p className="project-card__deck">{project.tagline}</p>
           <h3>{project.title}</h3>
           <p>{project.summary}</p>
         </div>
@@ -43,7 +37,7 @@ export default function ProjectCard({ project, navigate }) {
           onClick={() => navigate(`/projects/${project.slug}`)}
           type="button"
         >
-          View Case Study
+          Open Project
         </button>
       </div>
     </article>

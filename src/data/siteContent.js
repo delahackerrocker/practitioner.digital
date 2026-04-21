@@ -69,14 +69,14 @@ export const featuredWorkContent = {
   eyebrow: "Selected work",
   title: "A curated mix of original IP, product thinking, and game-facing interface work.",
   intro:
-    "Beyond Call of Duty, this section stays focused on projects that show range across visual design, systems thinking, and interactive product work.",
+    "Original IP, companion concepts, and immersive tools that broaden the range beyond Call of Duty.",
 };
 
 export const callOfDutyClusterContent = {
   eyebrow: "Flagship AAA work",
-  title: "Five shipped Call of Duty releases lead the work.",
+  title: "Call of Duty across five shipped releases.",
   intro:
-    "The strongest franchise artifacts are organized into focused case studies covering MW3 Exfil, the BO6 Keypad Mini Game, the Warzone / Cold War Design Guide, Play Again With Team, and the BO6 Stealth System.",
+    "MW3 Exfil, the BO6 Keypad Mini Game, the Warzone / Cold War Design Guide, Play Again With Team, and the BO6 Stealth System show reward flows, interaction feedback, visual systems, social UX, and combat communication.",
   action: {
     label: "Open the Call of Duty hub",
     target: "/projects/call-of-duty",
@@ -115,12 +115,12 @@ export const experienceContent = {
 };
 
 export const caseStudyPrompt = {
-  eyebrow: "Case study approach",
-  title: "The strongest work is organized as focused case studies, not catch-all pages.",
+  eyebrow: "Deeper dive",
+  title: "Call of Duty goes deeper into feature flows, systems work, and combat communication.",
   intro:
-    "Flagship projects get the depth they need. The rest stays concise, readable, and easy to scan.",
+    "Start there for the densest artifact set, then move into the broader mix of original IP, companion concepts, and immersive tools.",
   action: {
-    label: "Browse the Call of Duty hub",
+    label: "Open the Call of Duty hub",
     target: "/projects/call-of-duty",
   },
 };

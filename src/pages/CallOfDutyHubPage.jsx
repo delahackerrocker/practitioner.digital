@@ -51,9 +51,9 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       </section>
 
       <Section
-        eyebrow="Featured case studies"
-        intro="These five case studies cover the strongest artifact-driven UI and UX work from Dela's Call of Duty experience."
-        title="Five focused case studies"
+        eyebrow="Featured work"
+        intro="These five artifacts cover reward flows, puzzle feedback, visual systems, post-match social UX, and combat communication."
+        title="Five shipped Call of Duty projects"
       >
         <div className="project-grid">
           {callOfDutyCaseStudies.map((entry) => (

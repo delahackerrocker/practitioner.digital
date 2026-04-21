@@ -114,8 +114,8 @@ export default function Home({ navigate }) {
       >
         <div className="case-study-prompt">
           <p>
-            Start with Call of Duty as the flagship, then deepen Rebel Future, Snoopy's Soapbox
-            Racers, and the strongest secondary projects as final assets and writing come together.
+            Start with Call of Duty for feature flows, social UX, and combat communication, then
+            move into Rebel Future, Snoopy's Soapbox Racers, and the strongest supporting work.
           </p>
           <button
             className="button button--primary"
