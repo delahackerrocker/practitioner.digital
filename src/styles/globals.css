@@ -8,6 +8,7 @@
   --color-surface: rgba(18, 20, 25, 0.9);
   --color-surface-strong: rgba(24, 27, 34, 0.98);
   --color-panel: rgba(14, 16, 20, 0.92);
+  --color-media-backdrop: #000000;
   --color-border: rgba(255, 255, 255, 0.1);
   --color-border-strong: rgba(255, 255, 255, 0.18);
   --color-text: #f4f5f7;
