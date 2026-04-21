@@ -66,9 +66,13 @@ export default function App() {
     if (location.hash) {
       requestAnimationFrame(() => {
         const target = document.querySelector(location.hash);
+        const reduceMotion = document.documentElement.dataset.motionReduced === "true";
 
         if (target) {
-          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          target.scrollIntoView({
+            behavior: reduceMotion ? "auto" : "smooth",
+            block: "start",
+          });
           return;
         }
 

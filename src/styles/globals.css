@@ -1,6 +1,10 @@
 :root {
   color-scheme: dark;
+  --color-bg-start: #0b0d10;
   --color-bg: #08090b;
+  --color-bg-end: #0d1015;
+  --color-bg-glow: rgba(143, 183, 255, 0.16);
+  --color-bg-warm-glow: rgba(232, 178, 104, 0.1);
   --color-surface: rgba(18, 20, 25, 0.9);
   --color-surface-strong: rgba(24, 27, 34, 0.98);
   --color-panel: rgba(14, 16, 20, 0.92);
@@ -11,14 +15,118 @@
   --color-text-muted: rgba(244, 245, 247, 0.56);
   --color-accent: #8fb7ff;
   --color-accent-soft: rgba(143, 183, 255, 0.16);
-  --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.35);
-  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.24);
+  --shadow-soft-alpha: 0.35;
+  --shadow-card-alpha: 0.24;
+  --shadow-soft: 0 24px 60px rgba(0, 0, 0, var(--shadow-soft-alpha));
+  --shadow-card: 0 20px 40px rgba(0, 0, 0, var(--shadow-card-alpha));
   --radius-xl: 32px;
   --radius-lg: 24px;
   --radius-md: 18px;
   --radius-sm: 12px;
   --font-display: "Aptos Display", "Segoe UI Variable Display", "Segoe UI", sans-serif;
   --font-body: "Aptos", "Segoe UI Variable", "Segoe UI", sans-serif;
+  --shell-width: 1160px;
+  --shell-gutter: 1rem;
+  --app-main-padding-top: 7rem;
+  --app-main-padding-bottom: 4rem;
+  --section-margin-top: 2rem;
+  --section-padding: 3.25rem;
+  --section-header-max-width: 720px;
+  --section-intro-max-width: 720px;
+  --section-title-gap: 0.6rem;
+  --paragraph-spacing: 1rem;
+  --heading-letter-spacing: -0.02em;
+  --eyebrow-letter-spacing: 0.18em;
+  --eyebrow-size: 0.78rem;
+  --intro-size: 1.1rem;
+  --heading-line-height: 1.05;
+  --body-line-height: 1.7;
+  --h1-min: 3.5rem;
+  --h1-max: 6.5rem;
+  --h2-min: 2rem;
+  --h2-max: 3.35rem;
+  --h3-min: 1.2rem;
+  --h3-max: 1.6rem;
+  --nav-top-spacing: 1rem;
+  --nav-inner-padding-x: 1rem;
+  --nav-inner-padding-y: 0.9rem;
+  --nav-radius: 999px;
+  --nav-background-alpha: 0.82;
+  --nav-blur: 18px;
+  --nav-border-opacity: 0.1;
+  --nav-brand-title-scale: 0.98;
+  --nav-brand-meta-scale: 0.82;
+  --nav-link-gap: 0.6rem;
+  --nav-link-padding-x: 1rem;
+  --nav-link-padding-y: 0.7rem;
+  --nav-toggle-padding-x: 0.95rem;
+  --nav-toggle-padding-y: 0.75rem;
+  --hero-content-padding: 3.5rem;
+  --hero-content-radius: 36px;
+  --hero-content-max-width: 720px;
+  --hero-aside-min-width: 320px;
+  --hero-title-max-width: 12ch;
+  --hero-intro-max-width: 60ch;
+  --hero-positioning-max-width: 60ch;
+  --hero-actions-gap: 1rem;
+  --hero-quick-link-gap: 1rem;
+  --hero-aside-gap: 1.5rem;
+  --hero-panel-padding: 1.5rem;
+  --hero-spotlight-padding: 1.8rem;
+  --hero-panel-gap: 0.9rem;
+  --project-grid-gap: 1rem;
+  --project-card-radius: 24px;
+  --project-card-padding: 1.4rem;
+  --project-card-visual-min-height: 280px;
+  --project-card-body-gap: 1.1rem;
+  --project-card-copy-title-gap: 0.45rem;
+  --project-card-copy-paragraph-gap: 0.9rem;
+  --project-card-meta-gap: 0.75rem;
+  --project-card-tag-gap: 0.75rem;
+  --project-card-hover-lift: 0px;
+  --project-card-hover-scale: 1;
+  --project-card-shadow-alpha: 0.24;
+  --case-study-hero-padding: 3rem;
+  --case-study-hero-gap: 1.75rem;
+  --case-study-content-max-width: 720px;
+  --case-study-meta-min-width: 280px;
+  --case-study-summary-max-width: 58ch;
+  --case-study-meta-gap: 1rem;
+  --detail-card-padding: 1.25rem;
+  --detail-grid-gap: 1rem;
+  --related-grid-gap: 1rem;
+  --flagship-callout-padding: 2rem;
+  --flagship-callout-radius: 32px;
+  --media-gallery-gap: 1rem;
+  --media-gallery-stage-min-height: 420px;
+  --media-summary-min-width: 280px;
+  --media-gallery-summary-padding: 1.25rem;
+  --media-gallery-controls-gap: 1rem;
+  --media-caption-gap: 0.75rem;
+  --media-divider-spacing: 1.15rem;
+  --media-frame-padding: 1.8rem;
+  --media-frame-radius: 24px;
+  --media-frame-min-height: 420px;
+  --feature-stage-min-height: 520px;
+  --feature-stage-radius: 32px;
+  --feature-stage-padding: 1rem;
+  --feature-sidebar-padding: 1.35rem;
+  --feature-sidebar-min-width: 300px;
+  --feature-rail-gap: 0.75rem;
+  --feature-rail-padding: 0.9rem;
+  --feature-rail-item-min-width: 92px;
+  --feature-rail-item-padding: 0.9rem;
+  --media-shadow-alpha: 0.18;
+  --media-contain-radius: 24px;
+  --motion-duration: 180ms;
+  --motion-ease: ease;
+  --motion-interactive-lift: 2px;
+  --motion-interactive-scale: 1;
+  --debug-grid-opacity: 0.035;
+  --debug-grid-size: 64px;
+  --debug-guide-opacity: 0.28;
+  --debug-outline-opacity: 0.32;
+  --debug-outline-width: 1px;
 }
 
 * {
@@ -29,13 +137,22 @@ html {
   scroll-behavior: smooth;
 }
 
+html[data-motion-reduced="true"] {
+  scroll-behavior: auto;
+  --motion-duration: 0ms;
+  --motion-interactive-lift: 0px;
+  --motion-interactive-scale: 1;
+  --project-card-hover-lift: 0px;
+  --project-card-hover-scale: 1;
+}
+
 body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at top, rgba(143, 183, 255, 0.16), transparent 32%),
-    radial-gradient(circle at 85% 18%, rgba(232, 178, 104, 0.1), transparent 24%),
-    linear-gradient(180deg, #0b0d10 0%, #08090b 48%, #0d1015 100%);
+    radial-gradient(circle at top, var(--color-bg-glow), transparent 32%),
+    radial-gradient(circle at 85% 18%, var(--color-bg-warm-glow), transparent 24%),
+    linear-gradient(180deg, var(--color-bg-start) 0%, var(--color-bg) 48%, var(--color-bg-end) 100%);
   color: var(--color-text);
   font-family: var(--font-body);
 }
@@ -71,7 +188,7 @@ a {
 p {
   margin: 0;
   color: var(--color-text-soft);
-  line-height: 1.7;
+  line-height: var(--body-line-height);
 }
 
 h1,
@@ -79,7 +196,7 @@ h2,
 h3,
 strong,
 span {
-  letter-spacing: -0.02em;
+  letter-spacing: var(--heading-letter-spacing);
 }
 
 h1,
@@ -89,19 +206,19 @@ h3 {
   color: var(--color-text);
   font-family: var(--font-display);
   font-weight: 600;
-  line-height: 1.05;
+  line-height: var(--heading-line-height);
 }
 
 h1 {
-  font-size: clamp(3.5rem, 9vw, 6.5rem);
+  font-size: clamp(var(--h1-min), 9vw, var(--h1-max));
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-size: clamp(var(--h2-min), 4vw, var(--h2-max));
 }
 
 h3 {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: clamp(var(--h3-min), 2vw, var(--h3-max));
 }
 
 ul {
