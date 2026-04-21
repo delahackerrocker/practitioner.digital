@@ -39,7 +39,6 @@
   "layout": {
     "shellWidth": 1160,
     "shellGutter": 1,
-    "appMainTop": 7,
     "appMainBottom": 4,
     "sectionSpacing": 2,
     "sectionPadding": 3.25,
@@ -51,6 +50,7 @@
   },
   "header": {
     "sticky": true,
+    "contentGap": 7,
     "topSpacing": 1,
     "innerPaddingX": 1,
     "innerPaddingY": 0.9,

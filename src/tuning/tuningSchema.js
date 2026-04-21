@@ -219,7 +219,6 @@ export const tuningTabs = [
         controls: [
           rangeField("layout.shellWidth", "Shell width", "--shell-width", "px", 960, 1440, 10),
           rangeField("layout.shellGutter", "Shell gutter", "--shell-gutter", "rem", 0.5, 2.5, 0.05),
-          rangeField("layout.appMainTop", "App top padding", "--app-main-padding-top", "rem", 4, 9, 0.1),
           rangeField(
             "layout.appMainBottom",
             "App bottom padding",
@@ -285,12 +284,22 @@ export const tuningTabs = [
   {
     id: "header",
     label: "Header / Nav",
-    description: "Sticky shell, nav spacing, and menu treatment.",
+    description: "Sticky shell, nav spacing, and content gap.",
     sections: [
       {
         title: "Shell",
         controls: [
           toggleField("header.sticky", "Sticky header"),
+          rangeField(
+            "header.contentGap",
+            "Gap Below Header",
+            "--header-content-gap",
+            "rem",
+            4,
+            9,
+            0.1,
+            "Spacing between the header bar and the first content block."
+          ),
           rangeField("header.topSpacing", "Top spacing", "--nav-top-spacing", "rem", 0, 2, 0.05),
           rangeField("header.innerPaddingX", "Inner padding X", "--nav-inner-padding-x", "rem", 0.5, 1.5, 0.05),
           rangeField("header.innerPaddingY", "Inner padding Y", "--nav-inner-padding-y", "rem", 0.5, 1.5, 0.05),

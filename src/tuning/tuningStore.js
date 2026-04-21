@@ -4,7 +4,7 @@ import defaultProfile from "./profiles/practitioner-default.json";
 
 export const tuningStorageKey = "drive-fast-take-chances:tuning:v1";
 
-export const defaultTuning = deepMerge(defaultProfile, activeTuning);
+export const defaultTuning = normalizeTuning(deepMerge(defaultProfile, activeTuning));
 
 export const controlMap = buildControlMap(tuningTabs);
 
@@ -71,6 +71,30 @@ export function setValueAtPath(source, path, value) {
 
 export function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
+}
+
+export function normalizeTuning(tuning) {
+  if (!isPlainObject(tuning)) {
+    return cloneTuning(tuning);
+  }
+
+  const result = cloneTuning(tuning);
+  const legacyHeaderGap = result.layout?.appMainTop;
+  const hasHeaderGap = result.header?.contentGap !== undefined;
+
+  if (legacyHeaderGap !== undefined && !hasHeaderGap) {
+    if (!isPlainObject(result.header)) {
+      result.header = {};
+    }
+
+    result.header.contentGap = legacyHeaderGap;
+  }
+
+  if (result.layout && Object.prototype.hasOwnProperty.call(result.layout, "appMainTop")) {
+    delete result.layout.appMainTop;
+  }
+
+  return result;
 }
 
 export function coerceControlValue(control, rawValue) {

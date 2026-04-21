@@ -7,6 +7,7 @@ import {
   cloneTuning,
   controlMap,
   getTabDefaults,
+  normalizeTuning,
   setValueAtPath,
   tuningProfileName,
   tuningStorageKey,
@@ -34,12 +35,13 @@ function readStoredTuning() {
 
 function getInitialTuning() {
   const storedTuning = readStoredTuning();
+  const normalizedStoredTuning = normalizeTuning(storedTuning);
 
-  if (!storedTuning) {
+  if (!normalizedStoredTuning) {
     return cloneTuning(defaultTuning);
   }
 
-  return deepMerge(defaultTuning, storedTuning);
+  return deepMerge(defaultTuning, normalizedStoredTuning);
 }
 
 function saveTuning(tuning) {
@@ -102,7 +104,7 @@ export function TuningProvider({ children }) {
   };
 
   const importTuning = (nextTuning) => {
-    setTuning(deepMerge(defaultTuning, nextTuning));
+    setTuning(deepMerge(defaultTuning, normalizeTuning(nextTuning)));
   };
 
   const exportTuning = () => JSON.stringify(tuning, null, 2);
@@ -129,4 +131,3 @@ export function useTuning() {
 
   return context;
 }
-

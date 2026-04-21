@@ -15,7 +15,7 @@
 }
 
 .app-main {
-  padding: var(--app-main-padding-top) 0 var(--app-main-padding-bottom);
+  padding: var(--header-content-gap) 0 var(--app-main-padding-bottom);
 }
 
 .shell {
@@ -337,7 +337,7 @@ html[data-debug-bounds="true"] .media-frame {
 
 @media (max-width: 820px) {
   .app-main {
-    padding-top: calc(var(--app-main-padding-top) - 1rem);
+    padding-top: calc(var(--header-content-gap) - 1rem);
   }
 
   .hero__content,

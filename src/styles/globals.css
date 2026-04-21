@@ -27,7 +27,7 @@
   --font-body: "Aptos", "Segoe UI Variable", "Segoe UI", sans-serif;
   --shell-width: 1160px;
   --shell-gutter: 1rem;
-  --app-main-padding-top: 7rem;
+  --header-content-gap: 7rem;
   --app-main-padding-bottom: 4rem;
   --section-margin-top: 2rem;
   --section-padding: 3.25rem;
