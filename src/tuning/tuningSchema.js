@@ -135,18 +135,18 @@ export const tuningTabs = [
       {
         title: "Scale",
         controls: [
-          rangeField("typography.h1Min", "H1 min", "--h1-min", "rem", 2.2, 5.5, 0.1),
-          rangeField("typography.h1Max", "H1 max", "--h1-max", "rem", 3.5, 8.0, 0.1),
-          rangeField("typography.h2Min", "H2 min", "--h2-min", "rem", 1.6, 3.5, 0.05),
-          rangeField("typography.h2Max", "H2 max", "--h2-max", "rem", 2.4, 5.0, 0.05),
-          rangeField("typography.h3Min", "H3 min", "--h3-min", "rem", 1.0, 2.0, 0.05),
-          rangeField("typography.h3Max", "H3 max", "--h3-max", "rem", 1.3, 2.4, 0.05),
+          rangeField("typography.h1Min", "H1 min", "--h1-min", "rem", 1.6, 5.5, 0.1),
+          rangeField("typography.h1Max", "H1 max", "--h1-max", "rem", 2.4, 8.0, 0.1),
+          rangeField("typography.h2Min", "H2 min", "--h2-min", "rem", 1.2, 3.5, 0.05),
+          rangeField("typography.h2Max", "H2 max", "--h2-max", "rem", 1.8, 5.0, 0.05),
+          rangeField("typography.h3Min", "H3 min", "--h3-min", "rem", 0.8, 2.0, 0.05),
+          rangeField("typography.h3Max", "H3 max", "--h3-max", "rem", 1.0, 2.4, 0.05),
           rangeField(
             "typography.introSize",
             "Intro size",
             "--intro-size",
             "rem",
-            0.9,
+            0.7,
             1.5,
             0.05
           ),
@@ -165,7 +165,7 @@ export const tuningTabs = [
             "Eyebrow size",
             "--eyebrow-size",
             "rem",
-            0.68,
+            0.55,
             0.95,
             0.01
           ),
@@ -413,7 +413,7 @@ export const tuningTabs = [
             "--hero-title-max-width",
             "ch",
             8,
-            16,
+            32,
             0.5
           ),
           rangeField(

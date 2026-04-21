@@ -71,7 +71,7 @@
     "contentRadius": 36,
     "contentMaxWidth": 720,
     "asideMinWidth": 320,
-    "titleMaxWidth": 12,
+    "titleMaxWidth": 24,
     "introMaxWidth": 60,
     "positioningMaxWidth": 60,
     "actionsGap": 1,
