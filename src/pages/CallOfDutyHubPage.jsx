@@ -21,7 +21,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
     <>
       <section className="case-study-hero shell" style={{ "--project-accent": project.accent }}>
         <button className="back-link" onClick={() => navigate("/#overview")} type="button">
-          Back to home
+          Back to Home
         </button>
 
         <div className="case-study-hero__grid">
@@ -35,11 +35,11 @@ export default function CallOfDutyHubPage({ navigate, project }) {
 
           <aside className="case-study-hero__meta">
             <div className="detail-card">
-              <span>Role / focus</span>
+              <span>Role / Focus</span>
               <strong>{project.role}</strong>
             </div>
             <div className="detail-card">
-              <span>Project type</span>
+              <span>Project Type</span>
               <strong>{project.projectType}</strong>
             </div>
             <div className="detail-card">
@@ -51,9 +51,9 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       </section>
 
       <Section
-        eyebrow="Featured work"
+        eyebrow="Featured Work"
         intro="These five artifacts cover Modern Warfare Zombies exfil, a BO6 keypad interaction, Warzone / Cold War visual systems, a post-match squad flow, and BO6 stealth readability."
-        title="Five shipped Call of Duty projects"
+        title="Five Shipped Call of Duty Projects"
       >
         <div className="project-grid">
           {callOfDutyCaseStudies.map((entry) => (
@@ -66,7 +66,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
         className="section--compact"
         eyebrow="Challenge"
         intro="The franchise work spans multiple releases and problem types, so the hub clarifies scope before handing off to individual artifacts."
-        title="Why the hub exists"
+        title="Why the Hub Exists"
       >
         <DetailList items={project.challenge} />
       </Section>
@@ -75,7 +75,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
         className="section--compact"
         eyebrow="Approach"
         intro="The hub stays short and routes into artifact-led pages where decks, video, and diagrams can do the heavier storytelling."
-        title="How the cluster is organized"
+        title="How the Cluster Is Organized"
       >
         <DetailList items={project.approach} />
       </Section>
@@ -83,7 +83,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       <Section
         eyebrow="Artifacts"
         intro="Slideshows, video, flow diagrams, and supporting stills keep the franchise work scannable without flattening it into one page."
-        title="What this cluster now supports"
+        title="What This Cluster Now Supports"
       >
         <div className="tag-row">
           {project.deliverables.map((deliverable) => (

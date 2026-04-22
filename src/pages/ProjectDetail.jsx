@@ -22,8 +22,8 @@ export default function ProjectDetail({ navigate, project }) {
   if (!project) {
     return (
       <section className="missing-page shell">
-        <p className="section-eyebrow">Project not found</p>
-        <h1>The requested case study has not been wired yet.</h1>
+        <p className="section-eyebrow">Project Not Found</p>
+        <h1>The Requested Case Study Has Not Been Wired Yet.</h1>
         <p>Return to the home page to continue through the portfolio.</p>
         <button className="button button--primary" onClick={() => navigate("/")} type="button">
           Back Home
@@ -41,9 +41,9 @@ export default function ProjectDetail({ navigate, project }) {
       <CaseStudyHero navigate={navigate} project={project} />
 
       <Section
-        eyebrow="Media gallery"
+        eyebrow="Media Gallery"
         intro="Screenshots, diagrams, and motion selected to show the work quickly."
-        title="Project media"
+        title="Project Media"
       >
         <MediaGallery media={project.media} projectTitle={project.title} />
       </Section>
@@ -52,7 +52,7 @@ export default function ProjectDetail({ navigate, project }) {
         className="section--compact"
         eyebrow="Challenge"
         intro="The product, interaction, or communication problem at the center of the project."
-        title="What needed to work"
+        title="What Needed to Work"
       >
         <DetailList items={project.challenge} />
       </Section>
@@ -61,7 +61,7 @@ export default function ProjectDetail({ navigate, project }) {
         className="section--compact"
         eyebrow="Approach"
         intro="The key decisions, constraints, and production thinking behind the work."
-        title="How the work was shaped"
+        title="How the Work Was Shaped"
       >
         <DetailList items={project.approach} />
       </Section>
@@ -70,7 +70,7 @@ export default function ProjectDetail({ navigate, project }) {
         className="section--compact"
         eyebrow="Outcome"
         intro="What the project demonstrates and why it matters in the portfolio."
-        title="What the project shows"
+        title="What the Project Shows"
       >
         <DetailList items={project.outcome} />
       </Section>
@@ -78,7 +78,7 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         eyebrow="Deliverables"
         intro="Core artifacts represented in the case study."
-        title="Artifacts this case study can hold"
+        title="Artifacts This Case Study Can Hold"
       >
         <div className="tag-row">
           {project.deliverables.map((deliverable) => (
@@ -91,9 +91,9 @@ export default function ProjectDetail({ navigate, project }) {
 
       {project.links.length ? (
         <Section
-          eyebrow="Supporting links"
+          eyebrow="Supporting Links"
           intro="Original references, demos, and supporting material."
-          title="Additional material"
+          title="Additional Material"
         >
           <div className="link-grid">
             {project.links.map((link) =>
@@ -118,9 +118,9 @@ export default function ProjectDetail({ navigate, project }) {
       ) : null}
 
       <Section
-        eyebrow="More work"
+        eyebrow="More Work"
         intro="Related work from games, XR, and interactive product development."
-        title="More projects"
+        title="More Projects"
       >
         <div className="project-grid project-grid--compact">
           {relatedProjects.map((entry) => (

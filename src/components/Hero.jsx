@@ -72,7 +72,7 @@ export default function Hero({ actionLinks, content, navigate }) {
             onClick={() => navigate(content.spotlight.target)}
             type="button"
           >
-            Open Call of Duty hub
+            Open Call of Duty Hub
           </button>
         </div>
       </aside>

@@ -7,18 +7,18 @@ const portfolioProjects = [
     slug: "snoopys-soapbox-racers",
     title: "Snoopy's Soapbox Racers",
     accent: "#ef9d67",
-    eyebrow: "Featured visual project",
+    eyebrow: "Featured Visual Project",
     tagline:
       "A character-led racing project carried by visual punch and game-facing presentation.",
     summary:
       "A visually driven racing project included for range, paced as a short media-first case study rather than padded with unsupported production detail.",
-    role: "Visual showcase and game-facing presentation",
-    projectType: "Racing game project",
-    timeframe: "Archived game work",
+    role: "Visual Showcase and Game-Facing Presentation",
+    projectType: "Racing Game Project",
+    timeframe: "Archived Game Work",
     focusTags: [
-      "Visual showcase",
-      "Racing project",
-      "Game-facing presentation",
+      "Visual Showcase",
+      "Racing Project",
+      "Game-Facing Presentation",
     ],
     context:
       "The public source material clearly establishes the project and its tone, but not the full production history, so the writeup stays intentionally restrained.",
@@ -36,29 +36,29 @@ const portfolioProjects = [
       "Creates a clean foundation for a stronger media-led case study once final assets are ready.",
     ],
     deliverables: [
-      "Hero media slot",
-      "Key screenshot gallery",
-      "Short production summary",
+      "Hero Media Slot",
+      "Key Screenshot Gallery",
+      "Short Production Summary",
     ],
     media: [
       {
         type: "image",
-        label: "Visual slot 01",
-        title: "Featured screenshot placeholder",
+        label: "Visual Slot 01",
+        title: "Featured Screenshot Placeholder",
         caption:
           "Reserved for the strongest frame or hero crop that makes the project feel instantly distinct on desktop and mobile.",
       },
       {
         type: "video",
-        label: "Motion slot",
-        title: "Gameplay clip placeholder",
+        label: "Motion Slot",
+        title: "Gameplay Clip Placeholder",
         caption:
           "Ready for a short gameplay or presentation clip once final media is selected.",
       },
     ],
     links: [
       {
-        label: "Legacy interactive portfolio",
+        label: "Legacy Interactive Portfolio",
         href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
       },
     ],
@@ -72,13 +72,13 @@ const portfolioProjects = [
       "Original IP spanning world-building, game UI, embodiment, and direction.",
     summary:
       "An original game universe that pulls together character and world briefs, UI studies, embodiment demos, teaser material, and gameplay look-and-feel into one broader IP story.",
-    role: "Creative direction, UI/UX, gameplay concepting, and development",
-    projectType: "Original IP and game universe",
-    timeframe: "Ongoing independent project family",
+    role: "Creative Direction, UI/UX, Gameplay Concepting, and Development",
+    projectType: "Original IP and Game Universe",
+    timeframe: "Ongoing Independent Project Family",
     focusTags: [
       "Original IP",
-      "Game direction",
-      "UI and embodiment",
+      "Game Direction",
+      "UI and Embodiment",
     ],
     context:
       "The legacy material presents Rebel Future as Dela's own game universe, with documentation spanning characters, world-building, gameplay direction, and supporting experiments.",
@@ -97,46 +97,46 @@ const portfolioProjects = [
       "Leaves room for narrower case studies later if stronger assets surface.",
     ],
     deliverables: [
-      "Universe and character brief",
-      "Gameplay look-and-feel document",
-      "Player embodiment demo",
+      "Universe and Character Brief",
+      "Gameplay Look-and-Feel Document",
+      "Player Embodiment Demo",
       "StarFighter module",
-      "Teaser and intro material",
+      "Teaser and Intro Material",
     ],
     media: [
       {
         type: "image",
-        label: "Project family 01",
-        title: "Universe and visual identity",
+        label: "Project Family 01",
+        title: "Universe and Visual Identity",
         caption:
           "A strong slot for world-building art, character material, or visual identity frames that define the Rebel Future tone.",
       },
       {
         type: "image",
-        label: "Project family 02",
-        title: "Glave Gunner player embodiment",
+        label: "Project Family 02",
+        title: "Glave Gunner Player Embodiment",
         caption:
           "Prepared for embodiment demo media that shows how the project explores player presence and interaction in the world.",
       },
       {
         type: "video",
-        label: "Project family 03",
-        title: "Teaser or intro reel",
+        label: "Project Family 03",
+        title: "Teaser or Intro Reel",
         caption:
           "Ready for a teaser, cartoon intro, or gameplay concept clip once final video sources are selected.",
       },
     ],
     links: [
       {
-        label: "Legacy interactive portfolio",
+        label: "Legacy Interactive Portfolio",
         href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
       },
       {
-        label: "Rebel Future universe and character brief",
+        label: "Rebel Future Universe and Character Brief",
         href: "https://drive.google.com/file/d/166Znw1O6y-qGAB45BlMC4I2QVGrybjR7/view?usp=sharing",
       },
       {
-        label: "Gameplay look-and-feel document",
+        label: "Gameplay Look-and-Feel Document",
         href: "https://drive.google.com/file/d/1z7TiI3sz-6F2POTFy3CG8WxuQU1C0Sqp/view?usp=sharing",
       },
     ],
@@ -145,18 +145,18 @@ const portfolioProjects = [
     slug: "overwatch-companion-demo",
     title: "Overwatch Companion Demo",
     accent: "#f0b26e",
-    eyebrow: "Companion product concept",
+    eyebrow: "Companion Product Concept",
     tagline:
       "A utility-first companion concept for browsing, account support, and service-minded UX.",
     summary:
       "A compact product concept that treats a companion app as a useful service layer, with browsing, account utility, and readable interface structure at the center.",
-    role: "UX design, UI, and demo implementation",
-    projectType: "Companion app concept",
-    timeframe: "Personal demo project",
+    role: "UX Design, UI, and Demo Implementation",
+    projectType: "Companion App Concept",
+    timeframe: "Personal Demo Project",
     focusTags: [
       "Companion UX",
-      "Utility features",
-      "Demo implementation",
+      "Utility Features",
+      "Demo Implementation",
     ],
     context:
       "The project is represented publicly through a video demo rather than a long written case study, so the framing stays focused on product utility and implementation.",
@@ -174,14 +174,14 @@ const portfolioProjects = [
       "Shows range beyond franchise UI by pairing concept thinking with a working demo artifact.",
     ],
     deliverables: [
-      "Video demo",
-      "Companion feature framing",
-      "Screen and flow concepts",
+      "Video Demo",
+      "Companion Feature Framing",
+      "Screen and Flow Concepts",
     ],
     media: [
       {
         type: "video",
-        label: "Demo video",
+        label: "Demo Video",
         title: "Overwatch Companion Demo",
         caption:
           "Embedded from the legacy portfolio's YouTube demo so the case study already has a real motion artifact.",
@@ -189,19 +189,19 @@ const portfolioProjects = [
       },
       {
         type: "image",
-        label: "Screen slot",
-        title: "Companion UI captures",
+        label: "Screen Slot",
+        title: "Companion UI Captures",
         caption:
           "Reserved for final mockups or video stills that show account views, utility features, and browsing flows.",
       },
     ],
     links: [
       {
-        label: "YouTube demo",
+        label: "YouTube Demo",
         href: "https://www.youtube.com/watch?v=PMTRt2csE1A",
       },
       {
-        label: "Legacy portfolio reference",
+        label: "Legacy Portfolio Reference",
         href: "https://www.drive-fast-take-chances.com/callofduty",
       },
     ],
@@ -210,18 +210,18 @@ const portfolioProjects = [
     slug: "how-to-train-your-dragon-demo",
     title: "How to Train Your Dragon Demo",
     accent: "#cf8d98",
-    eyebrow: "Supporting visual project",
+    eyebrow: "Supporting Visual Project",
     tagline:
       "A character-led demo built around visual tone and animation-led presentation.",
     summary:
       "A supporting visual piece that broadens the portfolio's range through character work, motion, and presentation rather than systems-heavy UX.",
-    role: "Demo presentation and visual showcase",
-    projectType: "Demo and animation-led project",
-    timeframe: "Archived demo work",
+    role: "Demo Presentation and Visual Showcase",
+    projectType: "Demo and Animation-Led Project",
+    timeframe: "Archived Demo Work",
     focusTags: [
-      "Visual demo",
-      "Character-led project",
-      "Animation-led presentation",
+      "Visual Demo",
+      "Character-Led Project",
+      "Animation-Led Presentation",
     ],
     context:
       "The available public material is light, so the case study stays concise and media-led instead of filling gaps with unsupported production claims.",
@@ -238,29 +238,29 @@ const portfolioProjects = [
       "Creates a clean secondary case study that can be strengthened quickly when final assets arrive.",
     ],
     deliverables: [
-      "Hero screenshot slot",
-      "Animation clip slot",
-      "Brief production notes",
+      "Hero Screenshot Slot",
+      "Animation Clip Slot",
+      "Brief Production Notes",
     ],
     media: [
       {
         type: "image",
-        label: "Visual slot 01",
-        title: "Demo still placeholder",
+        label: "Visual Slot 01",
+        title: "Demo Still Placeholder",
         caption:
           "Prepared for the strongest still or marketing frame that makes this project readable at a glance.",
       },
       {
         type: "video",
-        label: "Visual slot 02",
-        title: "Animation sequence placeholder",
+        label: "Visual Slot 02",
+        title: "Animation Sequence Placeholder",
         caption:
           "Ready for a short sequence or breakdown clip tied to the legacy animation material.",
       },
     ],
     links: [
       {
-        label: "Legacy interactive portfolio",
+        label: "Legacy Interactive Portfolio",
         href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
       },
     ],
@@ -269,17 +269,17 @@ const portfolioProjects = [
     slug: "glave-gunner-ipad-ui",
     title: "Glave Gunner iPad UI",
     accent: "#b68eff",
-    eyebrow: "Focused Rebel Future entry",
+    eyebrow: "Focused Rebel Future Entry",
     tagline: "Game UI for a one- or two-player iPad experience inside Rebel Future.",
     summary:
       "A concrete UI slice from the Rebel Future universe, centered on menu flow, account handling, customization, and moment-to-moment play surfaces for tablet.",
-    role: "Direction, development, and UI/UX",
-    projectType: "iPad game UI",
-    timeframe: "Independent Rebel Future project",
+    role: "Direction, Development, and UI/UX",
+    projectType: "iPad Game UI",
+    timeframe: "Independent Rebel Future Project",
     focusTags: [
       "Rebel Future",
       "Game UI",
-      "Directed and developed",
+      "Directed and Developed",
     ],
     context:
       "The legacy portfolio frames this as directed and developed by Dela, making it a useful supporting case study beneath the broader Rebel Future umbrella.",
@@ -296,33 +296,33 @@ const portfolioProjects = [
       "Creates a useful supporting case study for future screen captures and flow annotations.",
     ],
     deliverables: [
-      "iPad UI screens",
-      "Player flow notes",
-      "Rebel Future visual language",
+      "iPad UI Screens",
+      "Player Flow Notes",
+      "Rebel Future Visual Language",
     ],
     media: [
       {
         type: "image",
-        label: "UI slot 01",
-        title: "iPad interface placeholder",
+        label: "UI Slot 01",
+        title: "iPad Interface Placeholder",
         caption:
           "Reserved for the strongest screen or menu view from the Glave Gunner iPad UI work.",
       },
       {
         type: "image",
-        label: "UI slot 02",
-        title: "Flow breakdown placeholder",
+        label: "UI Slot 02",
+        title: "Flow Breakdown Placeholder",
         caption:
           "Ready for annotations that connect the interface to multiplayer or two-player use cases.",
       },
     ],
     links: [
       {
-        label: "Legacy interactive portfolio",
+        label: "Legacy Interactive Portfolio",
         href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
       },
       {
-        label: "Rebel Future universe and character brief",
+        label: "Rebel Future Universe and Character Brief",
         href: "https://drive.google.com/file/d/166Znw1O6y-qGAB45BlMC4I2QVGrybjR7/view?usp=sharing",
       },
     ],
@@ -331,18 +331,18 @@ const portfolioProjects = [
     slug: "vr-intelligence-tool-usaf",
     title: "VR Intelligence Tool for the USAF",
     accent: "#9bd0c4",
-    eyebrow: "Immersive product UX",
+    eyebrow: "Immersive Product UX",
     tagline:
       "A tablet-and-VR intelligence tool for dense information workflows.",
     summary:
       "A security-conscious UX project that paired tablet and headset interfaces for reviewing and recording intelligence data across 3D globe views and network-like structures.",
-    role: "UX design, Unity prototyping, and development",
-    projectType: "Tablet and VR intelligence workflow tool",
-    timeframe: "Client product",
+    role: "UX Design, Unity Prototyping, and Development",
+    projectType: "Tablet and VR Intelligence Workflow Tool",
+    timeframe: "Client Product",
     focusTags: [
       "Simulation UX",
-      "Tablet plus VR workflows",
-      "Security-conscious prototype data",
+      "Tablet plus VR Workflows",
+      "Security-Conscious Prototype Data",
     ],
     context:
       "The public source material describes Dela prototyping UI in Unity, then contributing on the broader shipping team for the product.",
@@ -360,30 +360,30 @@ const portfolioProjects = [
       "Shows that the work extends beyond games into immersive tools, expert workflows, and shipped client products.",
     ],
     deliverables: [
-      "Tablet intelligence views",
-      "VR panel concepts",
+      "Tablet Intelligence Views",
+      "VR Panel Concepts",
       "Unity UI prototypes",
-      "Fake-data workflow demonstrations",
+      "Fake-Data Workflow Demonstrations",
     ],
     media: [
       {
         type: "image",
-        label: "Workflow slot 01",
-        title: "3D globe and network view placeholder",
+        label: "Workflow Slot 01",
+        title: "3D Globe and Network View Placeholder",
         caption:
           "Reserved for the clearest example of how dense intelligence information was organized and read.",
       },
       {
         type: "image",
-        label: "Workflow slot 02",
-        title: "Tablet and VR interface placeholder",
+        label: "Workflow Slot 02",
+        title: "Tablet and VR Interface Placeholder",
         caption:
           "Ready for paired captures showing how the product moved between flat and immersive surfaces.",
       },
     ],
     links: [
       {
-        label: "Legacy interactive portfolio",
+        label: "Legacy Interactive Portfolio",
         href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
       },
     ],
@@ -392,18 +392,18 @@ const portfolioProjects = [
     slug: "authoring-tool-final-vr-panels",
     title: "Authoring Tool Final + VR Panels",
     accent: "#7cc8ff",
-    eyebrow: "Workflow-heavy interface system",
+    eyebrow: "Workflow-Heavy Interface System",
     tagline:
       "A desktop-and-VR interface system linking authoring workflows to immersive panels.",
     summary:
       "A systems-heavy project that pairs backend authoring surfaces with the VR panels they drive, showing workflow design, tool thinking, and front-end alignment.",
-    role: "UX design and interface prototyping",
-    projectType: "Authoring tool and VR interface system",
-    timeframe: "Client-side product workflow",
+    role: "UX Design and Interface Prototyping",
+    projectType: "Authoring Tool and VR Interface System",
+    timeframe: "Client-Side Product Workflow",
     focusTags: [
-      "Workflow-heavy UI",
-      "Desktop plus VR pairing",
-      "System design thinking",
+      "Workflow-Heavy UI",
+      "Desktop plus VR Pairing",
+      "System Design Thinking",
     ],
     context:
       "The legacy portfolio presents this as close-to-final UI for both the authoring tool and VR frontend, making it a strong example of connected creator and user surfaces.",
@@ -420,29 +420,29 @@ const portfolioProjects = [
       "Supports future case-study expansion around process, authoring workflows, and immersive UI behavior.",
     ],
     deliverables: [
-      "Authoring tool screens",
-      "VR panel layouts",
-      "Workflow alignment notes",
+      "Authoring Tool Screens",
+      "VR Panel Layouts",
+      "Workflow Alignment Notes",
     ],
     media: [
       {
         type: "image",
-        label: "System slot 01",
-        title: "Authoring tool placeholder",
+        label: "System Slot 01",
+        title: "Authoring Tool Placeholder",
         caption:
           "Reserved for the clearest authoring interface frame or workflow capture.",
       },
       {
         type: "image",
-        label: "System slot 02",
-        title: "VR panel placeholder",
+        label: "System Slot 02",
+        title: "VR Panel Placeholder",
         caption:
           "Prepared for a matching immersive panel view so the system pairing reads immediately.",
       },
     ],
     links: [
       {
-        label: "Legacy interactive portfolio",
+        label: "Legacy Interactive Portfolio",
         href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
       },
     ],
@@ -451,18 +451,18 @@ const portfolioProjects = [
     slug: "curious-george",
     title: "Curious George",
     accent: "#ffd36c",
-    eyebrow: "Educational game app",
+    eyebrow: "Educational Game App",
     tagline:
       "A learning game app that widens the audience and product range.",
     summary:
       "An educational game app where Dela handled UI/UX and principal development, showing a lighter but still meaningful example of end-to-end ownership.",
-    role: "UI/UX and principal development",
-    projectType: "Learning game app for kids",
-    timeframe: "Educational game project",
+    role: "UI/UX and Principal Development",
+    projectType: "Learning Game App for Kids",
+    timeframe: "Educational Game Project",
     focusTags: [
-      "Educational game",
-      "UI/UX plus development",
-      "Kid-friendly interaction",
+      "Educational Game",
+      "UI/UX plus Development",
+      "Kid-Friendly Interaction",
     ],
     context:
       "The public writeup is short but explicit about Dela's role across both experience design and development.",
@@ -479,22 +479,22 @@ const portfolioProjects = [
       "Preserves a useful example of full-stack creative ownership in a lighter-weight format.",
     ],
     deliverables: [
-      "Game UI screens",
-      "Kid-friendly interaction flows",
-      "Principal development support",
+      "Game UI Screens",
+      "Kid-Friendly Interaction Flows",
+      "Principal Development Support",
     ],
     media: [
       {
         type: "image",
-        label: "Project slot 01",
-        title: "Learning app placeholder",
+        label: "Project Slot 01",
+        title: "Learning App Placeholder",
         caption:
           "Reserved for the clearest screen or interaction still that communicates the app's audience and tone quickly.",
       },
     ],
     links: [
       {
-        label: "Legacy interactive portfolio",
+        label: "Legacy Interactive Portfolio",
         href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
       },
     ],

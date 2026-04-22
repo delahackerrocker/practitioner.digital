@@ -6,7 +6,7 @@ export default function CaseStudyHero({ navigate, project }) {
         onClick={() => navigate("/#overview")}
         type="button"
       >
-        Back to home
+        Back to Home
       </button>
 
       <div className="case-study-hero__grid">
@@ -20,11 +20,11 @@ export default function CaseStudyHero({ navigate, project }) {
 
         <aside className="case-study-hero__meta">
           <div className="detail-card">
-            <span>Role / focus</span>
+            <span>Role / Focus</span>
             <strong>{project.role}</strong>
           </div>
           <div className="detail-card">
-            <span>Project type</span>
+            <span>Project Type</span>
             <strong>{project.projectType}</strong>
           </div>
           <div className="detail-card">

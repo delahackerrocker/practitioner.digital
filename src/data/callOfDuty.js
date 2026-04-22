@@ -29,12 +29,12 @@ export const callOfDutyCaseStudies = [
     summary:
       "A post-exfil After Action Report flow for Modern Warfare Zombies, balancing reward drama with readable inventory, XP, loot, and progression breakdowns.",
     role: "UI/UX Technical Designer",
-    projectType: "After Action Report flow",
+    projectType: "After Action Report Flow",
     timeframe: "Modern Warfare III",
     focusTags: [
-      "AAR flow design",
-      "Reward reveal",
-      "Animation and sequencing logic",
+      "AAR Flow Design",
+      "Reward Reveal",
+      "Animation and Sequencing Logic",
     ],
     context:
       "Set inside Modern Warfare Zombies' extraction loop, the work tackles a familiar tension: making Exfil feel high-stakes and satisfying without losing clarity across dense post-run states.",
@@ -52,34 +52,34 @@ export const callOfDutyCaseStudies = [
       "Shows how pacing, hierarchy, and screen logic can be communicated in a production-ready design deck.",
     ],
     deliverables: [
-      "49-page Exfil deck",
-      "Big-picture flow map",
-      "Individual user flow",
+      "49-Page Exfil Deck",
+      "Big-Picture Flow Map",
+      "Individual User Flow",
     ],
     mediaBlocks: [
       {
-        eyebrow: "Primary deck",
-        title: "Exfil After Action Report slideshow",
+        eyebrow: "Primary Deck",
+        title: "Exfil After Action Report Slideshow",
         intro:
           "The full deck is rendered page by page for a readable walkthrough of the flow.",
         items: createPageGallery(
           "/assets/projects/call-of-duty/exfil/pages",
           49,
-          "Exfil deck page",
+          "Exfil Deck Page",
           "Page from the Exfil After Action Report deck."
         ),
       },
       {
-        eyebrow: "Supporting flows",
-        title: "Flow and sequencing support",
+        eyebrow: "Supporting Flows",
+        title: "Flow and Sequencing Support",
         intro:
           "Supporting diagrams clarify the logic from big-picture reward sequencing down to the individual user journey.",
         items: [
           {
             type: "image",
-            label: "Flow map 01",
+            label: "Flow Map 01",
             shortLabel: "01",
-            title: "Jupiter big-picture flow",
+            title: "Jupiter Big-Picture Flow",
             src: "/assets/projects/call-of-duty/exfil/flows/Jupiter-AAR-BIG-PICTURE-FLOW.png",
             caption:
               "High-level sequencing map for how the Exfil AAR moves across major beats and reward framing.",
@@ -87,9 +87,9 @@ export const callOfDutyCaseStudies = [
           },
           {
             type: "image",
-            label: "Flow map 02",
+            label: "Flow Map 02",
             shortLabel: "02",
-            title: "Cerberus individual user flow",
+            title: "Cerberus Individual User Flow",
             src: "/assets/projects/call-of-duty/exfil/flows/Cerberus-AAR-IndividualUserFlow.png",
             caption:
               "A closer look at the user journey and state progression inside the Exfil AAR experience.",
@@ -104,7 +104,7 @@ export const callOfDutyCaseStudies = [
         href: "/assets/projects/call-of-duty/exfil/pdf/Exfil_Success_After_Action_Report.pdf",
       },
       {
-        label: "Legacy Call of Duty overview",
+        label: "Legacy Call of Duty Overview",
         href: "https://www.drive-fast-take-chances.com/callofduty",
       },
     ],
@@ -122,12 +122,12 @@ export const callOfDutyCaseStudies = [
     summary:
       "A tight Black Ops 6 interaction loop focused on readable state changes, success feedback, and fast comprehension under pressure.",
     role: "UI/UX Technical Designer",
-    projectType: "Mini-game interaction design",
+    projectType: "Mini-Game Interaction Design",
     timeframe: "Black Ops 6",
     focusTags: [
-      "Mini-game UX",
-      "Feedback and progression",
-      "Interaction clarity",
+      "Mini-Game UX",
+      "Feedback and Progression",
+      "Interaction Clarity",
     ],
     context:
       "The artifact set shows how even a short, high-tension Black Ops 6 interaction benefits from clear feedback, visible state, and disciplined pacing.",
@@ -145,14 +145,14 @@ export const callOfDutyCaseStudies = [
       "Shows how compact mechanics can still benefit from thoughtful UX framing and state communication.",
     ],
     deliverables: [
-      "Gameplay video",
-      "Keypad flow diagram",
-      "Interaction notes",
+      "Gameplay Video",
+      "Keypad Flow Diagram",
+      "Interaction Notes",
     ],
     mediaBlocks: [
       {
-        eyebrow: "Video artifact",
-        title: "Keypad interaction in motion",
+        eyebrow: "Video Artifact",
+        title: "Keypad Interaction in Motion",
         intro:
           "Motion leads because timing and feedback are central to the case study.",
         items: [
@@ -160,7 +160,7 @@ export const callOfDutyCaseStudies = [
             type: "video",
             label: "Video",
             shortLabel: "V1",
-            title: "BO6 keypad mini game clip",
+            title: "BO6 Keypad Mini Game Clip",
             src: "/assets/projects/call-of-duty/keypad-mini-game/video/BlackOps6-Keypads.mp4",
             poster: "/assets/projects/call-of-duty/keypad-mini-game/flows/KeypadFlowSmall.png",
             caption:
@@ -168,9 +168,9 @@ export const callOfDutyCaseStudies = [
           },
           {
             type: "image",
-            label: "Flow support",
+            label: "Flow Support",
             shortLabel: "F1",
-            title: "Keypad flow chart",
+            title: "Keypad Flow Chart",
             src: "/assets/projects/call-of-duty/keypad-mini-game/flows/KeypadFlowSmall.png",
             caption:
               "Flow support image that clarifies interaction branches, readability, and state communication.",
@@ -181,7 +181,7 @@ export const callOfDutyCaseStudies = [
     ],
     links: [
       {
-        label: "Legacy Call of Duty overview",
+        label: "Legacy Call of Duty Overview",
         href: "https://www.drive-fast-take-chances.com/callofduty",
       },
     ],
@@ -199,12 +199,12 @@ export const callOfDutyCaseStudies = [
     summary:
       "A Warzone / Black Ops Cold War guide that frames typography, color, item branding, and UI tone for a shared ecosystem without flattening each product's identity.",
     role: "UI/UX Technical Designer",
-    projectType: "Style guide and visual system design",
+    projectType: "Style Guide and Visual System Design",
     timeframe: "Warzone / Cold War",
     focusTags: [
-      "Visual systems",
-      "Typography and color",
-      "Brand balancing",
+      "Visual Systems",
+      "Typography and Color",
+      "Brand Balancing",
     ],
     context:
       "As Warzone and Black Ops Cold War moved toward deeper integration, the visual system needed clearer rules for consistency, readability, and premium presentation.",
@@ -222,26 +222,26 @@ export const callOfDutyCaseStudies = [
       "Demonstrates how a design guide can align teams around a shared visual target.",
     ],
     deliverables: [
-      "40-page style guide",
-      "Brand and item direction",
-      "Typography and color targets",
+      "40-Page Style Guide",
+      "Brand and Item Direction",
+      "Typography and Color Targets",
     ],
     mediaBlocks: [
       {
-        eyebrow: "Primary deck",
-        title: "In-site style guide slideshow",
+        eyebrow: "Primary Deck",
+        title: "In-Site Style Guide Slideshow",
         intro:
           "Every page of the guide is available in-site for a readable review of the artifact.",
         items: createPageGallery(
           "/assets/projects/call-of-duty/warzone-cold-war-design-guide/pages",
           40,
-          "Style guide page",
+          "Style Guide Page",
           "Page from the Warzone / Cold War design guide."
         ),
       },
       {
-        eyebrow: "Supporting stills",
-        title: "Visual tone and brand targets",
+        eyebrow: "Supporting Stills",
+        title: "Visual Tone and Brand Targets",
         intro:
           "Supporting stills help connect the guide to outcome-facing visuals.",
         items: [
@@ -249,7 +249,7 @@ export const callOfDutyCaseStudies = [
             type: "image",
             label: "Still 01",
             shortLabel: "01",
-            title: "Style guide cover still",
+            title: "Style Guide Cover Still",
             src: "/assets/projects/call-of-duty/images/WZ_StyleGuide.png",
             caption:
               "A direct still from the guide that works well as a quick visual summary of the artifact.",
@@ -259,7 +259,7 @@ export const callOfDutyCaseStudies = [
             type: "image",
             label: "Still 02",
             shortLabel: "02",
-            title: "Warzone promotional target",
+            title: "Warzone Promotional Target",
             src: "/assets/projects/call-of-duty/images/AGB_WZ_0309_TOUT.jpg",
             caption:
               "Supporting marketing-style visual that helps frame the tone and premium-product balancing discussed in the guide.",
@@ -269,11 +269,11 @@ export const callOfDutyCaseStudies = [
     ],
     links: [
       {
-        label: "Original style guide PDF",
+        label: "Original Style Guide PDF",
         href: "/assets/projects/call-of-duty/warzone-cold-war-design-guide/pdf/WZ_Chapter2_StyleGuide_v2.pdf",
       },
       {
-        label: "Legacy Call of Duty overview",
+        label: "Legacy Call of Duty Overview",
         href: "https://www.drive-fast-take-chances.com/callofduty",
       },
     ],
@@ -291,12 +291,12 @@ export const callOfDutyCaseStudies = [
     summary:
       "A Warzone post-match flow focused on the moment players review results, decide whether to stay together, and move into the next session.",
     role: "UI/UX Technical Designer",
-    projectType: "Post-match and social UX flow",
+    projectType: "Post-Match and Social UX Flow",
     timeframe: "Warzone",
     focusTags: [
       "Social UX",
-      "Post-match decisions",
-      "Progression framing",
+      "Post-Match Decisions",
+      "Progression Framing",
     ],
     context:
       "The artifact centers on a small but important social decision: preserving squad momentum without overloading the post-match screen.",
@@ -314,26 +314,26 @@ export const callOfDutyCaseStudies = [
       "Shows thinking around team continuity and post-match framing without overclaiming outcomes.",
     ],
     deliverables: [
-      "7-page Play Again deck",
-      "Supporting still image",
-      "Post-match decision framing",
+      "7-Page Play Again Deck",
+      "Supporting Still Image",
+      "Post-Match Decision Framing",
     ],
     mediaBlocks: [
       {
-        eyebrow: "Primary deck",
-        title: "Play Again With Team slideshow",
+        eyebrow: "Primary Deck",
+        title: "Play Again With Team Slideshow",
         intro:
           "The smaller deck keeps the story compact and easy to move through.",
         items: createPageGallery(
           "/assets/projects/call-of-duty/play-again-with-team/pages",
           7,
-          "Play Again page",
+          "Play Again Page",
           "Page from the Play Again With Team deck."
         ),
       },
       {
-        eyebrow: "Supporting still",
-        title: "Social and AAR framing",
+        eyebrow: "Supporting Still",
+        title: "Social and AAR Framing",
         intro:
           "A supporting still helps the work land before the user opens the deck itself.",
         items: [
@@ -341,7 +341,7 @@ export const callOfDutyCaseStudies = [
             type: "image",
             label: "Still",
             shortLabel: "01",
-            title: "AAR and Play Again still",
+            title: "AAR and Play Again Still",
             src: "/assets/projects/call-of-duty/images/WZ_UX__AAR_and_PlayAgainWithTeam.png",
             caption:
               "Supporting still that reinforces how the social decision sits beside AAR and reward framing.",
@@ -356,7 +356,7 @@ export const callOfDutyCaseStudies = [
         href: "/assets/projects/call-of-duty/play-again-with-team/pdf/WZ_UX__AAR_and_PlayAgainWithTeam_v01.pdf",
       },
       {
-        label: "Legacy Call of Duty overview",
+        label: "Legacy Call of Duty Overview",
         href: "https://www.drive-fast-take-chances.com/callofduty",
       },
     ],
@@ -374,12 +374,12 @@ export const callOfDutyCaseStudies = [
     summary:
       "A focused exploration of how enemy awareness and escalation states can stay readable enough to support stealth play under pressure.",
     role: "UI/UX Technical Designer",
-    projectType: "Awareness-state communication system",
+    projectType: "Awareness-State Communication System",
     timeframe: "Black Ops 6",
     focusTags: [
-      "State readability",
-      "Icon exploration",
-      "Combat communication",
+      "State Readability",
+      "Icon Exploration",
+      "Combat Communication",
     ],
     context:
       "Framed against Black Ops 6's spy-thriller campaign language, the artifact explores how stealth information can stay legible without flattening tension.",
@@ -397,14 +397,14 @@ export const callOfDutyCaseStudies = [
       "Shows how a tightly scoped UI problem can still reveal strong systems and communication design.",
     ],
     deliverables: [
-      "Stealth meter exploration",
-      "State-readability framing",
-      "Icon direction support",
+      "Stealth Meter Exploration",
+      "State-Readability Framing",
+      "Icon Direction Support",
     ],
     mediaBlocks: [
       {
-        eyebrow: "Primary artifact",
-        title: "Stealth awareness exploration",
+        eyebrow: "Primary Artifact",
+        title: "Stealth Awareness Exploration",
         intro:
           "The artifact does the heavy lifting here, making state progression and alert behavior easy to review.",
         items: [
@@ -412,7 +412,7 @@ export const callOfDutyCaseStudies = [
             type: "image",
             label: "Artifact",
             shortLabel: "01",
-            title: "Stealth meter exploration",
+            title: "Stealth Meter Exploration",
             src: "/assets/projects/call-of-duty/stealth-system/flows/Stealth_Meter-01.png",
             caption:
               "Exploration board focused on awareness states, escalation clarity, and player-readable status communication.",
@@ -423,7 +423,7 @@ export const callOfDutyCaseStudies = [
     ],
     links: [
       {
-        label: "Legacy Call of Duty overview",
+        label: "Legacy Call of Duty Overview",
         href: "https://www.drive-fast-take-chances.com/callofduty",
       },
     ],
@@ -435,19 +435,19 @@ export const callOfDutyHub = {
   pageType: "call-of-duty-hub",
   accent: "#8fb7ff",
   cardImage: "/assets/projects/call-of-duty/images/header.jpg",
-  eyebrow: "AAA franchise UI/UX",
+  eyebrow: "AAA Franchise UI/UX",
   title: "Call of Duty",
   tagline:
     "Five shipped case studies across extraction UX, interaction feedback, visual systems, social flow, and combat communication.",
   summary:
     "Across Black Ops 6, Vanguard, MW2, MW3, and Warzone, Dela shipped UI/UX work spanning feature design, visual systems, documentation, and implementation support for franchise-scale teams.",
   role: "UI/UX Technical Designer",
-  projectType: "AAA franchise UI/UX",
+  projectType: "AAA Franchise UI/UX",
   timeframe: "Black Ops 6, Vanguard, MW2, MW3, and Warzone",
   focusTags: [
-    "5 shipped releases",
+    "5 Shipped Releases",
     "Franchise UI/UX",
-    "Feature flows, systems, and documentation",
+    "Feature Flows, Systems, and Documentation",
   ],
   context:
     "The hub frames the Call of Duty work at product level, then routes directly into the strongest artifact-led case studies.",
@@ -465,13 +465,13 @@ export const callOfDutyHub = {
     "Surfaces feature design, systems thinking, documentation, and communication design across shipped releases.",
   ],
   deliverables: [
-    "Call of Duty hub page",
-    "Five sub-case-study pages",
-    "In-site PDF slideshows",
+    "Call of Duty Hub Page",
+    "Five Sub-Case-Study Pages",
+    "In-Site PDF Slideshows",
   ],
   links: [
     {
-      label: "Legacy Call of Duty overview",
+      label: "Legacy Call of Duty Overview",
       href: "https://www.drive-fast-take-chances.com/callofduty",
     },
   ],

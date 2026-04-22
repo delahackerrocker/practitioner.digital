@@ -26,7 +26,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
     <>
       <section className="case-study-hero shell" style={{ "--project-accent": project.accent }}>
         <button className="back-link" onClick={() => navigate("/projects/call-of-duty")} type="button">
-          Back to Call of Duty hub
+          Back to Call of Duty Hub
         </button>
 
         <div className="case-study-hero__grid">
@@ -40,11 +40,11 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
 
           <aside className="case-study-hero__meta">
             <div className="detail-card">
-              <span>Role / focus</span>
+              <span>Role / Focus</span>
               <strong>{project.role}</strong>
             </div>
             <div className="detail-card">
-              <span>Project type</span>
+              <span>Project Type</span>
               <strong>{project.projectType}</strong>
             </div>
             <div className="detail-card">
@@ -71,7 +71,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
         className="section--compact"
         eyebrow="Challenge"
         intro="The player-facing communication or interaction problem at the center of this case study."
-        title="What needed to work"
+        title="What Needed to Work"
       >
         <DetailList items={project.challenge} />
       </Section>
@@ -80,7 +80,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
         className="section--compact"
         eyebrow="Approach"
         intro="How the artifact was framed, sequenced, and supported so the thinking stays legible."
-        title="How the case study is framed"
+        title="How the Case Study Is Framed"
       >
         <DetailList items={project.approach} />
       </Section>
@@ -88,7 +88,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       <Section
         eyebrow="Artifacts"
         intro="The media and documentation that make the design thinking legible."
-        title="Included artifacts"
+        title="Included Artifacts"
       >
         <div className="tag-row">
           {project.deliverables.map((deliverable) => (
@@ -101,9 +101,9 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
 
       {project.links.length ? (
         <Section
-          eyebrow="Supporting links"
+          eyebrow="Supporting Links"
           intro="Original decks and public references connected to the work."
-          title="Source material"
+          title="Source Material"
         >
           <div className="link-grid">
             {project.links.map((link) => (
@@ -122,9 +122,9 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       ) : null}
 
       <Section
-        eyebrow="More COD work"
+        eyebrow="More COD Work"
         intro="More franchise case studies across extraction UX, visual systems, social flow, and combat communication."
-        title="Continue through the cluster"
+        title="Continue Through the Cluster"
       >
         <div className="project-grid project-grid--compact">
           {relatedCaseStudies.map((entry) => (
