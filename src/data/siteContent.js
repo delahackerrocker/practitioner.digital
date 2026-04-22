@@ -1,8 +1,8 @@
 export const siteMeta = {
-  title: "Dela | UX Designer and UI Developer",
+  title: "Dela | Design Engineer, UX Designer, UI Developer",
   owner: "Dela",
   brand: "Drive Fast Take Chances",
-  descriptor: "UX, UI systems, prototyping, and immersive product work",
+  descriptor: "Game UI/UX, design systems, prototyping, and XR product work",
 };
 
 export const navigationItems = [
@@ -13,125 +13,122 @@ export const navigationItems = [
 ];
 
 export const heroContent = {
-  eyebrow: "UX designer, UI developer, technical prototyper",
-  title: "Interfaces for games, immersive tools, and interactive products.",
+  eyebrow: "Design engineer, UX designer, UI developer",
+  title: "Shipped UI/UX for Call of Duty, XR tools, and interactive products.",
   intro:
-    "Dela is a hybrid design-and-engineering practitioner with shipped work across five Call of Duty releases and XR projects for Google, the NBA, and the U.S. Air Force.",
+    "Dela is a hybrid design-and-engineering practitioner with shipped work across five Call of Duty releases, immersive product work, and interactive builds for Google, the NBA, and the U.S. Air Force.",
   positioning:
-    "The work sits between design and engineering: UX, interface systems, prototyping, and implementation shaped for real teams, real constraints, and clear player or user communication.",
+    "The work spans game UI/UX, design systems, prototyping, and implementation, with an emphasis on making dense systems readable, actionable, and production-ready.",
   primaryAction: {
-    label: "View Call of Duty work",
+    label: "View Call of Duty case studies",
     target: "/#call-of-duty",
   },
   secondaryAction: {
-    label: "Open Call of Duty hub",
+    label: "Open franchise hub",
     target: "/projects/call-of-duty",
   },
   highlights: [
     "5 shipped Call of Duty releases",
-    "XR work for Google, the NBA, and the U.S. Air Force",
-    "UX, interface systems, prototyping, and implementation",
+    "XR product work for Google, the NBA, and the U.S. Air Force",
+    "Game UI/UX, design systems, prototyping, and implementation",
   ],
   spotlight: {
     eyebrow: "Flagship cluster",
     title: "Call of Duty",
     summary:
-      "Five artifact-led case studies covering feature flows, systems work, social UX, and combat communication across shipped releases.",
+      "Five shipped case studies covering extraction UX, interaction feedback, visual systems, post-match flow, and combat communication.",
     target: "/projects/call-of-duty",
   },
 };
 
 export const actionLinks = [
   {
-    label: "Resume",
-    note: "PDF link pending",
-    kind: "placeholder",
+    label: "Call of Duty",
+    note: "Five shipped franchise case studies",
+    kind: "internal",
+    target: "/#call-of-duty",
+  },
+  {
+    label: "Experience",
+    note: "Games, XR, and product work",
+    kind: "internal",
+    target: "/#experience",
   },
   {
     label: "Contact",
-    note: "Jump to contact",
+    note: "Resume and profile links below",
     kind: "internal",
     target: "/#contact",
-  },
-  {
-    label: "LinkedIn",
-    note: "Profile link pending",
-    kind: "placeholder",
-  },
-  {
-    label: "GitHub",
-    note: "Optional code samples",
-    kind: "placeholder",
   },
 ];
 
 export const callOfDutyClusterContent = {
-  eyebrow: "Flagship AAA work",
-  title: "Call of Duty across five shipped releases.",
+  eyebrow: "Flagship franchise work",
+  title: "Five shipped Call of Duty case studies.",
   intro:
-    "MW3 Exfil, the BO6 Keypad Mini Game, the Warzone / Cold War Design Guide, Play Again With Team, and the BO6 Stealth System show reward flows, interaction feedback, visual systems, social UX, and combat communication.",
+    "MW3 Exfil, the BO6 Keypad Mini Game, the Warzone / Cold War Design Guide, Play Again With Team, and the BO6 Stealth System cover extraction UX, interaction feedback, franchise visual systems, squad continuity, and stealth communication.",
   action: {
-    label: "Open the Call of Duty hub",
+    label: "Explore the Call of Duty hub",
     target: "/projects/call-of-duty",
   },
 };
 
 export const experienceContent = {
-  eyebrow: "Experience",
-  title: "UI and UX work across AAA games, XR products, and independent projects.",
+  eyebrow: "Broader practice",
+  title: "Game UI/UX, XR product design, and hands-on implementation.",
   intro:
-    "Dela works at the intersection of UX design, interface systems, prototyping, and implementation.",
+    "Across franchise games, immersive tools, and independent work, Dela moves between interaction design, interface systems, prototyping, and production-minded build work.",
   pillars: [
     {
       title: "Call of Duty at scale",
       body:
-        "Shipped UI and UX work across Black Ops 6, Vanguard, MW2, MW3, and Warzone, including feature flows, documentation, and production-aware design for large teams.",
+        "Shipped UI/UX work across Black Ops 6, Vanguard, MW2, MW3, and Warzone, including reward flows, combat communication, design documentation, and implementation support for large teams.",
     },
     {
       title: "VR and AR product work",
       body:
-        "Designed and prototyped immersive workflows for Google, the NBA, and the U.S. Air Force across tablets, headsets, and supporting tools.",
+        "Designed and prototyped interactive tools and immersive experiences for Google, the NBA, VRPatients, and the U.S. Air Force across mobile, tablet, headset, and desktop surfaces.",
     },
     {
       title: "Original worlds and demos",
       body:
-        "Independent projects like Rebel Future and the Overwatch Companion Demo show original IP direction, product framing, and hands-on implementation outside client constraints.",
+        "Independent work like Rebel Future, Glave Gunner, and the Overwatch Companion Demo keeps the portfolio grounded in original IP, game systems, and hands-on experimentation.",
     },
   ],
 };
 
 export const caseStudyPrompt = {
-  eyebrow: "Deeper dive",
-  title: "Call of Duty goes deeper into feature flows, systems work, and combat communication.",
+  eyebrow: "Start here",
+  title: "Call of Duty is the fastest read on the shipped work.",
   intro:
-    "Start there for the densest artifact set and the clearest read on shipped interaction work.",
+    "The cluster bundles decks, flows, video, and system artifacts into the clearest snapshot of Dela's game UI/UX practice.",
   action: {
-    label: "Open the Call of Duty hub",
+    label: "Explore the Call of Duty hub",
     target: "/projects/call-of-duty",
   },
 };
 
 export const footerContent = {
   eyebrow: "Contact",
-  title: "Contact details and profile links belong here.",
+  title: "Resume and profile links are staged for final approval.",
   intro:
-    "Final resume, email, LinkedIn, and GitHub destinations can be added here once approved.",
+    "Resume, email, LinkedIn, and GitHub can drop in once the final destinations are approved. Until then, the work above is the clearest read on Dela's shipped UI/UX, design systems, XR product work, and implementation range.",
   contactCards: [
     {
       label: "Resume",
-      value: "PDF link pending",
+      value: "Final PDF link pending approval",
     },
     {
       label: "Email",
-      value: "Preferred address pending",
+      value: "Preferred address pending approval",
     },
     {
       label: "LinkedIn",
-      value: "Profile link pending",
+      value: "Profile link pending approval",
     },
     {
       label: "GitHub",
-      value: "Optional profile link",
+      value: "Code samples optional",
     },
   ],
 };

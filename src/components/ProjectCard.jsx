@@ -47,9 +47,7 @@ export default function ProjectCard({ project, navigate }) {
           ))}
         </div>
 
-        <span className="project-card__cta">
-          Open Project
-        </span>
+        <span className="project-card__cta">View Project</span>
       </div>
     </a>
   );

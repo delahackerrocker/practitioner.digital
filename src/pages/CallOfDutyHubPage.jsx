@@ -52,7 +52,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
 
       <Section
         eyebrow="Featured work"
-        intro="These five artifacts cover reward flows, puzzle feedback, visual systems, post-match social UX, and combat communication."
+        intro="These five artifacts cover Modern Warfare Zombies exfil, a BO6 keypad interaction, Warzone / Cold War visual systems, a post-match squad flow, and BO6 stealth readability."
         title="Five shipped Call of Duty projects"
       >
         <div className="project-grid">
@@ -65,7 +65,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Challenge"
-        intro="The hub makes a broad body of franchise work easier to scan."
+        intro="The franchise work spans multiple releases and problem types, so the hub clarifies scope before handing off to individual artifacts."
         title="Why the hub exists"
       >
         <DetailList items={project.challenge} />
@@ -74,7 +74,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="The overview stays concise and hands off to dedicated case-study pages for the deeper material."
+        intro="The hub stays short and routes into artifact-led pages where decks, video, and diagrams can do the heavier storytelling."
         title="How the cluster is organized"
       >
         <DetailList items={project.approach} />
@@ -82,7 +82,7 @@ export default function CallOfDutyHubPage({ navigate, project }) {
 
       <Section
         eyebrow="Artifacts"
-        intro="The cluster combines slideshows, video, diagrams, and supporting stills."
+        intro="Slideshows, video, flow diagrams, and supporting stills keep the franchise work scannable without flattening it into one page."
         title="What this cluster now supports"
       >
         <div className="tag-row">

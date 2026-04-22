@@ -42,7 +42,7 @@ export default function ProjectDetail({ navigate, project }) {
 
       <Section
         eyebrow="Media gallery"
-        intro="Screenshots, diagrams, and video are grouped here for a quick read on the work."
+        intro="Screenshots, diagrams, and motion selected to show the work quickly."
         title="Project media"
       >
         <MediaGallery media={project.media} projectTitle={project.title} />
@@ -51,7 +51,7 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Challenge"
-        intro="The core UX, interface, or product problem this project needed to solve."
+        intro="The product, interaction, or communication problem at the center of the project."
         title="What needed to work"
       >
         <DetailList items={project.challenge} />
@@ -60,7 +60,7 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="The key decisions, systems, and production thinking behind the work."
+        intro="The key decisions, constraints, and production thinking behind the work."
         title="How the work was shaped"
       >
         <DetailList items={project.approach} />
@@ -69,7 +69,7 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Outcome"
-        intro="What the work demonstrates and why it matters."
+        intro="What the project demonstrates and why it matters in the portfolio."
         title="What the project shows"
       >
         <DetailList items={project.outcome} />
@@ -77,7 +77,7 @@ export default function ProjectDetail({ navigate, project }) {
 
       <Section
         eyebrow="Deliverables"
-        intro="Key artifacts tied to the case study."
+        intro="Core artifacts represented in the case study."
         title="Artifacts this case study can hold"
       >
         <div className="tag-row">
@@ -92,7 +92,7 @@ export default function ProjectDetail({ navigate, project }) {
       {project.links.length ? (
         <Section
           eyebrow="Supporting links"
-          intro="Original decks, demos, and supporting references."
+          intro="Original references, demos, and supporting material."
           title="Additional material"
         >
           <div className="link-grid">
@@ -119,7 +119,7 @@ export default function ProjectDetail({ navigate, project }) {
 
       <Section
         eyebrow="More work"
-        intro="A few related projects from the broader body of work."
+        intro="Related work from games, XR, and interactive product development."
         title="More projects"
       >
         <div className="project-grid project-grid--compact">

@@ -22,22 +22,22 @@ export const callOfDutyCaseStudies = [
     pageType: "call-of-duty-case-study",
     accent: "#8fb7ff",
     cardImage: "/assets/projects/call-of-duty/images/Exfil_Success_After_Action_Report.png",
-    eyebrow: "Modern Warfare 3 Exfil",
+    eyebrow: "Modern Warfare III Exfil",
     title: "MW3 Exfil",
     tagline:
-      "A post-extraction flow built around reward reveal, inventory clarity, and pacing.",
+      "Reward, inventory, and extraction UX for Modern Warfare Zombies.",
     summary:
-      "This After Action Report work shows how reward reveal, loot presentation, XP breakdown, and screen sequencing were shaped to feel dramatic without sacrificing readability.",
+      "A post-exfil After Action Report flow for Modern Warfare Zombies, balancing reward drama with readable inventory, XP, loot, and progression breakdowns.",
     role: "UI/UX Technical Designer",
     projectType: "After Action Report flow",
-    timeframe: "Modern Warfare 3",
+    timeframe: "Modern Warfare III",
     focusTags: [
       "AAR flow design",
       "Reward reveal",
       "Animation and sequencing logic",
     ],
     context:
-      "The artifact centers on a core Call of Duty UX problem: making a successful extraction feel clear, high-value, and readable across multiple information-dense states.",
+      "Set inside Modern Warfare Zombies' extraction loop, the work tackles a familiar tension: making Exfil feel high-stakes and satisfying without losing clarity across dense post-run states.",
     challenge: [
       "Make a successful extraction feel rewarding and readable across multiple information-dense screens.",
       "Balance cinematic reveal with practical clarity for inventory, XP, loot, and progression breakdowns.",
@@ -118,9 +118,9 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Black Ops 6 Keypad Mini Game",
     title: "BO6 Keypad Mini Game",
     tagline:
-      "A compact puzzle interaction shaped around readability, state feedback, and player guidance.",
+      "A compact BO6 interaction shaped around readability, feedback, and pressure.",
     summary:
-      "A compact interaction loop that helps players read state changes, progression, and feedback at a glance while preserving tension.",
+      "A tight Black Ops 6 interaction loop focused on readable state changes, success feedback, and fast comprehension under pressure.",
     role: "UI/UX Technical Designer",
     projectType: "Mini-game interaction design",
     timeframe: "Black Ops 6",
@@ -130,7 +130,7 @@ export const callOfDutyCaseStudies = [
       "Interaction clarity",
     ],
     context:
-      "The artifact set shows how a short, high-pressure interaction can still benefit from clear UX framing and well-structured feedback.",
+      "The artifact set shows how even a short, high-tension Black Ops 6 interaction benefits from clear feedback, visible state, and disciplined pacing.",
     challenge: [
       "Make a puzzle interaction readable at a glance while still preserving tension and progression.",
       "Communicate state changes, success cues, and player feedback clearly inside a compact mini-game loop.",
@@ -195,9 +195,9 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Warzone / Cold War Design Guide",
     title: "Warzone / Cold War Design Guide",
     tagline:
-      "A visual-systems guide for consistency, brand balance, and UI targets.",
+      "A franchise visual-systems guide for shared content, brand balance, and UI targets.",
     summary:
-      "This style guide shows system-level UI thinking: balancing shared-content needs with premium product identity across typography, color, item branding, and visual tone.",
+      "A Warzone / Black Ops Cold War guide that frames typography, color, item branding, and UI tone for a shared ecosystem without flattening each product's identity.",
     role: "UI/UX Technical Designer",
     projectType: "Style guide and visual system design",
     timeframe: "Warzone / Cold War",
@@ -207,7 +207,7 @@ export const callOfDutyCaseStudies = [
       "Brand balancing",
     ],
     context:
-      "The deck demonstrates how UI direction can scale beyond single features into a coherent franchise-wide visual system.",
+      "As Warzone and Black Ops Cold War moved toward deeper integration, the visual system needed clearer rules for consistency, readability, and premium presentation.",
     challenge: [
       "Create visual guidance that balances shared-content needs with premium product identity.",
       "Document typography, color, branding, and consistency targets in a form teams can actually use.",
@@ -287,9 +287,9 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Play Again With Team",
     title: "Play Again With Team",
     tagline:
-      "A post-match social flow shaped around team continuity and progression context.",
+      "A post-match Warzone flow built around squad continuity and next-match choice.",
     summary:
-      "This deck focuses on the moment after a match when players review rewards, decide whether to stay together, and move into the next session.",
+      "A Warzone post-match flow focused on the moment players review results, decide whether to stay together, and move into the next session.",
     role: "UI/UX Technical Designer",
     projectType: "Post-match and social UX flow",
     timeframe: "Warzone",
@@ -299,7 +299,7 @@ export const callOfDutyCaseStudies = [
       "Progression framing",
     ],
     context:
-      "The artifact shows how post-match UX can support both progression communication and socially meaningful choices without clutter.",
+      "The artifact centers on a small but important social decision: preserving squad momentum without overloading the post-match screen.",
     challenge: [
       "Make the post-match handoff between rewards, decisions, and team continuity easy to understand.",
       "Support a socially meaningful choice without cluttering the AAR with too many competing messages.",
@@ -370,7 +370,7 @@ export const callOfDutyCaseStudies = [
     eyebrow: "Black Ops 6 Stealth System",
     title: "BO6 Stealth System",
     tagline:
-      "A communication system for awareness states, iconography, and combat readability.",
+      "A BO6 awareness system for stealth states, escalation, and combat readability.",
     summary:
       "A focused exploration of how enemy awareness and escalation states can stay readable enough to support stealth play under pressure.",
     role: "UI/UX Technical Designer",
@@ -382,7 +382,7 @@ export const callOfDutyCaseStudies = [
       "Combat communication",
     ],
     context:
-      "Even as a compact artifact, it shows systems thinking through state communication, icon exploration, and player-readable combat feedback.",
+      "Framed against Black Ops 6's spy-thriller campaign language, the artifact explores how stealth information can stay legible without flattening tension.",
     challenge: [
       "Communicate awareness escalation clearly enough for players to understand stealth status at a glance.",
       "Explore iconography and state treatment that can survive combat pressure without adding noise.",
@@ -438,19 +438,19 @@ export const callOfDutyHub = {
   eyebrow: "AAA franchise UI/UX",
   title: "Call of Duty",
   tagline:
-    "Five shipped artifacts spanning feature flows, systems work, social UX, and combat communication.",
+    "Five shipped case studies across extraction UX, interaction feedback, visual systems, social flow, and combat communication.",
   summary:
-    "Across Black Ops 6, Vanguard, MW2, MW3, and Warzone, Dela shipped UI and UX work spanning feature flows, systems design, documentation, and combat communication.",
+    "Across Black Ops 6, Vanguard, MW2, MW3, and Warzone, Dela shipped UI/UX work spanning feature design, visual systems, documentation, and implementation support for franchise-scale teams.",
   role: "UI/UX Technical Designer",
   projectType: "AAA franchise UI/UX",
   timeframe: "Black Ops 6, Vanguard, MW2, MW3, and Warzone",
   focusTags: [
     "5 shipped releases",
-    "AAA franchise UI/UX",
-    "Feature, systems, and documentation work",
+    "Franchise UI/UX",
+    "Feature flows, systems, and documentation",
   ],
   context:
-    "The page gives the franchise work a concise overview, then routes directly into the strongest artifact-led case studies.",
+    "The hub frames the Call of Duty work at product level, then routes directly into the strongest artifact-led case studies.",
   challenge: [
     "Present a broad body of franchise work without collapsing everything into one giant catch-all page.",
     "Make the strongest case studies easier to scan, compare, and revisit individually.",

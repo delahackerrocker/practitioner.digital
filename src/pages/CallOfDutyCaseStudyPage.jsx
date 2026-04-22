@@ -70,7 +70,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Challenge"
-        intro="The core communication or interaction problem at the center of this case study."
+        intro="The player-facing communication or interaction problem at the center of this case study."
         title="What needed to work"
       >
         <DetailList items={project.challenge} />
@@ -79,7 +79,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="How the work was framed, structured, and supported by the artifact set."
+        intro="How the artifact was framed, sequenced, and supported so the thinking stays legible."
         title="How the case study is framed"
       >
         <DetailList items={project.approach} />
@@ -87,7 +87,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
 
       <Section
         eyebrow="Artifacts"
-        intro="The media and documentation that anchor this case study."
+        intro="The media and documentation that make the design thinking legible."
         title="Included artifacts"
       >
         <div className="tag-row">
@@ -102,7 +102,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       {project.links.length ? (
         <Section
           eyebrow="Supporting links"
-          intro="Original decks and supporting references."
+          intro="Original decks and public references connected to the work."
           title="Source material"
         >
           <div className="link-grid">
@@ -123,7 +123,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
 
       <Section
         eyebrow="More COD work"
-        intro="More flagship Call of Duty case studies from the same cluster."
+        intro="More franchise case studies across extraction UX, visual systems, social flow, and combat communication."
         title="Continue through the cluster"
       >
         <div className="project-grid project-grid--compact">

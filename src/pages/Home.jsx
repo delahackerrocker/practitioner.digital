@@ -86,8 +86,9 @@ export default function Home({ navigate }) {
       >
         <div className="case-study-prompt">
           <p>
-            Start with Call of Duty for feature flows, social UX, and combat communication, then
-            use the cluster to move through the strongest artifact-led case studies.
+            Start with Call of Duty for player-facing flows, feedback systems, social UX, and
+            combat communication, then use the rest of the portfolio to see how that same hybrid
+            approach carries into XR tools and original IP.
           </p>
           <button
             className="button button--primary"

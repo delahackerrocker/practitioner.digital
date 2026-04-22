@@ -9,9 +9,9 @@ const portfolioProjects = [
     accent: "#ef9d67",
     eyebrow: "Featured visual project",
     tagline:
-      "A racing project led by visual appeal, pace, and game-facing presentation.",
+      "A character-led racing project carried by visual punch and game-facing presentation.",
     summary:
-      "A concise racing project that leads with its strongest available imagery and keeps the focus on visual appeal, pace, and presentation.",
+      "A visually driven racing project included for range, paced as a short media-first case study rather than padded with unsupported production detail.",
     role: "Visual showcase and game-facing presentation",
     projectType: "Racing game project",
     timeframe: "Archived game work",
@@ -21,7 +21,7 @@ const portfolioProjects = [
       "Game-facing presentation",
     ],
     context:
-      "Snoopy's Soapbox Racers is clearly identified in the source material, but the available detail is still limited.",
+      "The public source material clearly establishes the project and its tone, but not the full production history, so the writeup stays intentionally restrained.",
     challenge: [
       "Present a visually strong project without overstating details that are not yet documented in the source material.",
       "Build a concise case study structure that can absorb stronger media later.",
@@ -69,9 +69,9 @@ const portfolioProjects = [
     accent: "#ca8dff",
     eyebrow: "Original IP",
     tagline:
-      "Original IP spanning world-building, UI, embodiment, and game direction.",
+      "Original IP spanning world-building, game UI, embodiment, and direction.",
     summary:
-      "Rebel Future brings together original-world development, interface studies, teaser material, and gameplay concepts into one broader body of work around IP creation and interactive direction.",
+      "An original game universe that pulls together character and world briefs, UI studies, embodiment demos, teaser material, and gameplay look-and-feel into one broader IP story.",
     role: "Creative direction, UI/UX, gameplay concepting, and development",
     projectType: "Original IP and game universe",
     timeframe: "Ongoing independent project family",
@@ -81,7 +81,7 @@ const portfolioProjects = [
       "UI and embodiment",
     ],
     context:
-      "The legacy material presents Rebel Future as Dela's original game universe, with linked documentation covering characters, world-building, and gameplay look and feel.",
+      "The legacy material presents Rebel Future as Dela's own game universe, with documentation spanning characters, world-building, gameplay direction, and supporting experiments.",
     challenge: [
       "Give one original universe a coherent identity across gameplay ideas, UI, motion, world-building, and teaser material.",
       "Use smaller artifacts and demos to test tone and embodiment without losing the bigger picture of the project family.",
@@ -147,9 +147,9 @@ const portfolioProjects = [
     accent: "#f0b26e",
     eyebrow: "Companion product concept",
     tagline:
-      "A companion-app concept focused on utility, browsing, and service-minded UX.",
+      "A utility-first companion concept for browsing, account support, and service-minded UX.",
     summary:
-      "A companion product concept built around utility, browsing, interface clarity, and hands-on implementation.",
+      "A compact product concept that treats a companion app as a useful service layer, with browsing, account utility, and readable interface structure at the center.",
     role: "UX design, UI, and demo implementation",
     projectType: "Companion app concept",
     timeframe: "Personal demo project",
@@ -159,7 +159,7 @@ const portfolioProjects = [
       "Demo implementation",
     ],
     context:
-      "The project is supported by a video artifact rather than a long written case study.",
+      "The project is represented publicly through a video demo rather than a long written case study, so the framing stays focused on product utility and implementation.",
     challenge: [
       "Design a companion experience that feels genuinely useful instead of ornamental.",
       "Create a service-product layer that supports browsing, utility, and quick understanding without the sprawl of the main client.",
@@ -212,9 +212,9 @@ const portfolioProjects = [
     accent: "#cf8d98",
     eyebrow: "Supporting visual project",
     tagline:
-      "A character-led demo centered on visual tone and animation-led presentation.",
+      "A character-led demo built around visual tone and animation-led presentation.",
     summary:
-      "A concise demo that broadens the visual range through character-driven presentation without overstating the available material.",
+      "A supporting visual piece that broadens the portfolio's range through character work, motion, and presentation rather than systems-heavy UX.",
     role: "Demo presentation and visual showcase",
     projectType: "Demo and animation-led project",
     timeframe: "Archived demo work",
@@ -224,7 +224,7 @@ const portfolioProjects = [
       "Animation-led presentation",
     ],
     context:
-      "The available source material sits alongside separate animation content, making this a natural media-led case study.",
+      "The available public material is light, so the case study stays concise and media-led instead of filling gaps with unsupported production claims.",
     challenge: [
       "Keep the project present without pretending the legacy source contains more detail than it does.",
       "Reserve enough space for future animation and visual material to become the hero.",
@@ -270,9 +270,9 @@ const portfolioProjects = [
     title: "Glave Gunner iPad UI",
     accent: "#b68eff",
     eyebrow: "Focused Rebel Future entry",
-    tagline: "A concrete UI slice inside the larger Rebel Future world.",
+    tagline: "Game UI for a one- or two-player iPad experience inside Rebel Future.",
     summary:
-      "A concrete interface slice from the Rebel Future universe, focused on game UI for a one- or two-player iPad experience.",
+      "A concrete UI slice from the Rebel Future universe, centered on menu flow, account handling, customization, and moment-to-moment play surfaces for tablet.",
     role: "Direction, development, and UI/UX",
     projectType: "iPad game UI",
     timeframe: "Independent Rebel Future project",
@@ -282,7 +282,7 @@ const portfolioProjects = [
       "Directed and developed",
     ],
     context:
-      "The legacy material frames this as a specific Glave Gunner interface piece, which makes it a useful supporting entry beneath the larger Rebel Future world.",
+      "The legacy portfolio frames this as directed and developed by Dela, making it a useful supporting case study beneath the broader Rebel Future umbrella.",
     challenge: [
       "Show a specific UI artifact from an original IP without losing the larger project family around it.",
       "Keep the entry concrete enough to feel real while leaving room for fuller screenshots and flow notes later.",
@@ -333,9 +333,9 @@ const portfolioProjects = [
     accent: "#9bd0c4",
     eyebrow: "Immersive product UX",
     tagline:
-      "An immersive product UX project spanning tablets, VR, and dense information workflows.",
+      "A tablet-and-VR intelligence tool for dense information workflows.",
     summary:
-      "A security-conscious UX project built around fake data sets, 3D globe views, and complex intelligence structures across tablets and VR headsets.",
+      "A security-conscious UX project that paired tablet and headset interfaces for reviewing and recording intelligence data across 3D globe views and network-like structures.",
     role: "UX design, Unity prototyping, and development",
     projectType: "Tablet and VR intelligence workflow tool",
     timeframe: "Client product",
@@ -345,7 +345,7 @@ const portfolioProjects = [
       "Security-conscious prototype data",
     ],
     context:
-      "The source material describes Dela starting as a UX designer prototyping in Unity and later contributing as a developer on the larger shipping team.",
+      "The public source material describes Dela prototyping UI in Unity, then contributing on the broader shipping team for the product.",
     challenge: [
       "Make complex intelligence data readable across tablets, VR headsets, globe views, and network-like structures.",
       "Prototype enough interaction clarity to support expert workflows without exposing sensitive real-world information.",
@@ -394,9 +394,9 @@ const portfolioProjects = [
     accent: "#7cc8ff",
     eyebrow: "Workflow-heavy interface system",
     tagline:
-      "A desktop-and-VR interface system connecting authoring workflows to immersive surfaces.",
+      "A desktop-and-VR interface system linking authoring workflows to immersive panels.",
     summary:
-      "This project pairs a backend authoring tool with the VR panels it powered, showing workflow-heavy UI, system thinking, and alignment between creator tools and front-end experience.",
+      "A systems-heavy project that pairs backend authoring surfaces with the VR panels they drive, showing workflow design, tool thinking, and front-end alignment.",
     role: "UX design and interface prototyping",
     projectType: "Authoring tool and VR interface system",
     timeframe: "Client-side product workflow",
@@ -406,7 +406,7 @@ const portfolioProjects = [
       "System design thinking",
     ],
     context:
-      "The legacy material presents this as near-final UI for both the backend authoring tool and the VR frontend, making it a strong systems-oriented supporting project.",
+      "The legacy portfolio presents this as close-to-final UI for both the authoring tool and VR frontend, making it a strong example of connected creator and user surfaces.",
     challenge: [
       "Keep authoring surfaces and VR-facing panels aligned so the overall product feels coherent.",
       "Present a workflow-heavy tool without making it feel dry or text-bound.",
@@ -453,9 +453,9 @@ const portfolioProjects = [
     accent: "#ffd36c",
     eyebrow: "Educational game app",
     tagline:
-      "A learning-game project that broadens the audience and product range.",
+      "A learning game app that widens the audience and product range.",
     summary:
-      "A learning game app for kids with Dela handling both UI/UX and principal development.",
+      "An educational game app where Dela handled UI/UX and principal development, showing a lighter but still meaningful example of end-to-end ownership.",
     role: "UI/UX and principal development",
     projectType: "Learning game app for kids",
     timeframe: "Educational game project",
@@ -465,7 +465,7 @@ const portfolioProjects = [
       "Kid-friendly interaction",
     ],
     context:
-      "Even though the legacy writeup is short, it clearly points to Dela's ownership across both experience design and development.",
+      "The public writeup is short but explicit about Dela's role across both experience design and development.",
     challenge: [
       "Create playful, readable interaction for younger users without sacrificing clarity.",
       "Build a product that works for a very different audience than the rest of the game and tool work.",
