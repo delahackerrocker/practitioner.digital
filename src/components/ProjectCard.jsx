@@ -2,13 +2,28 @@ export default function ProjectCard({ project, navigate }) {
   const visualStyle = {
     "--project-accent": project.accent,
   };
+  const projectHref = `/projects/${project.slug}`;
 
   if (project.cardImage) {
     visualStyle["--project-image"] = `url(${project.cardImage})`;
   }
 
   return (
-    <article className="project-card" style={visualStyle}>
+    <a
+      className="project-card"
+      href={projectHref}
+      onClick={(event) => {
+        event.preventDefault();
+        navigate(projectHref);
+      }}
+      onKeyDown={(event) => {
+        if (event.key === " ") {
+          event.preventDefault();
+          navigate(projectHref);
+        }
+      }}
+      style={visualStyle}
+    >
       <div aria-hidden="true" className="project-card__visual" />
 
       <div className="project-card__body">
@@ -32,14 +47,10 @@ export default function ProjectCard({ project, navigate }) {
           ))}
         </div>
 
-        <button
-          className="button button--card"
-          onClick={() => navigate(`/projects/${project.slug}`)}
-          type="button"
-        >
+        <span className="project-card__cta">
           Open Project
-        </button>
+        </span>
       </div>
-    </article>
+    </a>
   );
 }

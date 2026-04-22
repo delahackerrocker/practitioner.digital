@@ -692,24 +692,6 @@ export const tuningTabs = [
             1.75,
             0.05
           ),
-          rangeField(
-            "media.sidebarPadding",
-            "Sidebar padding",
-            "--feature-sidebar-padding",
-            "rem",
-            1,
-            2,
-            0.05
-          ),
-          rangeField(
-            "media.sidebarMinWidth",
-            "Sidebar min width",
-            "--feature-sidebar-min-width",
-            "px",
-            240,
-            420,
-            4
-          ),
           rangeField("media.railGap", "Rail gap", "--feature-rail-gap", "rem", 0.5, 1.5, 0.05),
           rangeField(
             "media.railPadding",

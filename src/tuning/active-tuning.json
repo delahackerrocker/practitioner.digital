@@ -122,8 +122,6 @@
     "featureStageMinHeight": 520,
     "featureStageRadius": 32,
     "featureStagePadding": 1,
-    "sidebarPadding": 1.35,
-    "sidebarMinWidth": 300,
     "railGap": 0.75,
     "railPadding": 0.9,
     "railItemMinWidth": 92,

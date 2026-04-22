@@ -63,12 +63,7 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
           key={block.title}
           title={block.title}
         >
-          <FeatureSlideshow
-            eyebrow={block.eyebrow}
-            intro={block.intro}
-            items={block.items}
-            title={block.title}
-          />
+          <FeatureSlideshow items={block.items} />
         </Section>
       ))}
 
