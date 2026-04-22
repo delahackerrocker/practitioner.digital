@@ -13,6 +13,12 @@ const FOCUSABLE_SELECTOR = [
 ].join(", ");
 
 const SWIPE_DISTANCE_THRESHOLD = 48;
+const FLASH_PRESS_DURATION = 140;
+const STAGE_CLICK_SUPPRESSION_DURATION = 220;
+
+function isPressKey(event) {
+  return event.key === " " || event.key === "Enter";
+}
 
 function getFocusableElements(container) {
   if (!container) {
@@ -84,10 +90,15 @@ function MediaStage({ item, stageClassName = "" }) {
 export default function FeatureSlideshow({ items }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [manualPressedDirection, setManualPressedDirection] = useState(null);
+  const [flashPressedDirection, setFlashPressedDirection] = useState(null);
   const fullscreenButtonRef = useRef(null);
   const dialogRef = useRef(null);
   const closeButtonRef = useRef(null);
+  const flashPressTimeoutRef = useRef(null);
   const restoreFocusRef = useRef(false);
+  const suppressStageClickRef = useRef(false);
+  const suppressStageClickTimeoutRef = useRef(null);
   const touchStartRef = useRef(null);
   const dialogId = useId();
   const dialogTitleId = useId();
@@ -96,6 +107,19 @@ export default function FeatureSlideshow({ items }) {
   useEffect(() => {
     setActiveIndex(0);
   }, [items]);
+
+  useEffect(
+    () => () => {
+      if (flashPressTimeoutRef.current) {
+        window.clearTimeout(flashPressTimeoutRef.current);
+      }
+
+      if (suppressStageClickTimeoutRef.current) {
+        window.clearTimeout(suppressStageClickTimeoutRef.current);
+      }
+    },
+    [],
+  );
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -175,20 +199,66 @@ export default function FeatureSlideshow({ items }) {
   const activeItem = items[activeIndex];
   const compactRail = items.length > 12;
   const canNavigate = items.length > 1;
-  const goToPrevious = () => {
+  const supportsStageNavigation = canNavigate && Boolean(activeItem.src) && activeItem.type !== "video";
+
+  const clearManualPressedDirection = (direction) => {
+    setManualPressedDirection((current) => (current === direction ? null : current));
+  };
+
+  const flashNavPress = (direction) => {
+    if (flashPressTimeoutRef.current) {
+      window.clearTimeout(flashPressTimeoutRef.current);
+    }
+
+    setFlashPressedDirection(direction);
+    flashPressTimeoutRef.current = window.setTimeout(() => {
+      setFlashPressedDirection(null);
+      flashPressTimeoutRef.current = null;
+    }, FLASH_PRESS_DURATION);
+  };
+
+  const suppressStageClick = () => {
+    suppressStageClickRef.current = true;
+
+    if (suppressStageClickTimeoutRef.current) {
+      window.clearTimeout(suppressStageClickTimeoutRef.current);
+    }
+
+    suppressStageClickTimeoutRef.current = window.setTimeout(() => {
+      suppressStageClickRef.current = false;
+      suppressStageClickTimeoutRef.current = null;
+    }, STAGE_CLICK_SUPPRESSION_DURATION);
+  };
+
+  const isNavButtonPressed = (direction) =>
+    manualPressedDirection === direction || flashPressedDirection === direction;
+
+  const navigateByDirection = (direction, options = {}) => {
     if (!canNavigate) {
       return;
     }
 
-    setActiveIndex((current) => (current === 0 ? items.length - 1 : current - 1));
-  };
-  const goToNext = () => {
-    if (!canNavigate) {
-      return;
+    if (options.flash) {
+      flashNavPress(direction);
     }
 
-    setActiveIndex((current) => (current === items.length - 1 ? 0 : current + 1));
+    setActiveIndex((current) => {
+      if (direction === "previous") {
+        return current === 0 ? items.length - 1 : current - 1;
+      }
+
+      return current === items.length - 1 ? 0 : current + 1;
+    });
   };
+
+  const goToPrevious = (options) => {
+    navigateByDirection("previous", options);
+  };
+
+  const goToNext = (options) => {
+    navigateByDirection("next", options);
+  };
+
   const openFullscreen = () => {
     restoreFocusRef.current = false;
     setIsFullscreen(true);
@@ -274,12 +344,99 @@ export default function FeatureSlideshow({ items }) {
     }
 
     if (deltaX < 0) {
+      suppressStageClick();
       goToNext();
       return;
     }
 
+    suppressStageClick();
     goToPrevious();
   };
+
+  const handleStageNavigate = (direction) => (event) => {
+    if (suppressStageClickRef.current) {
+      event.preventDefault();
+      suppressStageClickRef.current = false;
+      return;
+    }
+
+    if (direction === "previous") {
+      goToPrevious({ flash: true });
+      return;
+    }
+
+    goToNext({ flash: true });
+  };
+
+  const getNavButtonPressProps = (direction) => ({
+    "data-pressed": isNavButtonPressed(direction) ? "true" : "false",
+    onBlur: () => {
+      clearManualPressedDirection(direction);
+    },
+    onKeyDown: (event) => {
+      if (event.repeat || !isPressKey(event)) {
+        return;
+      }
+
+      setManualPressedDirection(direction);
+    },
+    onKeyUp: (event) => {
+      if (!isPressKey(event)) {
+        return;
+      }
+
+      clearManualPressedDirection(direction);
+    },
+    onPointerCancel: () => {
+      clearManualPressedDirection(direction);
+    },
+    onPointerDown: () => {
+      setManualPressedDirection(direction);
+    },
+    onPointerLeave: () => {
+      clearManualPressedDirection(direction);
+    },
+    onPointerUp: () => {
+      clearManualPressedDirection(direction);
+    },
+  });
+
+  const renderStage = ({ shellClassName = "", stageClassName = "" } = {}) => (
+    <div
+      className={[
+        "feature-slideshow__stage-shell",
+        shellClassName,
+        supportsStageNavigation ? "feature-slideshow__stage-shell--navigable" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      <MediaStage item={activeItem} stageClassName={stageClassName} />
+
+      {supportsStageNavigation ? (
+        <div aria-hidden="true" className="feature-slideshow__stage-hit-areas">
+          <button
+            className="feature-slideshow__stage-hit-area feature-slideshow__stage-hit-area--previous"
+            onClick={handleStageNavigate("previous")}
+            onMouseDown={(event) => {
+              event.preventDefault();
+            }}
+            tabIndex={-1}
+            type="button"
+          />
+          <button
+            className="feature-slideshow__stage-hit-area feature-slideshow__stage-hit-area--next"
+            onClick={handleStageNavigate("next")}
+            onMouseDown={(event) => {
+              event.preventDefault();
+            }}
+            tabIndex={-1}
+            type="button"
+          />
+        </div>
+      ) : null}
+    </div>
+  );
 
   const renderInlineControls = () => (
     <div
@@ -289,9 +446,10 @@ export default function FeatureSlideshow({ items }) {
     >
       <button
         aria-label="Show previous slide"
-        className="button button--secondary feature-slideshow__control"
+        className="button button--secondary feature-slideshow__control feature-slideshow__nav-button"
         disabled={!canNavigate}
         onClick={goToPrevious}
+        {...getNavButtonPressProps("previous")}
         type="button"
       >
         Previous
@@ -305,9 +463,10 @@ export default function FeatureSlideshow({ items }) {
       </span>
       <button
         aria-label="Show next slide"
-        className="button button--secondary feature-slideshow__control"
+        className="button button--secondary feature-slideshow__control feature-slideshow__nav-button"
         disabled={!canNavigate}
         onClick={goToNext}
+        {...getNavButtonPressProps("next")}
         type="button"
       >
         Next
@@ -329,7 +488,7 @@ export default function FeatureSlideshow({ items }) {
   return (
     <div className="feature-slideshow">
       <div className="feature-slideshow__card">
-        <MediaStage item={activeItem} />
+        {renderStage()}
         <div className="feature-slideshow__footer">
           <div className="feature-slideshow__meta">
             <span>{activeItem.label}</span>
@@ -396,8 +555,9 @@ export default function FeatureSlideshow({ items }) {
             <>
               <button
                 aria-label="Show previous slide"
-                className="feature-slideshow__lightbox-arrow feature-slideshow__lightbox-arrow--previous"
+                className="feature-slideshow__lightbox-arrow feature-slideshow__lightbox-arrow--previous feature-slideshow__nav-button"
                 onClick={goToPrevious}
+                {...getNavButtonPressProps("previous")}
                 type="button"
               >
                 <span aria-hidden="true">&lt;</span>
@@ -405,8 +565,9 @@ export default function FeatureSlideshow({ items }) {
 
               <button
                 aria-label="Show next slide"
-                className="feature-slideshow__lightbox-arrow feature-slideshow__lightbox-arrow--next"
+                className="feature-slideshow__lightbox-arrow feature-slideshow__lightbox-arrow--next feature-slideshow__nav-button"
                 onClick={goToNext}
+                {...getNavButtonPressProps("next")}
                 type="button"
               >
                 <span aria-hidden="true">&gt;</span>
@@ -422,7 +583,10 @@ export default function FeatureSlideshow({ items }) {
             onTouchEnd={handleLightboxTouchEnd}
             onTouchStart={handleLightboxTouchStart}
           >
-            <MediaStage item={activeItem} stageClassName="feature-stage--lightbox" />
+            {renderStage({
+              shellClassName: "feature-slideshow__lightbox-stage-shell",
+              stageClassName: "feature-stage--lightbox",
+            })}
           </div>
 
           <div
@@ -433,8 +597,9 @@ export default function FeatureSlideshow({ items }) {
             {canNavigate ? (
               <button
                 aria-label="Show previous slide"
-                className="button button--secondary feature-slideshow__lightbox-step"
+                className="button button--secondary feature-slideshow__lightbox-step feature-slideshow__nav-button"
                 onClick={goToPrevious}
+                {...getNavButtonPressProps("previous")}
                 type="button"
               >
                 Previous
@@ -456,8 +621,9 @@ export default function FeatureSlideshow({ items }) {
             {canNavigate ? (
               <button
                 aria-label="Show next slide"
-                className="button button--secondary feature-slideshow__lightbox-step"
+                className="button button--secondary feature-slideshow__lightbox-step feature-slideshow__nav-button"
                 onClick={goToNext}
+                {...getNavButtonPressProps("next")}
                 type="button"
               >
                 Next

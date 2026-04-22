@@ -430,6 +430,35 @@
   box-shadow: none;
 }
 
+.feature-slideshow__stage-shell {
+  position: relative;
+  min-width: 0;
+}
+
+.feature-slideshow__stage-shell--navigable {
+  overflow: hidden;
+}
+
+.feature-slideshow__stage-shell--navigable img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.feature-slideshow__stage-hit-areas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.feature-slideshow__stage-hit-area {
+  background: transparent;
+  user-select: none;
+  touch-action: pan-y pinch-zoom;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .feature-slideshow__footer {
   padding: 1.1rem 1.2rem 1.2rem;
   border-top: 1px solid var(--color-border);
@@ -466,6 +495,19 @@
   transform: none;
   border-color: var(--color-border);
   background: rgba(255, 255, 255, 0.03);
+}
+
+.feature-slideshow__nav-button {
+  transition: none;
+}
+
+.feature-slideshow__nav-button:active,
+.feature-slideshow__nav-button[data-pressed="true"] {
+  transform: none;
+  border-color: rgba(244, 245, 247, 0.92);
+  background: var(--color-text);
+  color: #090b0e;
+  box-shadow: none;
 }
 
 .feature-stage {
@@ -675,6 +717,18 @@
   line-height: 1;
 }
 
+.feature-slideshow__lightbox-arrow.feature-slideshow__nav-button {
+  transition: none;
+}
+
+.feature-slideshow__lightbox-arrow.feature-slideshow__nav-button:active,
+.feature-slideshow__lightbox-arrow.feature-slideshow__nav-button[data-pressed="true"] {
+  transform: translateY(-50%);
+  border-color: rgba(244, 245, 247, 0.92);
+  background: var(--color-text);
+  color: #090b0e;
+}
+
 .feature-slideshow__lightbox-bar {
   padding: 0 clamp(0.25rem, 1vw, 0.5rem) clamp(0.15rem, 0.8vw, 0.4rem);
 }
@@ -693,6 +747,20 @@
 
 .feature-slideshow__lightbox-step {
   display: none;
+}
+
+.feature-slideshow__lightbox-stage-shell {
+  height: 100%;
+}
+
+@media (pointer: fine) {
+  .feature-slideshow__stage-hit-area--previous {
+    cursor: w-resize;
+  }
+
+  .feature-slideshow__stage-hit-area--next {
+    cursor: e-resize;
+  }
 }
 
 .media-gallery__stage {
