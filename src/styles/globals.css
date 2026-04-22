@@ -145,6 +145,20 @@ html[data-motion-reduced="true"] {
   --project-card-hover-scale: 1;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration: 0ms;
+    --motion-interactive-lift: 0px;
+    --motion-interactive-scale: 1;
+    --project-card-hover-lift: 0px;
+    --project-card-hover-scale: 1;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -224,4 +238,16 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
