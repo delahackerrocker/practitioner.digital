@@ -7,7 +7,7 @@ export const siteMeta = {
 
 export const navigationItems = [
   { label: "Overview", target: "/#overview" },
-  { label: "Selected Work", target: "/#work" },
+  { label: "Call of Duty", target: "/#call-of-duty" },
   { label: "Experience", target: "/#experience" },
   { label: "Contact", target: "/#contact" },
 ];
@@ -20,8 +20,8 @@ export const heroContent = {
   positioning:
     "The work sits between design and engineering: UX, interface systems, prototyping, and implementation shaped for real teams, real constraints, and clear player or user communication.",
   primaryAction: {
-    label: "View selected work",
-    target: "/#work",
+    label: "View Call of Duty work",
+    target: "/#call-of-duty",
   },
   secondaryAction: {
     label: "Open Call of Duty hub",
@@ -65,13 +65,6 @@ export const actionLinks = [
   },
 ];
 
-export const featuredWorkContent = {
-  eyebrow: "Selected work",
-  title: "A curated mix of original IP, product thinking, and game-facing interface work.",
-  intro:
-    "Original IP, companion concepts, and immersive tools that broaden the range beyond Call of Duty.",
-};
-
 export const callOfDutyClusterContent = {
   eyebrow: "Flagship AAA work",
   title: "Call of Duty across five shipped releases.",
@@ -81,13 +74,6 @@ export const callOfDutyClusterContent = {
     label: "Open the Call of Duty hub",
     target: "/projects/call-of-duty",
   },
-};
-
-export const supportingWorkContent = {
-  eyebrow: "Supporting work",
-  title: "Additional work across product UX, XR, and independent game projects.",
-  intro:
-    "These projects broaden the range without crowding the first scan.",
 };
 
 export const experienceContent = {
@@ -118,7 +104,7 @@ export const caseStudyPrompt = {
   eyebrow: "Deeper dive",
   title: "Call of Duty goes deeper into feature flows, systems work, and combat communication.",
   intro:
-    "Start there for the densest artifact set, then move into the broader mix of original IP, companion concepts, and immersive tools.",
+    "Start there for the densest artifact set and the clearest read on shipped interaction work.",
   action: {
     label: "Open the Call of Duty hub",
     target: "/projects/call-of-duty",

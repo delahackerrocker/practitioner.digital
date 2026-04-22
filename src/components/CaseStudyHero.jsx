@@ -3,10 +3,10 @@ export default function CaseStudyHero({ navigate, project }) {
     <section className="case-study-hero shell" style={{ "--project-accent": project.accent }}>
       <button
         className="back-link"
-        onClick={() => navigate("/#work")}
+        onClick={() => navigate("/#overview")}
         type="button"
       >
-        Back to selected work
+        Back to home
       </button>
 
       <div className="case-study-hero__grid">

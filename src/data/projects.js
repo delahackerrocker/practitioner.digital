@@ -6,7 +6,6 @@ const portfolioProjects = [
   {
     slug: "snoopys-soapbox-racers",
     title: "Snoopy's Soapbox Racers",
-    featuredTier: "primary",
     accent: "#ef9d67",
     eyebrow: "Featured visual project",
     tagline:
@@ -67,7 +66,6 @@ const portfolioProjects = [
   {
     slug: "rebel-future",
     title: "Rebel Future",
-    featuredTier: "primary",
     accent: "#ca8dff",
     eyebrow: "Original IP",
     tagline:
@@ -146,7 +144,6 @@ const portfolioProjects = [
   {
     slug: "overwatch-companion-demo",
     title: "Overwatch Companion Demo",
-    featuredTier: "primary",
     accent: "#f0b26e",
     eyebrow: "Companion product concept",
     tagline:
@@ -212,7 +209,6 @@ const portfolioProjects = [
   {
     slug: "how-to-train-your-dragon-demo",
     title: "How to Train Your Dragon Demo",
-    featuredTier: "secondary",
     accent: "#cf8d98",
     eyebrow: "Supporting visual project",
     tagline:
@@ -272,7 +268,6 @@ const portfolioProjects = [
   {
     slug: "glave-gunner-ipad-ui",
     title: "Glave Gunner iPad UI",
-    featuredTier: "secondary",
     accent: "#b68eff",
     eyebrow: "Focused Rebel Future entry",
     tagline: "A concrete UI slice inside the larger Rebel Future world.",
@@ -335,7 +330,6 @@ const portfolioProjects = [
   {
     slug: "vr-intelligence-tool-usaf",
     title: "VR Intelligence Tool for the USAF",
-    featuredTier: "secondary",
     accent: "#9bd0c4",
     eyebrow: "Immersive product UX",
     tagline:
@@ -397,7 +391,6 @@ const portfolioProjects = [
   {
     slug: "authoring-tool-final-vr-panels",
     title: "Authoring Tool Final + VR Panels",
-    featuredTier: "secondary",
     accent: "#7cc8ff",
     eyebrow: "Workflow-heavy interface system",
     tagline:
@@ -457,7 +450,6 @@ const portfolioProjects = [
   {
     slug: "curious-george",
     title: "Curious George",
-    featuredTier: "secondary",
     accent: "#ffd36c",
     eyebrow: "Educational game app",
     tagline:
@@ -510,19 +502,6 @@ const portfolioProjects = [
 ];
 
 export const projects = portfolioProjects;
-
-export const primaryProjects = portfolioProjects.filter(
-  (project) =>
-    project.featuredTier === "primary" &&
-    !project.parentSlug &&
-    project.slug !== "call-of-duty"
-);
-
-export const secondaryProjects = portfolioProjects.filter(
-  (project) => project.featuredTier === "secondary" && !project.parentSlug
-);
-
-export const featuredProjects = primaryProjects;
 
 export { callOfDutyHub, callOfDutyCaseStudies };
 

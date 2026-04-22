@@ -40,10 +40,10 @@ export default function Navbar({ isProjectView, location, navigate }) {
           {isProjectView ? (
             <button
               className="site-nav__link site-nav__link--accent"
-              onClick={() => navigate("/#work")}
+              onClick={() => navigate("/#overview")}
               type="button"
             >
-              Back to Work
+              Back Home
             </button>
           ) : null}
         </nav>
@@ -51,4 +51,3 @@ export default function Navbar({ isProjectView, location, navigate }) {
     </header>
   );
 }
-

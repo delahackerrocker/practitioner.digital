@@ -24,7 +24,7 @@ export default function ProjectDetail({ navigate, project }) {
       <section className="missing-page shell">
         <p className="section-eyebrow">Project not found</p>
         <h1>The requested case study has not been wired yet.</h1>
-        <p>Return to the home page to continue from the selected work overview.</p>
+        <p>Return to the home page to continue through the portfolio.</p>
         <button className="button button--primary" onClick={() => navigate("/")} type="button">
           Back Home
         </button>
@@ -120,7 +120,7 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         eyebrow="More work"
         intro="A few related projects from the broader body of work."
-        title="More selected work"
+        title="More projects"
       >
         <div className="project-grid project-grid--compact">
           {relatedProjects.map((entry) => (

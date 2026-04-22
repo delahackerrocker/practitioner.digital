@@ -5,18 +5,14 @@ import Section from "../components/Section";
 import {
   callOfDutyCaseStudies,
   callOfDutyHub,
-  primaryProjects,
-  secondaryProjects,
 } from "../data/projects";
 import {
   actionLinks,
   callOfDutyClusterContent,
   caseStudyPrompt,
   experienceContent,
-  featuredWorkContent,
   footerContent,
   heroContent,
-  supportingWorkContent,
 } from "../data/siteContent";
 
 export default function Home({ navigate }) {
@@ -27,7 +23,7 @@ export default function Home({ navigate }) {
       <Section
         className="section--flagship-cluster"
         eyebrow={callOfDutyClusterContent.eyebrow}
-        id="work"
+        id="call-of-duty"
         intro={callOfDutyClusterContent.intro}
         title={callOfDutyClusterContent.title}
       >
@@ -67,30 +63,6 @@ export default function Home({ navigate }) {
       </Section>
 
       <Section
-        eyebrow={featuredWorkContent.eyebrow}
-        intro={featuredWorkContent.intro}
-        title={featuredWorkContent.title}
-      >
-        <div className="project-grid">
-          {primaryProjects.map((project) => (
-            <ProjectCard key={project.slug} navigate={navigate} project={project} />
-          ))}
-        </div>
-      </Section>
-
-      <Section
-        eyebrow={supportingWorkContent.eyebrow}
-        intro={supportingWorkContent.intro}
-        title={supportingWorkContent.title}
-      >
-        <div className="project-grid">
-          {secondaryProjects.map((project) => (
-            <ProjectCard key={project.slug} navigate={navigate} project={project} />
-          ))}
-        </div>
-      </Section>
-
-      <Section
         className="section--split"
         eyebrow={experienceContent.eyebrow}
         id="experience"
@@ -115,7 +87,7 @@ export default function Home({ navigate }) {
         <div className="case-study-prompt">
           <p>
             Start with Call of Duty for feature flows, social UX, and combat communication, then
-            move into Rebel Future, Snoopy's Soapbox Racers, and the strongest supporting work.
+            use the cluster to move through the strongest artifact-led case studies.
           </p>
           <button
             className="button button--primary"
