@@ -364,6 +364,24 @@ Default to fewer dependencies.
 
 ---
 
+## Build / validation policy for this React/Vite project
+
+- This project may fail to run `npm run build` inside the Codex sandbox because Vite/esbuild may hit `spawn EPERM`.
+- Do not retry `npm run build` repeatedly if the failure is a sandbox/permission/child-process error.
+- If build verification is blocked by sandbox limitations, say so plainly and do not claim a clean build.
+- In that case, still complete the code changes and run any lower-risk verification that is available in the environment.
+- Prefer this fallback order:
+  1. targeted file inspection
+  2. typecheck/lint if available and runnable
+  3. explain exactly what the user should run locally to verify
+- When reporting results, distinguish clearly between:
+  - code changes completed
+  - validation completed
+  - validation blocked by sandbox limitations
+- Do not describe sandbox-blocked build failure as a project code failure unless there is direct evidence.
+
+---
+
 ## Permissions and Tooling Expectations for Coding Agents
 
 Coding agents may:

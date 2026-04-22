@@ -125,7 +125,7 @@
 .button--tertiary,
 .back-link {
   border-color: var(--color-border);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--button-secondary-surface);
   color: var(--color-text);
 }
 
@@ -504,9 +504,9 @@
 .feature-slideshow__nav-button:active,
 .feature-slideshow__nav-button[data-pressed="true"] {
   transform: none;
-  border-color: rgba(244, 245, 247, 0.92);
-  background: var(--color-text);
-  color: #090b0e;
+  border-color: var(--color-border-strong);
+  background: var(--slideshow-nav-press-surface);
+  color: var(--color-text);
   box-shadow: none;
 }
 
@@ -684,7 +684,7 @@
   height: clamp(3.25rem, 4vw, 4.25rem);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
-  background: rgba(10, 12, 16, 0.78);
+  background: var(--slideshow-lightbox-arrow-surface);
   color: var(--color-text);
   cursor: pointer;
   backdrop-filter: blur(16px);
@@ -724,9 +724,9 @@
 .feature-slideshow__lightbox-arrow.feature-slideshow__nav-button:active,
 .feature-slideshow__lightbox-arrow.feature-slideshow__nav-button[data-pressed="true"] {
   transform: translateY(-50%);
-  border-color: rgba(244, 245, 247, 0.92);
-  background: var(--color-text);
-  color: #090b0e;
+  border-color: var(--color-border-strong);
+  background: var(--slideshow-lightbox-arrow-press-surface);
+  color: var(--color-text);
 }
 
 .feature-slideshow__lightbox-bar {

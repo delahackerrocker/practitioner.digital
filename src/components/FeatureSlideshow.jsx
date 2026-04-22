@@ -94,6 +94,8 @@ export default function FeatureSlideshow({ items }) {
   const [flashPressedDirection, setFlashPressedDirection] = useState(null);
   const fullscreenButtonRef = useRef(null);
   const dialogRef = useRef(null);
+  const railRef = useRef(null);
+  const railItemRefs = useRef([]);
   const closeButtonRef = useRef(null);
   const flashPressTimeoutRef = useRef(null);
   const restoreFocusRef = useRef(false);
@@ -120,6 +122,10 @@ export default function FeatureSlideshow({ items }) {
     },
     [],
   );
+
+  useEffect(() => {
+    railItemRefs.current = railItemRefs.current.slice(0, items.length);
+  }, [items.length]);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -191,6 +197,69 @@ export default function FeatureSlideshow({ items }) {
       window.cancelAnimationFrame(focusFrame);
     };
   }, [isFullscreen]);
+
+  useEffect(() => {
+    const rail = railRef.current;
+    const activeRailItem = railItemRefs.current[activeIndex];
+
+    if (!rail || !activeRailItem || items.length < 2) {
+      return undefined;
+    }
+
+    const itemWidths = railItemRefs.current
+      .filter(Boolean)
+      .map((item) => item.getBoundingClientRect().width);
+
+    if (!itemWidths.length) {
+      return undefined;
+    }
+
+    const averageItemWidth =
+      itemWidths.reduce((total, width) => total + width, 0) / itemWidths.length;
+    const computedRailStyle = window.getComputedStyle(rail);
+    const railGap =
+      Number.parseFloat(computedRailStyle.columnGap || computedRailStyle.gap || "0") || 0;
+    const edgeThreshold = (averageItemWidth * 2) + (railGap * 2);
+    const railRect = rail.getBoundingClientRect();
+    const activeItemRect = activeRailItem.getBoundingClientRect();
+    const distanceFromLeftEdge = activeItemRect.left - railRect.left;
+    const distanceFromRightEdge = railRect.right - activeItemRect.right;
+
+    let targetScrollLeft = null;
+
+    if (distanceFromLeftEdge < edgeThreshold) {
+      targetScrollLeft = activeRailItem.offsetLeft - edgeThreshold;
+    } else if (distanceFromRightEdge < edgeThreshold) {
+      targetScrollLeft =
+        activeRailItem.offsetLeft +
+        activeRailItem.offsetWidth -
+        (rail.clientWidth - edgeThreshold);
+    }
+
+    if (targetScrollLeft === null) {
+      return undefined;
+    }
+
+    const clampedScrollLeft = Math.max(
+      0,
+      Math.min(targetScrollLeft, rail.scrollWidth - rail.clientWidth),
+    );
+
+    if (Math.abs(clampedScrollLeft - rail.scrollLeft) < 2) {
+      return undefined;
+    }
+
+    const prefersReducedMotion =
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      document.documentElement.dataset.motionReduced === "true";
+
+    rail.scrollTo({
+      left: clampedScrollLeft,
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+    });
+
+    return undefined;
+  }, [activeIndex, items.length]);
 
   if (!items.length) {
     return null;
@@ -500,7 +569,10 @@ export default function FeatureSlideshow({ items }) {
       </div>
 
       {items.length > 1 ? (
-        <div className={`feature-slideshow__rail ${compactRail ? "is-compact" : ""}`}>
+        <div
+          className={`feature-slideshow__rail ${compactRail ? "is-compact" : ""}`}
+          ref={railRef}
+        >
           {items.map((item, index) => {
             const railLabel = compactRail
               ? item.type === "video"
@@ -518,6 +590,9 @@ export default function FeatureSlideshow({ items }) {
                 className={`feature-rail__item ${activeIndex === index ? "is-active" : ""}`}
                 key={`${item.title}-${index}`}
                 onClick={() => setActiveIndex(index)}
+                ref={(element) => {
+                  railItemRefs.current[index] = element;
+                }}
                 type="button"
               >
                 <span>{railLabel}</span>

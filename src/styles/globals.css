@@ -14,6 +14,14 @@
   --color-text: #f4f5f7;
   --color-text-soft: rgba(244, 245, 247, 0.78);
   --color-text-muted: rgba(244, 245, 247, 0.56);
+  --button-secondary-surface: rgba(255, 255, 255, 0.03);
+  --slideshow-nav-press-surface: color-mix(in srgb, var(--button-secondary-surface) 75%, white 25%);
+  --slideshow-lightbox-arrow-surface: rgba(10, 12, 16, 0.78);
+  --slideshow-lightbox-arrow-press-surface: color-mix(
+    in srgb,
+    var(--slideshow-lightbox-arrow-surface) 75%,
+    white 25%
+  );
   --color-accent: #8fb7ff;
   --color-accent-soft: rgba(143, 183, 255, 0.16);
   --shadow-soft-alpha: 0.35;
