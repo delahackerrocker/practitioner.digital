@@ -283,6 +283,51 @@ Default toward fewer, stronger projects.
 
 ---
 
+## Title Case Rule
+
+Use standard Title Case for user-facing titles and headings.
+
+That means:
+
+* capitalize the first word
+* capitalize the last word
+* capitalize all major words, including nouns, pronouns, verbs, adjectives, adverbs, and subordinating conjunctions
+
+Keep these lowercase unless they are the first or last word:
+
+* articles: a, an, the
+* coordinating conjunctions: and, but, or, nor, for, so, yet
+* short prepositions: at, by, for, in, of, off, on, out, per, to, up, via
+
+Respect official or intentional styling when it should remain as-is, including:
+
+* product names
+* game titles
+* franchise styling
+* brand names
+* acronyms and initialisms
+* known stylized spellings
+* UI labels that are intentionally sentence case for product reasons
+
+Do not “correct” official capitalization into something less accurate.
+
+Apply this rule to:
+
+* page titles
+* hero headings
+* section headings
+* card titles
+* nav labels when they function as title-style labels
+* CTA headings
+* modal or panel headings
+* case study listing titles
+* project index titles
+* other prominent user-facing display headings
+
+This is a capitalization consistency rule, not permission for a broader rewrite.
+
+---
+
 ## Asset Handling
 
 Existing material from the old Squarespace site, résumé, PDFs, screenshots, videos, and other project assets should be treated as source material for the rebuild.
@@ -400,6 +445,24 @@ Coding agents should not:
 * create lots of optional toggles or future-proofing systems
 * change the project's core scope without being asked
 * perform repository operations such as repo creation, branching, commits, merges, or other repo-level control unless explicitly asked
+
+---
+
+## Vite Build Policy
+
+For this repository, do not run `npm run build` / Vite builds by default in Codex unless the user explicitly requests it or the task specifically requires runtime build verification.
+
+Reason:
+- In this repo’s Codex environment, Vite/esbuild build attempts may fail for sandbox/environment reasons rather than project-code reasons.
+
+Workflow:
+- Prefer lightweight validation first for copy/content/styling tasks.
+- For runtime-affecting code changes, a single build attempt is acceptable if explicitly requested or clearly warranted.
+- If the build fails with a known sandbox/environment execution error, do not retry repeatedly.
+- Report clearly whether:
+  - code changes are complete
+  - validation was completed
+  - validation was blocked by the Codex environment
 
 ---
 
