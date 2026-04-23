@@ -162,19 +162,27 @@ export const callOfDutyCaseStudies = [
             shortLabel: "V1",
             title: "BO6 Keypad Mini Game Clip",
             src: "/assets/projects/call-of-duty/keypad-mini-game/video/BlackOps6-Keypads.mp4",
-            poster: "/assets/projects/call-of-duty/keypad-mini-game/flows/KeypadFlowSmall.png",
+            poster: "/assets/projects/call-of-duty/keypad-mini-game/stills/BlackOps6-Keypads-first-frame.png",
             caption:
               "Local video capture showing interaction rhythm, puzzle pacing, and feedback states in sequence.",
           },
+        ],
+      },
+      {
+        variant: "flowchart",
+        eyebrow: "Flow Chart Support",
+        title: "Keypad Flow Chart",
+        intro:
+          "The supporting flow chart now has its own inspectable treatment so the branching logic can be read at full scale.",
+        items: [
           {
-            type: "image",
+            type: "flowchart",
             label: "Flow Support",
             shortLabel: "F1",
             title: "Keypad Flow Chart",
             src: "/assets/projects/call-of-duty/keypad-mini-game/flows/KeypadFlowSmall.png",
             caption:
-              "Flow support image that clarifies interaction branches, readability, and state communication.",
-            fit: "contain",
+              "Supporting flow chart for interaction branches, readability, and state communication.",
           },
         ],
       },

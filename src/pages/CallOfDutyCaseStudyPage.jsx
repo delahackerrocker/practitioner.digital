@@ -1,5 +1,6 @@
 import FeatureSlideshow from "../components/FeatureSlideshow";
 import Footer from "../components/Footer";
+import FlowChartViewer from "../components/FlowChartViewer";
 import ProjectCard from "../components/ProjectCard";
 import Section from "../components/Section";
 import { callOfDutyCaseStudies } from "../data/callOfDuty";
@@ -63,7 +64,11 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
           key={block.title}
           title={block.title}
         >
-          <FeatureSlideshow items={block.items} />
+          {block.variant === "flowchart" ? (
+            <FlowChartViewer items={block.items} />
+          ) : (
+            <FeatureSlideshow items={block.items} />
+          )}
         </Section>
       ))}
 
