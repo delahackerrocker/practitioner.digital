@@ -406,6 +406,7 @@ export const callOfDutyCaseStudies = [
     ],
     deliverables: [
       "Stealth Meter Exploration",
+      "Stealth Meter Demo Video",
       "State-Readability Framing",
       "Icon Direction Support",
     ],
@@ -425,6 +426,23 @@ export const callOfDutyCaseStudies = [
             caption:
               "Exploration board focused on awareness states, escalation clarity, and player-readable status communication.",
             fit: "contain",
+          },
+        ],
+      },
+      {
+        eyebrow: "Gameplay Feedback Video",
+        title: "Stealth Meter Update Demo",
+        intro:
+          "A short interaction demo showing how the stealth meter communicates awareness changes, escalation, and player feedback during stealth-state transitions.",
+        items: [
+          {
+            type: "video",
+            label: "Video",
+            shortLabel: "V1",
+            title: "Stealth Meter Update Demo",
+            src: "/assets/projects/call-of-duty/stealth-system/video/StealthMeterUpdateDemo.mp4",
+            caption:
+              "Stealth meter feedback and escalation behavior in motion.",
           },
         ],
       },
