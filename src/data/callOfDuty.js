@@ -414,8 +414,10 @@ export const callOfDutyCaseStudies = [
       {
         eyebrow: "Primary Artifact",
         title: "Stealth Awareness Exploration",
-        intro:
-          "The artifact does the heavy lifting here, making state progression and alert behavior easy to review.",
+        intro: [
+          "Stealth in a Black Ops-style Call of Duty game isn’t just a pacing change—it’s a different contract with the player. Instead of raw reaction and firepower, it asks for control, awareness, and intent. Every movement, line of sight, and sound becomes meaningful. Good stealth design turns invisible systems—enemy awareness, suspicion, escalation—into readable feedback the player can trust, so they can make deliberate choices rather than guess.",
+          "When it works, stealth creates tension that gunplay alone can’t. The player isn’t just trying to win a fight—they’re trying to avoid one, manipulate it, or choose exactly when it begins. That control is what makes the eventual break into combat feel earned, not accidental. In a Black Ops context, where tone leans tactical and covert, stealth systems carry a lot of the fantasy: being precise, informed, and always one step ahead.",
+        ],
         items: [
           {
             type: "image",
