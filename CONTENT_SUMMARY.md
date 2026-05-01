@@ -12,6 +12,8 @@ The most important content sources are:
 - `src/data/callOfDuty.js`
 - `src/data/projects.js`
 
+Important non-public tooling note: the repo also includes a dev-only tuning/editor system in `src/editor` and `src/tuning`. It is not part of the recruiter-facing site content, but it does affect presentation during development by applying CSS variables, tuning profiles, and debug guide toggles. Rendering-performance and editor-tooling plans are summarized separately in `OPTIMIZATION_STRATEGY.md`.
+
 ### Content Density Notes
 
 - Dense / well-developed: `Call of Duty`, `MW3 Exfil`, `Warzone / Cold War Design Guide`, `Play Again With Team`
@@ -423,5 +425,12 @@ Note: `src/pages/ProjectDetail.jsx` also includes a fallback "Project Not Found"
   Defines the generic media-gallery summary line and media-chip labels used on non-COD project pages.
 - `public/assets/projects/call-of-duty/...`
   Stores the current in-site PDFs, page-render images, stills, flow charts, and local video used by the Call of Duty cluster.
+- `src/editor/EditorApp.jsx`
+  Dev-only visual tuning workbench. It is mounted through `src/main.jsx` but returns `null` outside `import.meta.env.DEV`, so it does not add public portfolio content.
+- `src/tuning/...`
+  Stores the tuning schema, default profile, active tuning overrides, localStorage-backed runtime state, CSS-variable application, and debug-guide dataset flags used by the dev editor.
 
-Excluded from this summary: `src/editor/EditorApp.jsx`, which is mounted in development but returns `null` outside `import.meta.env.DEV`, so it is not part of the public site content.
+## 9. Related Planning Docs
+
+- `OPTIMIZATION_STRATEGY.md`
+  Summarizes the rendering optimization, media caching, culling, and editor-tooling work intended to keep the media-heavy case studies fast and tunable without turning the portfolio into a CMS or heavy app platform.
