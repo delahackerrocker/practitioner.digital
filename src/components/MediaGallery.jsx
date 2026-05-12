@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// Keeps generic project media simple: one active item, one summary, one chip row.
 function MediaFrame({ item }) {
   if (item.type === "video" && item.embedUrl) {
     return (

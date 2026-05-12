@@ -1,8 +1,8 @@
+// Site-level copy stays here so the presentation components stay mostly layout-only.
 export const siteMeta = {
   title: "Practitioner.Digital",
   owner: "Dela",
   brand: "Practitioner.Digital",
-  descriptor: "Shipped game UI/UX, XR product design, and interactive prototypes",
 };
 
 export const navigationItems = [
@@ -13,7 +13,6 @@ export const navigationItems = [
 ];
 
 export const heroContent = {
-  eyebrow: "Game UI/UX Designer and Design Engineer",
   title: "Shipped Game UI/UX, XR Product Work, and Interactive Systems.",
   intro:
     "Dela designs and builds player-facing interfaces, product workflows, and prototypes across AAA games, immersive tools, and interactive experiences.",
@@ -45,19 +44,16 @@ export const actionLinks = [
   {
     label: "Call of Duty",
     note: "Franchise case studies and shipped artifacts",
-    kind: "internal",
     target: "/#call-of-duty",
   },
   {
     label: "Experience",
     note: "Game UI/UX, XR tools, and prototypes",
-    kind: "internal",
     target: "/#experience",
   },
   {
     label: "Contact",
     note: "Resume, email, LinkedIn, and GitHub",
-    kind: "internal",
     target: "/#contact",
   },
 ];
@@ -120,7 +116,6 @@ export const footerContent = {
       note: "A concise overview of shipped projects, roles, and production experience.",
       href:
         "https://docs.google.com/document/d/1NIDABEhEkJngSh0aLBNnVqEOnu_9T8hW/edit?usp=drive_link&ouid=103687195586732707079&rtpof=true&sd=true",
-      external: true,
     },
     {
       label: "Email",
@@ -133,14 +128,12 @@ export const footerContent = {
       value: "LinkedIn Profile",
       note: "Professional background, shared connections, and work history.",
       href: "https://www.linkedin.com/in/delahackerrocker/",
-      external: true,
     },
     {
       label: "GitHub",
       value: "Practitioner.Digital",
       note: "View the code that drives this site.",
       href: "https://github.com/delahackerrocker/practitioner.digital",
-      external: true,
     },
   ],
 };

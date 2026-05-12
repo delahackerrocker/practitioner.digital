@@ -1,5 +1,6 @@
 import { callOfDutyCaseStudies, callOfDutyHub } from "./callOfDuty";
 
+// Broader portfolio entries share the same project shape used by the cards and detail pages.
 const portfolioProjects = [
   callOfDutyHub,
   ...callOfDutyCaseStudies,
@@ -7,7 +8,6 @@ const portfolioProjects = [
     slug: "snoopys-soapbox-racers",
     title: "Snoopy's Soapbox Racers",
     accent: "#ef9d67",
-    eyebrow: "Featured Visual Project",
     tagline:
       "A racing game entry focused on visual tone, character presentation, and case-study clarity.",
     summary:
@@ -35,11 +35,6 @@ const portfolioProjects = [
       "Keeps a visually distinctive racing project in the portfolio mix.",
       "Creates a clean foundation for a stronger media-led case study as additional assets are selected.",
     ],
-    deliverables: [
-      "Hero Media Frame",
-      "Key Screenshot Gallery",
-      "Short Production Summary",
-    ],
     media: [
       {
         type: "image",
@@ -56,18 +51,11 @@ const portfolioProjects = [
           "A short gameplay or presentation clip can show motion, pace, and game-facing polish.",
       },
     ],
-    links: [
-      {
-        label: "Legacy Interactive Portfolio",
-        href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
-      },
-    ],
   },
   {
     slug: "rebel-future",
     title: "Rebel Future",
     accent: "#ca8dff",
-    eyebrow: "Original IP",
     tagline:
       "Original IP connecting world-building, game UI, player embodiment, and prototype direction.",
     summary:
@@ -96,13 +84,6 @@ const portfolioProjects = [
       "Connects scattered legacy material into a clearer product and world-building narrative.",
       "Leaves room for narrower case studies as stronger assets and flow notes are selected.",
     ],
-    deliverables: [
-      "Universe and Character Brief",
-      "Gameplay Look-and-Feel Document",
-      "Player Embodiment Demo",
-      "StarFighter module",
-      "Teaser and Intro Material",
-    ],
     media: [
       {
         type: "image",
@@ -126,26 +107,11 @@ const portfolioProjects = [
           "A teaser, intro, or gameplay concept clip can show how the IP moves beyond static documentation.",
       },
     ],
-    links: [
-      {
-        label: "Legacy Interactive Portfolio",
-        href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
-      },
-      {
-        label: "Rebel Future Universe and Character Brief",
-        href: "https://drive.google.com/file/d/166Znw1O6y-qGAB45BlMC4I2QVGrybjR7/view?usp=sharing",
-      },
-      {
-        label: "Gameplay Look-and-Feel Document",
-        href: "https://drive.google.com/file/d/1z7TiI3sz-6F2POTFy3CG8WxuQU1C0Sqp/view?usp=sharing",
-      },
-    ],
   },
   {
     slug: "overwatch-companion-demo",
     title: "Overwatch Companion Demo",
     accent: "#f0b26e",
-    eyebrow: "Companion Product Concept",
     tagline:
       "A service-minded companion app concept for browsing, account support, and quick reference.",
     summary:
@@ -173,11 +139,6 @@ const portfolioProjects = [
       "Adds a more product-shaped case study to the featured lineup.",
       "Shows range beyond franchise UI by pairing concept thinking with a working demo artifact.",
     ],
-    deliverables: [
-      "Video Demo",
-      "Companion Feature Framing",
-      "Screen and Flow Concepts",
-    ],
     media: [
       {
         type: "video",
@@ -195,22 +156,11 @@ const portfolioProjects = [
           "Mockups or video stills can show account views, utility features, and browsing flows.",
       },
     ],
-    links: [
-      {
-        label: "YouTube Demo",
-        href: "https://www.youtube.com/watch?v=PMTRt2csE1A",
-      },
-      {
-        label: "Legacy Portfolio Reference",
-        href: "https://www.drive-fast-take-chances.com/callofduty",
-      },
-    ],
   },
   {
     slug: "how-to-train-your-dragon-demo",
     title: "How to Train Your Dragon Demo",
     accent: "#cf8d98",
-    eyebrow: "Supporting Visual Project",
     tagline:
       "A character-led demo focused on visual tone, motion, and presentation craft.",
     summary:
@@ -237,11 +187,6 @@ const portfolioProjects = [
       "Preserves a recognizable visual project in the broader mix.",
       "Creates a clean secondary case study that can strengthen quickly as more visual evidence is selected.",
     ],
-    deliverables: [
-      "Hero Screenshot Frame",
-      "Animation Clip",
-      "Brief Production Notes",
-    ],
     media: [
       {
         type: "image",
@@ -258,18 +203,11 @@ const portfolioProjects = [
           "A short sequence or breakdown clip can connect the page to the legacy animation material.",
       },
     ],
-    links: [
-      {
-        label: "Legacy Interactive Portfolio",
-        href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
-      },
-    ],
   },
   {
     slug: "glave-gunner-ipad-ui",
     title: "Glave Gunner iPad UI",
     accent: "#b68eff",
-    eyebrow: "Focused Rebel Future Entry",
     tagline: "Tablet game UI for one- and two-player flows inside the Rebel Future universe.",
     summary:
       "A concrete UI slice from Rebel Future, centered on menu flow, account handling, customization, and moment-to-moment play surfaces for tablet.",
@@ -295,11 +233,6 @@ const portfolioProjects = [
       "Adds a more tangible Rebel Future UI entry.",
       "Creates a useful supporting case study for future screen captures, flow annotations, and interaction notes.",
     ],
-    deliverables: [
-      "iPad UI Screens",
-      "Player Flow Notes",
-      "Rebel Future Visual Language",
-    ],
     media: [
       {
         type: "image",
@@ -316,22 +249,11 @@ const portfolioProjects = [
           "Flow annotations can connect the interface to one- and two-player use cases.",
       },
     ],
-    links: [
-      {
-        label: "Legacy Interactive Portfolio",
-        href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
-      },
-      {
-        label: "Rebel Future Universe and Character Brief",
-        href: "https://drive.google.com/file/d/166Znw1O6y-qGAB45BlMC4I2QVGrybjR7/view?usp=sharing",
-      },
-    ],
   },
   {
     slug: "vr-intelligence-tool-usaf",
     title: "VR Intelligence Tool for the USAF",
     accent: "#9bd0c4",
-    eyebrow: "Immersive Product UX",
     tagline:
       "A tablet and VR intelligence workflow for dense information review.",
     summary:
@@ -359,12 +281,6 @@ const portfolioProjects = [
       "Retains one of the strongest product-credibility projects in the body of work.",
       "Shows that the work extends beyond games into immersive tools, expert workflows, and shipped client products.",
     ],
-    deliverables: [
-      "Tablet Intelligence Views",
-      "VR Panel Concepts",
-      "Unity UI prototypes",
-      "Fake-Data Workflow Demonstrations",
-    ],
     media: [
       {
         type: "image",
@@ -381,18 +297,11 @@ const portfolioProjects = [
           "Paired captures can show how the product moved between flat and immersive surfaces.",
       },
     ],
-    links: [
-      {
-        label: "Legacy Interactive Portfolio",
-        href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
-      },
-    ],
   },
   {
     slug: "authoring-tool-final-vr-panels",
     title: "Authoring Tool Final + VR Panels",
     accent: "#7cc8ff",
-    eyebrow: "Workflow-Heavy Interface System",
     tagline:
       "A desktop and VR interface system linking authoring workflows to immersive panels.",
     summary:
@@ -419,11 +328,6 @@ const portfolioProjects = [
       "Adds a strong creator-tool-to-immersive-output systems example to the broader body of work.",
       "Supports future case-study expansion around process, authoring workflows, and immersive UI behavior.",
     ],
-    deliverables: [
-      "Authoring Tool Screens",
-      "VR Panel Layouts",
-      "Workflow Alignment Notes",
-    ],
     media: [
       {
         type: "image",
@@ -440,18 +344,11 @@ const portfolioProjects = [
           "A matching immersive panel view can make the desktop-to-VR system relationship readable.",
       },
     ],
-    links: [
-      {
-        label: "Legacy Interactive Portfolio",
-        href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
-      },
-    ],
   },
   {
     slug: "curious-george",
     title: "Curious George",
     accent: "#ffd36c",
-    eyebrow: "Educational Game App",
     tagline:
       "A learning game app showing UI/UX and development ownership for a younger audience.",
     summary:
@@ -478,11 +375,6 @@ const portfolioProjects = [
       "Broadens the body of work beyond shooter, VR, and original IP projects.",
       "Preserves a useful example of full-stack creative ownership in a lighter-weight format.",
     ],
-    deliverables: [
-      "Game UI Screens",
-      "Kid-Friendly Interaction Flows",
-      "Principal Development Support",
-    ],
     media: [
       {
         type: "image",
@@ -492,12 +384,6 @@ const portfolioProjects = [
           "The clearest screen or interaction still should communicate the app's audience and tone quickly.",
       },
     ],
-    links: [
-      {
-        label: "Legacy Interactive Portfolio",
-        href: "https://www.drive-fast-take-chances.com/interactive-portfolio",
-      },
-    ],
   },
 ];
 
@@ -505,6 +391,7 @@ export const projects = portfolioProjects;
 
 export { callOfDutyHub, callOfDutyCaseStudies };
 
+// Keep routing cheap: slugs are the only lookup key used by the custom router.
 export function getProjectBySlug(slug) {
   return portfolioProjects.find((project) => project.slug === slug) ?? null;
 }

@@ -1,5 +1,6 @@
 import InteractiveWireSurface from "./InteractiveWireSurface";
 
+// Shared hero for non-Call-of-Duty project detail pages.
 export default function CaseStudyHero({ navigate, project }) {
   return (
     <section className="case-study-hero shell" style={{ "--project-accent": project.accent }}>

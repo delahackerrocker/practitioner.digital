@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState } from "react";
 
+// Dialog focus stays local so inspect mode behaves like a real modal.
 const FOCUSABLE_SELECTOR = [
   "a[href]",
   "area[href]",
@@ -33,6 +34,7 @@ function getFocusableElements(container) {
   );
 }
 
+// Flow charts need zoom and pan because the source images can be much wider than the page.
 export default function FlowChartViewer({ items }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isInspecting, setIsInspecting] = useState(false);
@@ -145,6 +147,7 @@ export default function FlowChartViewer({ items }) {
       return { scale, offsetX, offsetY };
     }
 
+    // Clamp pan to the visible image bounds so users cannot lose the chart.
     const maxOffsetX = Math.max(0, ((image.offsetWidth * scale) - surface.clientWidth) / 2);
     const maxOffsetY = Math.max(0, ((image.offsetHeight * scale) - surface.clientHeight) / 2);
 
@@ -188,6 +191,7 @@ export default function FlowChartViewer({ items }) {
         return current;
       }
 
+      // Zoom around the pointer instead of snapping back to the image center.
       const ratio = clampedScale / current.scale;
       const nextOffsetX = point.x - ((point.x - current.offsetX) * ratio);
       const nextOffsetY = point.y - ((point.y - current.offsetY) * ratio);

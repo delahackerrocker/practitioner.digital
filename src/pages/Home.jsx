@@ -15,6 +15,7 @@ import {
   heroContent,
 } from "../data/siteContent";
 
+// Home is a curated scan path: hero, flagship work, broader practice, contact.
 export default function Home({ navigate }) {
   return (
     <>

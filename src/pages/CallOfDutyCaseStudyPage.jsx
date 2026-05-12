@@ -7,6 +7,7 @@ import Section from "../components/Section";
 import { callOfDutyCaseStudies } from "../data/callOfDuty";
 import { footerContent } from "../data/siteContent";
 
+// Short cards keep problem and approach notes scannable.
 function DetailList({ items }) {
   return (
     <div className="detail-list">
@@ -19,6 +20,7 @@ function DetailList({ items }) {
   );
 }
 
+// Call of Duty pages use tailored media blocks because decks, videos, and flow charts differ.
 export default function CallOfDutyCaseStudyPage({ navigate, project }) {
   const relatedCaseStudies = callOfDutyCaseStudies
     .filter((entry) => entry.slug !== project.slug)

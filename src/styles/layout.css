@@ -1,3 +1,4 @@
+/* Layout primitives: page shell, repeated sections, and responsive grids. */
 .app-shell {
   position: relative;
   min-height: 100vh;
@@ -18,6 +19,7 @@
   padding: var(--header-content-gap) 0 var(--app-main-padding-bottom);
 }
 
+/* Shared shell keeps every major block aligned without a layout framework. */
 .shell {
   width: min(var(--shell-width), calc(100% - (var(--shell-gutter) * 2)));
   margin: 0 auto;
@@ -226,6 +228,7 @@
   margin-top: var(--case-study-hero-gap);
 }
 
+/* Project heroes reserve a capped side rail for metadata cards. */
 .case-study-hero__content {
   width: 100%;
   max-width: var(--case-study-content-max-width);

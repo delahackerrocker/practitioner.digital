@@ -1,27 +1,20 @@
 import InteractiveWireSurface from "./InteractiveWireSurface";
 
+// Small home-page cards route to the key recruiter paths.
 function ActionTile({ item, navigate }) {
-  if (item.kind === "internal" && item.target) {
-    return (
-      <button
-        className="action-tile action-tile--interactive"
-        onClick={() => navigate(item.target)}
-        type="button"
-      >
-        <span>{item.label}</span>
-        <small>{item.note}</small>
-      </button>
-    );
-  }
-
   return (
-    <div className="action-tile action-tile--placeholder">
+    <button
+      className="action-tile action-tile--interactive"
+      onClick={() => navigate(item.target)}
+      type="button"
+    >
       <span>{item.label}</span>
       <small>{item.note}</small>
-    </div>
+    </button>
   );
 }
 
+// Main landing block: high-level positioning, fast actions, and the feature callout.
 export default function Hero({ actionLinks, content, navigate }) {
   return (
     <section className="hero shell" id="overview">

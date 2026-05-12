@@ -6,6 +6,7 @@ import Section from "../components/Section";
 import { projects } from "../data/projects";
 import { footerContent } from "../data/siteContent";
 
+// Generic project notes use the same compact detail-card rhythm as the franchise pages.
 function DetailList({ items }) {
   return (
     <div className="detail-list">
@@ -18,6 +19,7 @@ function DetailList({ items }) {
   );
 }
 
+// Fallback detail template for non-Call-of-Duty portfolio entries.
 export default function ProjectDetail({ navigate, project }) {
   if (!project) {
     return (

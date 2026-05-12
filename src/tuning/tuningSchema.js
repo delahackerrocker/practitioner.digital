@@ -1,3 +1,4 @@
+// Schema drives both the editor controls and the CSS variables they update.
 const option = (label, value) => ({ label, value });
 
 const colorField = (path, label, cssVar, help = "") => ({

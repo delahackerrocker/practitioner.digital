@@ -1,3 +1,4 @@
+/* Global tokens are the source of truth for both CSS and the tuning editor. */
 :root {
   color-scheme: dark;
   --color-bg-start: #0b0d10;
@@ -168,6 +169,7 @@ html[data-motion-reduced="true"] {
   }
 }
 
+/* Body background stays subtle so the media-heavy cards remain the focus. */
 body {
   margin: 0;
   min-width: 320px;

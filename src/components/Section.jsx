@@ -1,3 +1,4 @@
+// Generic content shell for the repeated portfolio sections.
 export default function Section({
   id,
   eyebrow,

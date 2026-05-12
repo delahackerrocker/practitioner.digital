@@ -1,3 +1,4 @@
+/* Component styling lives here; layout-only rules stay in layout.css. */
 .site-nav {
   position: sticky;
   top: 0;
@@ -56,7 +57,6 @@
 .detail-list__item,
 .detail-card,
 .project-card,
-.support-link,
 .feature-rail__item {
   border: 1px solid transparent;
   transition:
@@ -114,8 +114,6 @@
 .action-tile--interactive:focus-visible,
 .contact-card:hover,
 .contact-card:focus-visible,
-.support-link:hover,
-.support-link:focus-visible,
 .feature-rail__item:hover,
 .feature-rail__item:focus-visible {
   transform: translateY(calc(var(--motion-interactive-lift) * -1)) scale(var(--motion-interactive-scale));
@@ -258,6 +256,7 @@
     linear-gradient(180deg, transparent 0%, rgba(5, 6, 9, 0.76) 100%);
 }
 
+/* CSS fallback for machines that cannot start the WebGL surface. */
 .interactive-wire-surface[data-surface-fallback="true"] {
   background:
     linear-gradient(120deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
@@ -1094,29 +1093,6 @@
   color: var(--color-text-muted);
   font-size: 0.9rem;
   line-height: 1.55;
-}
-
-.support-link {
-  display: block;
-  padding: 1rem 1.2rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--color-text);
-  transition:
-    transform var(--motion-duration) var(--motion-ease),
-    border-color var(--motion-duration) var(--motion-ease),
-    background-color var(--motion-duration) var(--motion-ease);
-}
-
-.support-link:hover,
-.support-link:focus-visible {
-  border-color: var(--color-border-strong);
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.support-link--placeholder {
-  color: var(--color-text-soft);
 }
 
 .pillar-card p {

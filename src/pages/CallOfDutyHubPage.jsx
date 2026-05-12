@@ -5,6 +5,7 @@ import Section from "../components/Section";
 import { callOfDutyCaseStudies } from "../data/callOfDuty";
 import { footerContent } from "../data/siteContent";
 
+// Reused for short proof-point lists inside case-study sections.
 function DetailList({ items }) {
   return (
     <div className="detail-list">
@@ -17,6 +18,7 @@ function DetailList({ items }) {
   );
 }
 
+// Hub page frames the franchise work before sending users into individual artifacts.
 export default function CallOfDutyHubPage({ navigate, project }) {
   return (
     <>

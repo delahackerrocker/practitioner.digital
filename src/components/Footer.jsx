@@ -1,10 +1,6 @@
 import InteractiveWireSurface from "./InteractiveWireSurface";
 
-function openContactLink(event, href) {
-  event.preventDefault();
-  window.location.assign(href);
-}
-
+// Shared contact footer with the same wire-surface treatment as the hero cards.
 export default function Footer({ content }) {
   return (
     <footer className="site-footer site-footer--surface shell" id="contact">
@@ -22,7 +18,6 @@ export default function Footer({ content }) {
             className="contact-card"
             href={item.href}
             key={item.label}
-            onClick={(event) => openContactLink(event, item.href)}
           >
             <span>{item.label}</span>
             <strong>{item.value}</strong>

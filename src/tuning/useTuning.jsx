@@ -13,6 +13,7 @@ import {
   tuningStorageKey,
 } from "./tuningStore";
 
+// Context keeps visual tuning live without introducing app-level state management.
 const TuningContext = createContext(null);
 
 function readStoredTuning() {
@@ -60,6 +61,7 @@ function applyTuningToDocument(tuning) {
   const root = document.documentElement;
   const cssVariables = buildCssVariables(tuning);
 
+  // Write variables directly to the root so normal CSS owns the actual rendering.
   for (const [name, value] of Object.entries(cssVariables)) {
     root.style.setProperty(name, value);
   }

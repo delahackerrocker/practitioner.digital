@@ -1,9 +1,11 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
+// Low-res simulation keeps the mouse-reactive surface cheap enough for repeated use.
 const SIM_SIZE = 128;
 const JACOBI_ITERATIONS = 6;
 
+// Each placement gets its own camera and mesh pose so the grid aligns with the card.
 const VARIANTS = {
   hero: {
     cameraZ: 5.3,
@@ -177,6 +179,7 @@ function createRenderTarget(size) {
   });
 }
 
+// Ping-pong render targets avoid reading and writing the same texture in one pass.
 class DoubleBuffer {
   constructor(size) {
     this.readIndex = 0;
@@ -215,6 +218,7 @@ function safeColor(value) {
   }
 }
 
+// Three.js wire surface with a CSS fallback when WebGL is unavailable.
 export default function InteractiveWireSurface({
   accent = "#8fb7ff",
   className = "",

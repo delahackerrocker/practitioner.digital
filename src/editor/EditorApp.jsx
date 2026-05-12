@@ -3,6 +3,7 @@ import { tuningTabs } from "../tuning/tuningSchema";
 import { useTuning } from "../tuning/useTuning.jsx";
 import "./editor.css";
 
+// Display values stay close to the raw tuning numbers so the editor is easy to trust.
 function formatControlValue(control, value) {
   if (control.type === "toggle") {
     return value ? "On" : "Off";
@@ -15,6 +16,7 @@ function formatControlValue(control, value) {
   return value;
 }
 
+// One renderer handles every simple field type in the tuning schema.
 function ControlField({ control, value, onChange }) {
   const inputId = useId();
 
@@ -133,6 +135,7 @@ function EditorSection({ title, controls, tuning, onChange }) {
   );
 }
 
+// Dev-only tuning panel for quickly adjusting CSS variables in the browser.
 export default function EditorApp() {
   const { tuning, setControlValue, resetTab, resetAll, importTuning, exportTuning, profileName } =
     useTuning();
@@ -161,6 +164,7 @@ export default function EditorApp() {
   }
 
   const handleExport = () => {
+    // Export is a manual handoff; saved defaults live in src/tuning/profiles.
     const blob = new Blob([exportTuning()], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");

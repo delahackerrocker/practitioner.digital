@@ -1,3 +1,4 @@
+// Project cards are real links with router interception for fast in-app navigation.
 export default function ProjectCard({ project, navigate }) {
   const visualStyle = {
     "--project-accent": project.accent,

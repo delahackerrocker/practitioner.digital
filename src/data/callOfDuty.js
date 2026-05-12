@@ -1,3 +1,4 @@
+// Builds predictable page-gallery items from exported slide images.
 function createPageGallery(basePath, pageCount, titlePrefix, caption) {
   return Array.from({ length: pageCount }, (_, index) => {
     const pageNumber = index + 1;
@@ -18,11 +19,9 @@ function createPageGallery(basePath, pageCount, titlePrefix, caption) {
 export const callOfDutyCaseStudies = [
   {
     slug: "call-of-duty/mw3-exfil",
-    parentSlug: "call-of-duty",
     pageType: "call-of-duty-case-study",
     accent: "#8fb7ff",
     cardImage: "/assets/projects/call-of-duty/images/Exfil_Success_After_Action_Report.png",
-    eyebrow: "Modern Warfare III Exfil",
     title: "MW3 Exfil",
     tagline:
       "Post-extraction reward, inventory, and progression UX for Modern Warfare Zombies.",
@@ -50,11 +49,6 @@ export const callOfDutyCaseStudies = [
     outcome: [
       "Shows post-match UX thinking through a dense but readable reward flow.",
       "Demonstrates how pacing, hierarchy, and system status can be communicated in a production-ready design deck.",
-    ],
-    deliverables: [
-      "49-Page Exfil Deck",
-      "Big-Picture Flow Map",
-      "Individual User Flow",
     ],
     mediaBlocks: [
       {
@@ -98,24 +92,12 @@ export const callOfDutyCaseStudies = [
         ],
       },
     ],
-    links: [
-      {
-        label: "Original Exfil PDF",
-        href: "/assets/projects/call-of-duty/exfil/pdf/Exfil_Success_After_Action_Report.pdf",
-      },
-      {
-        label: "Legacy Call of Duty Overview",
-        href: "https://www.drive-fast-take-chances.com/callofduty",
-      },
-    ],
   },
   {
     slug: "call-of-duty/bo6-keypad-mini-game",
-    parentSlug: "call-of-duty",
     pageType: "call-of-duty-case-study",
     accent: "#f2b76a",
     cardImage: "/assets/projects/call-of-duty/keypad-mini-game/flows/KeypadFlowSmall.png",
-    eyebrow: "Black Ops 6 Keypad Mini Game",
     title: "BO6 Keypad Mini Game",
     tagline:
       "A compact BO6 interaction shaped around readable state, feedback, and pressure.",
@@ -143,11 +125,6 @@ export const callOfDutyCaseStudies = [
     outcome: [
       "Adds a concise interaction-design proof point to the Call of Duty cluster.",
       "Shows how compact mechanics can still benefit from thoughtful UX framing and state communication.",
-    ],
-    deliverables: [
-      "Gameplay Video",
-      "Keypad Flow Diagram",
-      "Interaction Notes",
     ],
     mediaBlocks: [
       {
@@ -187,20 +164,12 @@ export const callOfDutyCaseStudies = [
         ],
       },
     ],
-    links: [
-      {
-        label: "Legacy Call of Duty Overview",
-        href: "https://www.drive-fast-take-chances.com/callofduty",
-      },
-    ],
   },
   {
     slug: "call-of-duty/warzone-cold-war-design-guide",
-    parentSlug: "call-of-duty",
     pageType: "call-of-duty-case-study",
     accent: "#9fc2ff",
     cardImage: "/assets/projects/call-of-duty/images/WZ_StyleGuide.png",
-    eyebrow: "Warzone / Cold War Design Guide",
     title: "Warzone / Cold War Design Guide",
     tagline:
       "A franchise visual-systems guide for shared content, brand balance, and UI consistency.",
@@ -228,11 +197,6 @@ export const callOfDutyCaseStudies = [
     outcome: [
       "Shows visual leadership around tone, consistency, and decision-making at scale.",
       "Demonstrates how a design guide can align teams around a shared visual target.",
-    ],
-    deliverables: [
-      "40-Page Style Guide",
-      "Brand and Item Direction",
-      "Typography and Color Targets",
     ],
     mediaBlocks: [
       {
@@ -275,24 +239,12 @@ export const callOfDutyCaseStudies = [
         ],
       },
     ],
-    links: [
-      {
-        label: "Original Style Guide PDF",
-        href: "/assets/projects/call-of-duty/warzone-cold-war-design-guide/pdf/WZ_Chapter2_StyleGuide_v2.pdf",
-      },
-      {
-        label: "Legacy Call of Duty Overview",
-        href: "https://www.drive-fast-take-chances.com/callofduty",
-      },
-    ],
   },
   {
     slug: "call-of-duty/play-again-with-team",
-    parentSlug: "call-of-duty",
     pageType: "call-of-duty-case-study",
     accent: "#a2d0ff",
     cardImage: "/assets/projects/call-of-duty/images/WZ_UX__AAR_and_PlayAgainWithTeam.png",
-    eyebrow: "Play Again With Team",
     title: "Play Again With Team",
     tagline:
       "Exploring Information Flow and Decision Making",
@@ -321,10 +273,6 @@ export const callOfDutyCaseStudies = [
       "Adds a clear social UX case study to the Call of Duty cluster.",
       "Shows thinking around team continuity and post-match framing without overclaiming outcomes.",
     ],
-    deliverables: [
-      "7-Page Play Again Deck",
-      "Post-Match Decision Framing",
-    ],
     mediaBlocks: [
       {
         eyebrow: "Primary Deck",
@@ -339,24 +287,12 @@ export const callOfDutyCaseStudies = [
         ),
       },
     ],
-    links: [
-      {
-        label: "Original Play Again PDF",
-        href: "/assets/projects/call-of-duty/play-again-with-team/pdf/WZ_UX__AAR_and_PlayAgainWithTeam_v01.pdf",
-      },
-      {
-        label: "Legacy Call of Duty Overview",
-        href: "https://www.drive-fast-take-chances.com/callofduty",
-      },
-    ],
   },
   {
     slug: "call-of-duty/bo6-stealth-system",
-    parentSlug: "call-of-duty",
     pageType: "call-of-duty-case-study",
     accent: "#88d4c4",
     cardImage: "/assets/projects/call-of-duty/stealth-system/flows/Stealth_Meter-01.png",
-    eyebrow: "Black Ops 6 Stealth System",
     title: "BO6 Stealth System",
     tagline:
       "A BO6 awareness system for stealth states, escalation, and combat readability.",
@@ -384,12 +320,6 @@ export const callOfDutyCaseStudies = [
     outcome: [
       "Adds a communication-design-focused case study to the Call of Duty cluster.",
       "Shows how a tightly scoped UI problem can still reveal strong systems and communication design.",
-    ],
-    deliverables: [
-      "Stealth Meter Exploration",
-      "Stealth Meter Demo Video",
-      "State-Readability Framing",
-      "Icon Direction Support",
     ],
     mediaBlocks: [
       {
@@ -430,12 +360,6 @@ export const callOfDutyCaseStudies = [
         ],
       },
     ],
-    links: [
-      {
-        label: "Legacy Call of Duty Overview",
-        href: "https://www.drive-fast-take-chances.com/callofduty",
-      },
-    ],
   },
 ];
 
@@ -472,16 +396,5 @@ export const callOfDutyHub = {
   outcome: [
     "Makes a broad body of franchise work easier to scan and compare.",
     "Surfaces feature design, systems thinking, documentation, and communication design across shipped releases.",
-  ],
-  deliverables: [
-    "Call of Duty Hub Page",
-    "Five Sub-Case-Study Pages",
-    "In-Site PDF Slideshows",
-  ],
-  links: [
-    {
-      label: "Legacy Call of Duty Overview",
-      href: "https://www.drive-fast-take-chances.com/callofduty",
-    },
   ],
 };

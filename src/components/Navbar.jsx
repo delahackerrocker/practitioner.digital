@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { navigationItems, siteMeta } from "../data/siteContent";
 
+// The nav uses buttons so internal jumps stay inside the custom router.
 export default function Navbar({ isProjectView, location, navigate }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    // Close the mobile menu after every route or hash change.
     setMenuOpen(false);
   }, [location.hash, location.pathname]);
 

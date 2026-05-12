@@ -7,6 +7,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import { getProjectBySlug } from "./data/projects";
 import { siteMeta } from "./data/siteContent";
 
+// The site uses a tiny custom router because the route surface is intentionally small.
 function readLocation() {
   return {
     pathname: window.location.pathname,
@@ -63,6 +64,7 @@ export default function App() {
   useEffect(() => {
     document.title = pageTitle;
 
+    // Hash links drive the one-page sections, with reduced-motion respected for comfort.
     if (location.hash) {
       requestAnimationFrame(() => {
         const target = document.querySelector(location.hash);

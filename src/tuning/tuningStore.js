@@ -2,6 +2,7 @@ import activeTuning from "./active-tuning.json";
 import { tuningProfileName, tuningTabs } from "./tuningSchema";
 import defaultProfile from "./profiles/practitioner-default.json";
 
+// Active tuning overrides the saved profile so the current checked-in design wins.
 export const tuningStorageKey = "drive-fast-take-chances:tuning:v1";
 
 export const defaultTuning = normalizeTuning(deepMerge(defaultProfile, activeTuning));
@@ -94,6 +95,7 @@ export function normalizeTuning(tuning) {
     delete result.layout.appMainTop;
   }
 
+  // Migrate older saved editor values so localStorage does not keep stale layout choices.
   if (
     (result.header?.contentGap === 4 || result.header?.contentGap === 7) &&
     typeof result.layout?.sectionSpacing === "number"
@@ -198,6 +200,7 @@ export function buildControlMap(tabs) {
 export function buildCssVariables(tuning) {
   const vars = {};
 
+  // Only controls with cssVar entries should touch document styles.
   for (const [path, control] of controlMap.entries()) {
     if (!control.cssVar) {
       continue;

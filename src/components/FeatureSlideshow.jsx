@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState } from "react";
 
+// Shared selector for the lightbox focus trap.
 const FOCUSABLE_SELECTOR = [
   "a[href]",
   "area[href]",
@@ -16,6 +17,7 @@ const SWIPE_DISTANCE_THRESHOLD = 48;
 const FLASH_PRESS_DURATION = 140;
 const STAGE_CLICK_SUPPRESSION_DURATION = 220;
 
+// Space and Enter should behave like button presses in the custom slideshow controls.
 function isPressKey(event) {
   return event.key === " " || event.key === "Enter";
 }
@@ -33,6 +35,7 @@ function getFocusableElements(container) {
   );
 }
 
+// Renders whatever artifact type the project data asks for.
 function MediaStage({ item, stageClassName = "" }) {
   const stageClasses = ["feature-stage"];
 
@@ -87,6 +90,7 @@ function MediaStage({ item, stageClassName = "" }) {
   );
 }
 
+// Deck-style slideshow with keyboard, swipe, rail, and fullscreen support.
 export default function FeatureSlideshow({ items }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -177,6 +181,7 @@ export default function FeatureSlideshow({ items }) {
       };
     }
 
+    // Fullscreen uses a native dialog when available and restores body scroll on exit.
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
@@ -206,6 +211,7 @@ export default function FeatureSlideshow({ items }) {
       return undefined;
     }
 
+    // Keep the active thumbnail near the visible rail edges without hard-coding widths.
     const itemWidths = railItemRefs.current
       .filter(Boolean)
       .map((item) => item.getBoundingClientRect().width);
