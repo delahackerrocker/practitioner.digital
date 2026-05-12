@@ -1,7 +1,7 @@
 import CaseStudyHero from "../components/CaseStudyHero";
 import Footer from "../components/Footer";
 import MediaGallery from "../components/MediaGallery";
-import ProjectCard from "../components/ProjectCard";
+import ProjectGrid from "../components/ProjectGrid";
 import Section from "../components/Section";
 import { projects } from "../data/projects";
 import { footerContent } from "../data/siteContent";
@@ -42,17 +42,17 @@ export default function ProjectDetail({ navigate, project }) {
 
       <Section
         eyebrow="Media Gallery"
-        intro="Screenshots, diagrams, and motion selected to show the work quickly."
-        title="Project Media"
+        intro="Screenshots, diagrams, and motion selected to show the interface decisions quickly."
+        title="Project Evidence"
       >
         <MediaGallery media={project.media} projectTitle={project.title} />
       </Section>
 
       <Section
         className="section--compact"
-        eyebrow="Challenge"
-        intro="The product, interaction, or communication problem at the center of the project."
-        title="What Needed to Work"
+        eyebrow="Problem"
+        intro="The task, workflow, or communication issue the project needed to resolve."
+        title="User and System Problem"
       >
         <DetailList items={project.challenge} />
       </Section>
@@ -60,8 +60,8 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="The key decisions, constraints, and production thinking behind the work."
-        title="How the Work Was Shaped"
+        intro="The design decisions, constraints, and implementation thinking behind the work."
+        title="Design and Production Approach"
       >
         <DetailList items={project.approach} />
       </Section>
@@ -69,64 +69,18 @@ export default function ProjectDetail({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Outcome"
-        intro="What the project demonstrates and why it matters in the portfolio."
-        title="What the Project Shows"
+        intro="What the project demonstrates across usability, clarity, and production readiness."
+        title="Outcome and Portfolio Signal"
       >
         <DetailList items={project.outcome} />
       </Section>
 
       <Section
-        eyebrow="Deliverables"
-        intro="Core artifacts represented in the case study."
-        title="Artifacts This Case Study Can Hold"
-      >
-        <div className="tag-row">
-          {project.deliverables.map((deliverable) => (
-            <span className="tag tag--strong" key={deliverable}>
-              {deliverable}
-            </span>
-          ))}
-        </div>
-      </Section>
-
-      {project.links.length ? (
-        <Section
-          eyebrow="Supporting Links"
-          intro="Original references, demos, and supporting material."
-          title="Additional Material"
-        >
-          <div className="link-grid">
-            {project.links.map((link) =>
-              link.href ? (
-                <a
-                  className="support-link"
-                  href={link.href}
-                  key={link.label}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <div className="support-link support-link--placeholder" key={link.label}>
-                  {link.label}
-                </div>
-              )
-            )}
-          </div>
-        </Section>
-      ) : null}
-
-      <Section
         eyebrow="More Work"
-        intro="Related work from games, XR, and interactive product development."
+        intro="Related work across games, XR, interface systems, and interactive prototypes."
         title="More Projects"
       >
-        <div className="project-grid project-grid--compact">
-          {relatedProjects.map((entry) => (
-            <ProjectCard key={entry.slug} navigate={navigate} project={entry} />
-          ))}
-        </div>
+        <ProjectGrid compact navigate={navigate} projects={relatedProjects} />
       </Section>
 
       <Footer content={footerContent} />

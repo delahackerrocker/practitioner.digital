@@ -1,7 +1,8 @@
 import FeatureSlideshow from "../components/FeatureSlideshow";
 import Footer from "../components/Footer";
 import FlowChartViewer from "../components/FlowChartViewer";
-import ProjectCard from "../components/ProjectCard";
+import InteractiveWireSurface from "../components/InteractiveWireSurface";
+import ProjectGrid from "../components/ProjectGrid";
 import Section from "../components/Section";
 import { callOfDutyCaseStudies } from "../data/callOfDuty";
 import { footerContent } from "../data/siteContent";
@@ -26,13 +27,13 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
   return (
     <>
       <section className="case-study-hero shell" style={{ "--project-accent": project.accent }}>
+        <InteractiveWireSurface accent={project.accent} variant="case" />
         <button className="back-link" onClick={() => navigate("/projects/call-of-duty")} type="button">
           Back to Call of Duty Hub
         </button>
 
         <div className="case-study-hero__grid">
           <div className="case-study-hero__content">
-            <p className="section-eyebrow">{project.eyebrow}</p>
             <h1>{project.title}</h1>
             <p className="case-study-hero__tagline">{project.tagline}</p>
             <p className="case-study-hero__summary">{project.summary}</p>
@@ -74,9 +75,9 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
 
       <Section
         className="section--compact"
-        eyebrow="Challenge"
-        intro="The player-facing communication or interaction problem at the center of this case study."
-        title="What Needed to Work"
+        eyebrow="Problem"
+        intro="The player-facing communication or interaction issue at the center of this case study."
+        title="User and System Problem"
       >
         <DetailList items={project.challenge} />
       </Section>
@@ -84,58 +85,18 @@ export default function CallOfDutyCaseStudyPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="How the artifact was framed, sequenced, and supported so the thinking stays legible."
-        title="How the Case Study Is Framed"
+        intro="How the artifact was sequenced, documented, and supported so the design decisions stay legible."
+        title="Design Approach"
       >
         <DetailList items={project.approach} />
       </Section>
 
       <Section
-        eyebrow="Artifacts"
-        intro="The media and documentation that make the design thinking legible."
-        title="Included Artifacts"
-      >
-        <div className="tag-row">
-          {project.deliverables.map((deliverable) => (
-            <span className="tag tag--strong" key={deliverable}>
-              {deliverable}
-            </span>
-          ))}
-        </div>
-      </Section>
-
-      {project.links.length ? (
-        <Section
-          eyebrow="Supporting Links"
-          intro="Original decks and public references connected to the work."
-          title="Source Material"
-        >
-          <div className="link-grid">
-            {project.links.map((link) => (
-              <a
-                className="support-link"
-                href={link.href}
-                key={link.label}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </Section>
-      ) : null}
-
-      <Section
-        eyebrow="More COD Work"
+        eyebrow="More Call of Duty Work"
         intro="More franchise case studies across extraction UX, visual systems, social flow, and combat communication."
         title="Continue Through the Cluster"
       >
-        <div className="project-grid project-grid--compact">
-          {relatedCaseStudies.map((entry) => (
-            <ProjectCard key={entry.slug} navigate={navigate} project={entry} />
-          ))}
-        </div>
+        <ProjectGrid compact navigate={navigate} projects={relatedCaseStudies} />
       </Section>
 
       <Footer content={footerContent} />

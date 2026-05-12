@@ -9,51 +9,51 @@ const portfolioProjects = [
     accent: "#ef9d67",
     eyebrow: "Featured Visual Project",
     tagline:
-      "A character-led racing project carried by visual punch and game-facing presentation.",
+      "A racing game entry focused on visual tone, character presentation, and case-study clarity.",
     summary:
-      "A visually driven racing project included for range, paced as a short media-first case study rather than padded with unsupported production detail.",
-    role: "Visual Showcase and Game-Facing Presentation",
+      "A compact visual case study that adds range beyond systems-heavy UX and is structured around media-led evidence.",
+    role: "Visual Presentation and Game UI Framing",
     projectType: "Racing Game Project",
     timeframe: "Archived Game Work",
     focusTags: [
-      "Visual Showcase",
+      "Media-Led Case Study",
       "Racing Project",
       "Game-Facing Presentation",
     ],
     context:
-      "The public source material clearly establishes the project and its tone, but not the full production history, so the writeup stays intentionally restrained.",
+      "The public source material establishes the project and its tone, so the current page keeps scope factual and leaves room for final screenshots or gameplay captures.",
     challenge: [
-      "Present a visually strong project without overstating details that are not yet documented in the source material.",
-      "Build a concise case study structure that can absorb stronger media later.",
+      "Show visual range while keeping the role and project framing clear.",
+      "Create a case study structure that can support media, flow notes, and role context as stronger assets are added.",
     ],
     approach: [
-      "Kept the copy restrained and factual rather than filling gaps with invented production detail.",
-      "Positioned the project as a visually driven counterpoint to the more systems-heavy franchise and XR work.",
-      "Reserved larger media slots so final captures can carry more of the story.",
+      "Kept the framing factual and media-led, with the text providing context for the visual evidence.",
+      "Positioned the project as a visual counterpoint to the franchise UI/UX and XR product work.",
+      "Gave the media area enough scale for final captures to carry the strongest evidence.",
     ],
     outcome: [
-      "Keeps a visually distinctive racing project in the featured set.",
-      "Creates a clean foundation for a stronger media-led case study once final assets are ready.",
+      "Keeps a visually distinctive racing project in the portfolio mix.",
+      "Creates a clean foundation for a stronger media-led case study as additional assets are selected.",
     ],
     deliverables: [
-      "Hero Media Slot",
+      "Hero Media Frame",
       "Key Screenshot Gallery",
       "Short Production Summary",
     ],
     media: [
       {
         type: "image",
-        label: "Visual Slot 01",
-        title: "Featured Screenshot Placeholder",
+        label: "Visual Frame 01",
+        title: "Featured Racing Visual",
         caption:
-          "Reserved for the strongest frame or hero crop that makes the project feel instantly distinct on desktop and mobile.",
+          "The strongest frame or hero crop should communicate the racing tone clearly on desktop and mobile.",
       },
       {
         type: "video",
-        label: "Motion Slot",
-        title: "Gameplay Clip Placeholder",
+        label: "Motion Artifact",
+        title: "Gameplay or Presentation Clip",
         caption:
-          "Ready for a short gameplay or presentation clip once final media is selected.",
+          "A short gameplay or presentation clip can show motion, pace, and game-facing polish.",
       },
     ],
     links: [
@@ -69,9 +69,9 @@ const portfolioProjects = [
     accent: "#ca8dff",
     eyebrow: "Original IP",
     tagline:
-      "Original IP spanning world-building, game UI, embodiment, and direction.",
+      "Original IP connecting world-building, game UI, player embodiment, and prototype direction.",
     summary:
-      "An original game universe that pulls together character and world briefs, UI studies, embodiment demos, teaser material, and gameplay look-and-feel into one broader IP story.",
+      "An original game universe framed as a product ecosystem: character and world briefs, UI studies, embodiment demos, teaser material, and gameplay direction.",
     role: "Creative Direction, UI/UX, Gameplay Concepting, and Development",
     projectType: "Original IP and Game Universe",
     timeframe: "Ongoing Independent Project Family",
@@ -81,20 +81,20 @@ const portfolioProjects = [
       "UI and Embodiment",
     ],
     context:
-      "The legacy material presents Rebel Future as Dela's own game universe, with documentation spanning characters, world-building, gameplay direction, and supporting experiments.",
+      "The legacy material presents Rebel Future as Dela's own game universe, with documentation spanning characters, world-building, gameplay direction, and supporting prototypes.",
     challenge: [
-      "Give one original universe a coherent identity across gameplay ideas, UI, motion, world-building, and teaser material.",
-      "Use smaller artifacts and demos to test tone and embodiment without losing the bigger picture of the project family.",
+      "Give one original universe a coherent identity across gameplay concepts, interface language, motion, world-building, and teaser material.",
+      "Use smaller artifacts and demos to test interaction models and embodiment without losing the larger project family.",
     ],
     approach: [
-      "Used Rebel Future as the umbrella story, with Glave Gunner acting as a recurring vehicle for UI, gameplay, and embodiment experiments.",
+      "Used Rebel Future as the umbrella story, with Glave Gunner acting as a recurring vehicle for UI, gameplay, and embodiment prototypes.",
       "Connected supporting artifacts such as the player embodiment demo, StarFighter module, teaser, and character documentation into one clearer project narrative.",
-      "Kept the structure broad so the project family reads clearly before it is split into narrower case studies.",
+      "Kept the structure broad so the project family reads clearly before individual prototypes become narrower case studies.",
     ],
     outcome: [
       "Shows original IP thinking alongside client and franchise work.",
-      "Turns scattered legacy material into a clearer project family.",
-      "Leaves room for narrower case studies later if stronger assets surface.",
+      "Connects scattered legacy material into a clearer product and world-building narrative.",
+      "Leaves room for narrower case studies as stronger assets and flow notes are selected.",
     ],
     deliverables: [
       "Universe and Character Brief",
@@ -109,21 +109,21 @@ const portfolioProjects = [
         label: "Project Family 01",
         title: "Universe and Visual Identity",
         caption:
-          "A strong slot for world-building art, character material, or visual identity frames that define the Rebel Future tone.",
+          "World-building art, character material, or visual identity frames define the Rebel Future tone.",
       },
       {
         type: "image",
         label: "Project Family 02",
         title: "Glave Gunner Player Embodiment",
         caption:
-          "Prepared for embodiment demo media that shows how the project explores player presence and interaction in the world.",
+          "Embodiment demo media shows player presence, spatial feedback, and interaction inside the world.",
       },
       {
         type: "video",
         label: "Project Family 03",
         title: "Teaser or Intro Reel",
         caption:
-          "Ready for a teaser, cartoon intro, or gameplay concept clip once final video sources are selected.",
+          "A teaser, intro, or gameplay concept clip can show how the IP moves beyond static documentation.",
       },
     ],
     links: [
@@ -147,9 +147,9 @@ const portfolioProjects = [
     accent: "#f0b26e",
     eyebrow: "Companion Product Concept",
     tagline:
-      "A utility-first companion concept for browsing, account support, and service-minded UX.",
+      "A service-minded companion app concept for browsing, account support, and quick reference.",
     summary:
-      "A compact product concept that treats a companion app as a useful service layer, with browsing, account utility, and readable interface structure at the center.",
+      "A compact product concept that treats a companion app as a practical service layer, centered on browsing, account utility, and clear interface structure.",
     role: "UX Design, UI, and Demo Implementation",
     projectType: "Companion App Concept",
     timeframe: "Personal Demo Project",
@@ -159,14 +159,14 @@ const portfolioProjects = [
       "Demo Implementation",
     ],
     context:
-      "The project is represented publicly through a video demo rather than a long written case study, so the framing stays focused on product utility and implementation.",
+      "The project is represented publicly through a video demo, so the framing stays focused on product utility, information architecture, and implementation evidence.",
     challenge: [
-      "Design a companion experience that feels genuinely useful instead of ornamental.",
-      "Create a service-product layer that supports browsing, utility, and quick understanding without the sprawl of the main client.",
+      "Design a companion experience that supports useful tasks rather than acting as a decorative second screen.",
+      "Create a service layer that makes browsing, account context, and quick reference easy to understand outside the main client.",
     ],
     approach: [
       "Framed the project as a compact product experience with clear utility rather than as a fan-art exercise.",
-      "Emphasized product framing, information hierarchy, and interface usefulness.",
+      "Emphasized product framing, information hierarchy, and task-oriented interface structure.",
       "Used the existing demo link so the work can show motion without extra UI overhead.",
     ],
     outcome: [
@@ -184,15 +184,15 @@ const portfolioProjects = [
         label: "Demo Video",
         title: "Overwatch Companion Demo",
         caption:
-          "Embedded from the legacy portfolio's YouTube demo so the case study already has a real motion artifact.",
+          "Embedded from the legacy portfolio's YouTube demo so the case study has a real interaction artifact.",
         embedUrl: "https://www.youtube.com/embed/PMTRt2csE1A",
       },
       {
         type: "image",
-        label: "Screen Slot",
+        label: "UI Capture Set",
         title: "Companion UI Captures",
         caption:
-          "Reserved for final mockups or video stills that show account views, utility features, and browsing flows.",
+          "Mockups or video stills can show account views, utility features, and browsing flows.",
       },
     ],
     links: [
@@ -212,9 +212,9 @@ const portfolioProjects = [
     accent: "#cf8d98",
     eyebrow: "Supporting Visual Project",
     tagline:
-      "A character-led demo built around visual tone and animation-led presentation.",
+      "A character-led demo focused on visual tone, motion, and presentation craft.",
     summary:
-      "A supporting visual piece that broadens the portfolio's range through character work, motion, and presentation rather than systems-heavy UX.",
+      "A supporting visual piece that broadens the portfolio through character work, motion, and presentation rather than systems-heavy interface design.",
     role: "Demo Presentation and Visual Showcase",
     projectType: "Demo and Animation-Led Project",
     timeframe: "Archived Demo Work",
@@ -224,38 +224,38 @@ const portfolioProjects = [
       "Animation-Led Presentation",
     ],
     context:
-      "The available public material is light, so the case study stays concise and media-led instead of filling gaps with unsupported production claims.",
+      "This entry is intentionally concise and media-led, using available public material as the scope boundary.",
     challenge: [
-      "Keep the project present without pretending the legacy source contains more detail than it does.",
-      "Reserve enough space for future animation and visual material to become the hero.",
+      "Keep the project scoped to verifiable source material.",
+      "Keep enough structure for animation and visual material to carry the case study.",
     ],
     approach: [
-      "Wrote the project as a restrained supporting entry instead of forcing it into the primary tier.",
-      "Left the structure image-first so the eventual case study can rely on media instead of filler copy.",
+      "Framed the project as a restrained supporting entry instead of forcing it into the primary tier.",
+      "Kept the structure image-first so the eventual case study can rely on media and concise context.",
     ],
     outcome: [
       "Preserves a recognizable visual project in the broader mix.",
-      "Creates a clean secondary case study that can be strengthened quickly when final assets arrive.",
+      "Creates a clean secondary case study that can strengthen quickly as more visual evidence is selected.",
     ],
     deliverables: [
-      "Hero Screenshot Slot",
-      "Animation Clip Slot",
+      "Hero Screenshot Frame",
+      "Animation Clip",
       "Brief Production Notes",
     ],
     media: [
       {
         type: "image",
-        label: "Visual Slot 01",
-        title: "Demo Still Placeholder",
+        label: "Visual Frame 01",
+        title: "Demo Still",
         caption:
-          "Prepared for the strongest still or marketing frame that makes this project readable at a glance.",
+          "The strongest still or marketing frame should communicate the project at a glance.",
       },
       {
         type: "video",
-        label: "Visual Slot 02",
-        title: "Animation Sequence Placeholder",
+        label: "Visual Frame 02",
+        title: "Animation Sequence",
         caption:
-          "Ready for a short sequence or breakdown clip tied to the legacy animation material.",
+          "A short sequence or breakdown clip can connect the page to the legacy animation material.",
       },
     ],
     links: [
@@ -270,9 +270,9 @@ const portfolioProjects = [
     title: "Glave Gunner iPad UI",
     accent: "#b68eff",
     eyebrow: "Focused Rebel Future Entry",
-    tagline: "Game UI for a one- or two-player iPad experience inside Rebel Future.",
+    tagline: "Tablet game UI for one- and two-player flows inside the Rebel Future universe.",
     summary:
-      "A concrete UI slice from the Rebel Future universe, centered on menu flow, account handling, customization, and moment-to-moment play surfaces for tablet.",
+      "A concrete UI slice from Rebel Future, centered on menu flow, account handling, customization, and moment-to-moment play surfaces for tablet.",
     role: "Direction, Development, and UI/UX",
     projectType: "iPad Game UI",
     timeframe: "Independent Rebel Future Project",
@@ -285,15 +285,15 @@ const portfolioProjects = [
       "The legacy portfolio frames this as directed and developed by Dela, making it a useful supporting case study beneath the broader Rebel Future umbrella.",
     challenge: [
       "Show a specific UI artifact from an original IP without losing the larger project family around it.",
-      "Keep the entry concrete enough to feel real while leaving room for fuller screenshots and flow notes later.",
+      "Keep the entry concrete enough to show interface ownership while leaving room for fuller screenshots and flow notes.",
     ],
     approach: [
       "Positioned the project as a focused UI slice within the Rebel Future family.",
-      "Focused the copy on direction, development, and interface ownership as stated on the legacy site.",
+      "Focused the copy on direction, development, and interface ownership as stated in the legacy material.",
     ],
     outcome: [
       "Adds a more tangible Rebel Future UI entry.",
-      "Creates a useful supporting case study for future screen captures and flow annotations.",
+      "Creates a useful supporting case study for future screen captures, flow annotations, and interaction notes.",
     ],
     deliverables: [
       "iPad UI Screens",
@@ -303,17 +303,17 @@ const portfolioProjects = [
     media: [
       {
         type: "image",
-        label: "UI Slot 01",
-        title: "iPad Interface Placeholder",
+        label: "UI Frame 01",
+        title: "iPad Interface",
         caption:
-          "Reserved for the strongest screen or menu view from the Glave Gunner iPad UI work.",
+          "The strongest screen or menu view should show the Glave Gunner iPad UI at a glance.",
       },
       {
         type: "image",
-        label: "UI Slot 02",
-        title: "Flow Breakdown Placeholder",
+        label: "UI Frame 02",
+        title: "Flow Breakdown",
         caption:
-          "Ready for annotations that connect the interface to multiplayer or two-player use cases.",
+          "Flow annotations can connect the interface to one- and two-player use cases.",
       },
     ],
     links: [
@@ -333,27 +333,27 @@ const portfolioProjects = [
     accent: "#9bd0c4",
     eyebrow: "Immersive Product UX",
     tagline:
-      "A tablet-and-VR intelligence tool for dense information workflows.",
+      "A tablet and VR intelligence workflow for dense information review.",
     summary:
-      "A security-conscious UX project that paired tablet and headset interfaces for reviewing and recording intelligence data across 3D globe views and network-like structures.",
+      "A security-conscious UX project pairing tablet and headset interfaces for reviewing and recording intelligence data across 3D globe views and network-style structures.",
     role: "UX Design, Unity Prototyping, and Development",
     projectType: "Tablet and VR Intelligence Workflow Tool",
     timeframe: "Client Product",
     focusTags: [
       "Simulation UX",
-      "Tablet plus VR Workflows",
+      "Tablet and VR Workflows",
       "Security-Conscious Prototype Data",
     ],
     context:
       "The public source material describes Dela prototyping UI in Unity, then contributing on the broader shipping team for the product.",
     challenge: [
       "Make complex intelligence data readable across tablets, VR headsets, globe views, and network-like structures.",
-      "Prototype enough interaction clarity to support expert workflows without exposing sensitive real-world information.",
+      "Prototype enough interaction clarity to support expert workflows while using safe representative data.",
     ],
     approach: [
-      "Used Unity-based UI prototyping to make the workflow tangible early and to test how dense data should behave across surfaces.",
-      "Balanced tablet and VR interaction needs so the product could feel like one connected system rather than two unrelated interfaces.",
-      "Kept the writeup concise and factual while preserving the project's credibility.",
+      "Used Unity-based UI prototyping to make the workflow tangible and test how dense information should behave across surfaces.",
+      "Balanced tablet and VR interaction needs so the product felt like one connected system rather than two unrelated interfaces.",
+      "Kept the writeup concise while preserving the project's expert-workflow credibility.",
     ],
     outcome: [
       "Retains one of the strongest product-credibility projects in the body of work.",
@@ -368,17 +368,17 @@ const portfolioProjects = [
     media: [
       {
         type: "image",
-        label: "Workflow Slot 01",
-        title: "3D Globe and Network View Placeholder",
+        label: "Workflow Frame 01",
+        title: "3D Globe and Network View",
         caption:
-          "Reserved for the clearest example of how dense intelligence information was organized and read.",
+          "The clearest frame should show how dense intelligence information was organized and read.",
       },
       {
         type: "image",
-        label: "Workflow Slot 02",
-        title: "Tablet and VR Interface Placeholder",
+        label: "Workflow Frame 02",
+        title: "Tablet and VR Interface",
         caption:
-          "Ready for paired captures showing how the product moved between flat and immersive surfaces.",
+          "Paired captures can show how the product moved between flat and immersive surfaces.",
       },
     ],
     links: [
@@ -394,29 +394,29 @@ const portfolioProjects = [
     accent: "#7cc8ff",
     eyebrow: "Workflow-Heavy Interface System",
     tagline:
-      "A desktop-and-VR interface system linking authoring workflows to immersive panels.",
+      "A desktop and VR interface system linking authoring workflows to immersive panels.",
     summary:
-      "A systems-heavy project that pairs backend authoring surfaces with the VR panels they drive, showing workflow design, tool thinking, and front-end alignment.",
+      "A systems-heavy project pairing backend authoring surfaces with the VR panels they drive, showing workflow design, tool thinking, and front-end alignment.",
     role: "UX Design and Interface Prototyping",
     projectType: "Authoring Tool and VR Interface System",
     timeframe: "Client-Side Product Workflow",
     focusTags: [
       "Workflow-Heavy UI",
-      "Desktop plus VR Pairing",
+      "Desktop and VR Pairing",
       "System Design Thinking",
     ],
     context:
       "The legacy portfolio presents this as close-to-final UI for both the authoring tool and VR frontend, making it a strong example of connected creator and user surfaces.",
     challenge: [
       "Keep authoring surfaces and VR-facing panels aligned so the overall product feels coherent.",
-      "Present a workflow-heavy tool without making it feel dry or text-bound.",
+      "Present a workflow-heavy tool in a way that keeps structure, state, and output relationships readable.",
     ],
     approach: [
       "Framed the project as one connected interface system rather than splitting desktop and VR work into unrelated cards.",
-      "Kept the writeup concise so screenshots and process notes can carry more of the storytelling.",
+      "Kept the writeup concise so screenshots and process notes can carry the detailed workflow story.",
     ],
     outcome: [
-      "Adds a strong backend-to-frontend systems example to the broader body of work.",
+      "Adds a strong creator-tool-to-immersive-output systems example to the broader body of work.",
       "Supports future case-study expansion around process, authoring workflows, and immersive UI behavior.",
     ],
     deliverables: [
@@ -427,17 +427,17 @@ const portfolioProjects = [
     media: [
       {
         type: "image",
-        label: "System Slot 01",
-        title: "Authoring Tool Placeholder",
+        label: "System Frame 01",
+        title: "Authoring Tool Interface",
         caption:
-          "Reserved for the clearest authoring interface frame or workflow capture.",
+          "The clearest authoring frame should show workflow structure, state, and output control.",
       },
       {
         type: "image",
-        label: "System Slot 02",
-        title: "VR Panel Placeholder",
+        label: "System Frame 02",
+        title: "VR Panel Interface",
         caption:
-          "Prepared for a matching immersive panel view so the system pairing reads immediately.",
+          "A matching immersive panel view can make the desktop-to-VR system relationship readable.",
       },
     ],
     links: [
@@ -453,9 +453,9 @@ const portfolioProjects = [
     accent: "#ffd36c",
     eyebrow: "Educational Game App",
     tagline:
-      "A learning game app that widens the audience and product range.",
+      "A learning game app showing UI/UX and development ownership for a younger audience.",
     summary:
-      "An educational game app where Dela handled UI/UX and principal development, showing a lighter but still meaningful example of end-to-end ownership.",
+      "An educational game app where Dela handled UI/UX and principal development, showing end-to-end ownership in a lighter product category.",
     role: "UI/UX and Principal Development",
     projectType: "Learning Game App for Kids",
     timeframe: "Educational Game Project",
@@ -467,12 +467,12 @@ const portfolioProjects = [
     context:
       "The public writeup is short but explicit about Dela's role across both experience design and development.",
     challenge: [
-      "Create playful, readable interaction for younger users without sacrificing clarity.",
+      "Create playful, readable interaction for younger users while keeping tasks clear.",
       "Build a product that works for a very different audience than the rest of the game and tool work.",
     ],
     approach: [
       "Positioned the project as a range-expanding supporting case study.",
-      "Kept the copy specific to the source material: UI/UX ownership plus principal development responsibility.",
+      "Kept the copy specific to the source material: UI/UX ownership and principal development responsibility.",
     ],
     outcome: [
       "Broadens the body of work beyond shooter, VR, and original IP projects.",
@@ -486,10 +486,10 @@ const portfolioProjects = [
     media: [
       {
         type: "image",
-        label: "Project Slot 01",
-        title: "Learning App Placeholder",
+        label: "Project Frame 01",
+        title: "Learning App Interface",
         caption:
-          "Reserved for the clearest screen or interaction still that communicates the app's audience and tone quickly.",
+          "The clearest screen or interaction still should communicate the app's audience and tone quickly.",
       },
     ],
     links: [

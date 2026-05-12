@@ -94,6 +94,48 @@ export function normalizeTuning(tuning) {
     delete result.layout.appMainTop;
   }
 
+  if (
+    (result.header?.contentGap === 4 || result.header?.contentGap === 7) &&
+    typeof result.layout?.sectionSpacing === "number"
+  ) {
+    result.header.contentGap = result.layout.sectionSpacing;
+  }
+
+  if (
+    typeof result.layout?.sectionHeaderMaxWidth === "number" &&
+    result.layout.sectionHeaderMaxWidth < 1400
+  ) {
+    result.layout.sectionHeaderMaxWidth = 1600;
+  }
+
+  if (
+    typeof result.layout?.sectionIntroMaxWidth === "number" &&
+    result.layout.sectionIntroMaxWidth < 1400
+  ) {
+    result.layout.sectionIntroMaxWidth = 1600;
+  }
+
+  if (
+    typeof result.caseStudy?.contentMaxWidth === "number" &&
+    result.caseStudy.contentMaxWidth < 1400
+  ) {
+    result.caseStudy.contentMaxWidth = 1600;
+  }
+
+  if (
+    typeof result.caseStudy?.summaryMaxWidth === "number" &&
+    result.caseStudy.summaryMaxWidth < 140
+  ) {
+    result.caseStudy.summaryMaxWidth = 160;
+  }
+
+  if (
+    typeof result.debug?.gridOpacity === "number" &&
+    result.debug.gridOpacity <= 0.04
+  ) {
+    result.debug.gridOpacity = 0.06;
+  }
+
   return result;
 }
 

@@ -1,6 +1,9 @@
+import InteractiveWireSurface from "./InteractiveWireSurface";
+
 export default function CaseStudyHero({ navigate, project }) {
   return (
     <section className="case-study-hero shell" style={{ "--project-accent": project.accent }}>
+      <InteractiveWireSurface accent={project.accent} variant="case" />
       <button
         className="back-link"
         onClick={() => navigate("/#overview")}
@@ -11,7 +14,6 @@ export default function CaseStudyHero({ navigate, project }) {
 
       <div className="case-study-hero__grid">
         <div className="case-study-hero__content">
-          <p className="section-eyebrow">{project.eyebrow}</p>
           <h1>{project.title}</h1>
           <p className="case-study-hero__tagline">{project.tagline}</p>
           <p className="case-study-hero__summary">{project.summary}</p>

@@ -19,21 +19,24 @@
 }
 
 .site-brand {
-  display: grid;
-  gap: 0.15rem;
+  display: flex;
+  flex: 1 1 18rem;
+  align-items: center;
+  min-width: 0;
   text-align: left;
   cursor: pointer;
 }
 
 .site-brand__title {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-family: var(--font-display);
-  font-size: calc(0.98rem * var(--nav-brand-title-scale));
-  font-weight: 600;
-}
-
-.site-brand__meta {
-  color: var(--color-text-muted);
-  font-size: calc(0.82rem * var(--nav-brand-meta-scale));
+  font-size: calc(clamp(1.25rem, 2vw, 1.65rem) * var(--nav-brand-title-scale));
+  font-weight: 700;
+  line-height: 1;
 }
 
 .site-nav__links {
@@ -109,6 +112,8 @@
 .back-link:focus-visible,
 .action-tile--interactive:hover,
 .action-tile--interactive:focus-visible,
+.contact-card:hover,
+.contact-card:focus-visible,
 .support-link:hover,
 .support-link:focus-visible,
 .feature-rail__item:hover,
@@ -156,6 +161,7 @@
 .action-tile--interactive:focus-visible,
 .pillar-card:hover,
 .contact-card:hover,
+.contact-card:focus-visible,
 .detail-list__item:hover,
 .detail-card:hover,
 .project-card:hover,
@@ -167,6 +173,7 @@
 .hero-panel,
 .case-study-hero,
 .project-card,
+.project-grid__filler,
 .detail-card,
 .media-gallery__summary,
 .media-chip,
@@ -184,6 +191,107 @@
 
 .hero-panel {
   padding: var(--hero-panel-padding);
+}
+
+.hero__content--surface,
+.hero-panel--surface,
+.case-study-hero,
+.site-footer--surface {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero__content--surface > :not(.interactive-wire-surface),
+.hero-panel--surface > :not(.interactive-wire-surface),
+.case-study-hero > :not(.interactive-wire-surface),
+.site-footer--surface > :not(.interactive-wire-surface) {
+  position: relative;
+  z-index: 1;
+}
+
+.interactive-wire-surface {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.62;
+  background:
+    radial-gradient(circle at 20% 6%, rgba(255, 255, 255, 0.08), transparent 24%),
+    radial-gradient(circle at 85% 72%, color-mix(in srgb, var(--project-accent, var(--color-accent)) 28%, transparent), transparent 30%),
+    linear-gradient(145deg, rgba(3, 4, 7, 0.92), rgba(6, 8, 12, 0.72));
+}
+
+.interactive-wire-surface canvas,
+.interactive-wire-surface::before,
+.interactive-wire-surface::after {
+  position: absolute;
+  inset: 0;
+}
+
+.interactive-wire-surface canvas {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.92;
+}
+
+.interactive-wire-surface::before,
+.interactive-wire-surface::after {
+  content: "";
+  pointer-events: none;
+}
+
+.interactive-wire-surface::before {
+  z-index: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 20%),
+    radial-gradient(circle at 50% 50%, transparent 0%, rgba(0, 0, 0, 0.52) 72%);
+}
+
+.interactive-wire-surface::after {
+  z-index: 2;
+  background:
+    linear-gradient(90deg, rgba(5, 6, 9, 0.78), rgba(5, 6, 9, 0.28) 48%, rgba(5, 6, 9, 0.72)),
+    linear-gradient(180deg, transparent 0%, rgba(5, 6, 9, 0.76) 100%);
+}
+
+.interactive-wire-surface[data-surface-fallback="true"] {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(60deg, rgba(143, 183, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(145deg, rgba(3, 4, 7, 0.94), rgba(6, 8, 12, 0.72));
+  background-size: 42px 42px, 42px 42px, cover;
+}
+
+.hero__content--surface .interactive-wire-surface {
+  opacity: 0.72;
+}
+
+.hero-panel--surface .interactive-wire-surface {
+  opacity: 0.46;
+}
+
+.case-study-hero .interactive-wire-surface {
+  opacity: 0.54;
+}
+
+.site-footer--surface .interactive-wire-surface {
+  opacity: 0.64;
+}
+
+.case-study-hero .interactive-wire-surface::after {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 11, 0.88), rgba(7, 8, 11, 0.36) 48%, rgba(7, 8, 11, 0.78)),
+    linear-gradient(180deg, transparent 0%, rgba(7, 8, 11, 0.82) 100%);
+}
+
+.site-footer--surface .interactive-wire-surface::after {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 11, 0.62), rgba(7, 8, 11, 0.28) 48%, rgba(7, 8, 11, 0.62)),
+    linear-gradient(180deg, rgba(7, 8, 11, 0.08) 0%, rgba(7, 8, 11, 0.7) 100%);
 }
 
 .hero-panel__eyebrow,
@@ -231,6 +339,19 @@
   background: var(--color-panel);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   border-radius: var(--project-card-radius);
+}
+
+.project-grid__filler {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  border-radius: var(--project-card-radius);
+  background: var(--color-panel);
+  isolation: isolate;
+}
+
+.project-grid__filler .interactive-wire-surface {
+  opacity: 0.72;
 }
 
 .project-card:hover,
@@ -961,6 +1082,20 @@
   background: var(--color-panel);
 }
 
+.contact-card {
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.contact-card small {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
 .support-link {
   display: block;
   padding: 1rem 1.2rem;
@@ -984,9 +1119,12 @@
   color: var(--color-text-soft);
 }
 
-.pillar-card p,
-.detail-list__item p {
+.pillar-card p {
   margin-top: 0.8rem;
+}
+
+.detail-list__item {
+  padding-block: var(--detail-list-item-padding-y);
 }
 
 .missing-page {

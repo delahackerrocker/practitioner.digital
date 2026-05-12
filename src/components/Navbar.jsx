@@ -13,7 +13,6 @@ export default function Navbar({ isProjectView, location, navigate }) {
       <div className="shell site-nav__inner">
         <button className="site-brand" onClick={() => navigate("/")}>
           <span className="site-brand__title">{siteMeta.brand}</span>
-          <span className="site-brand__meta">{siteMeta.owner} portfolio</span>
         </button>
 
         <button

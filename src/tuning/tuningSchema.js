@@ -99,7 +99,7 @@ export const tuningTabs = [
             "--shadow-soft-alpha",
             "",
             0,
-            0.7,
+            1,
             0.01
           ),
           rangeField(
@@ -108,7 +108,7 @@ export const tuningTabs = [
             "--shadow-card-alpha",
             "",
             0,
-            0.7,
+            1,
             0.01
           ),
         ],
@@ -135,29 +135,29 @@ export const tuningTabs = [
       {
         title: "Scale",
         controls: [
-          rangeField("typography.h1Min", "H1 min", "--h1-min", "rem", 1.6, 5.5, 0.1),
-          rangeField("typography.h1Max", "H1 max", "--h1-max", "rem", 2.4, 8.0, 0.1),
-          rangeField("typography.h2Min", "H2 min", "--h2-min", "rem", 1.2, 3.5, 0.05),
-          rangeField("typography.h2Max", "H2 max", "--h2-max", "rem", 1.8, 5.0, 0.05),
-          rangeField("typography.h3Min", "H3 min", "--h3-min", "rem", 0.8, 2.0, 0.05),
-          rangeField("typography.h3Max", "H3 max", "--h3-max", "rem", 1.0, 2.4, 0.05),
+          rangeField("typography.h1Min", "H1 min", "--h1-min", "rem", 0.8, 8, 0.1),
+          rangeField("typography.h1Max", "H1 max", "--h1-max", "rem", 1, 12, 0.1),
+          rangeField("typography.h2Min", "H2 min", "--h2-min", "rem", 0.8, 5, 0.05),
+          rangeField("typography.h2Max", "H2 max", "--h2-max", "rem", 1, 8, 0.05),
+          rangeField("typography.h3Min", "H3 min", "--h3-min", "rem", 0.7, 3.5, 0.05),
+          rangeField("typography.h3Max", "H3 max", "--h3-max", "rem", 0.8, 4.5, 0.05),
           rangeField(
             "typography.introSize",
             "Intro size",
             "--intro-size",
             "rem",
-            0.7,
-            1.5,
+            0.5,
+            2.2,
             0.05
           ),
-          rangeField("typography.bodyLineHeight", "Body line height", "--body-line-height", "", 1.4, 2.0, 0.02),
+          rangeField("typography.bodyLineHeight", "Body line height", "--body-line-height", "", 1, 2.8, 0.02),
           rangeField(
             "typography.headingLineHeight",
             "Heading line height",
             "--heading-line-height",
             "",
-            0.9,
-            1.3,
+            0.75,
+            1.6,
             0.01
           ),
           rangeField(
@@ -165,8 +165,8 @@ export const tuningTabs = [
             "Eyebrow size",
             "--eyebrow-size",
             "rem",
-            0.55,
-            0.95,
+            0.4,
+            1.4,
             0.01
           ),
           rangeField(
@@ -174,8 +174,8 @@ export const tuningTabs = [
             "Eyebrow tracking",
             "--eyebrow-letter-spacing",
             "em",
-            0.08,
-            0.3,
+            0,
+            0.5,
             0.01
           ),
           rangeField(
@@ -183,8 +183,8 @@ export const tuningTabs = [
             "Heading tracking",
             "--heading-letter-spacing",
             "em",
-            -0.05,
-            0.02,
+            -0.08,
+            0.08,
             0.005
           ),
           rangeField(
@@ -192,8 +192,8 @@ export const tuningTabs = [
             "Paragraph spacing",
             "--paragraph-spacing",
             "rem",
-            0.5,
-            1.8,
+            0,
+            3,
             0.05
           ),
           rangeField(
@@ -201,8 +201,8 @@ export const tuningTabs = [
             "Section title gap",
             "--section-title-gap",
             "rem",
-            0.2,
-            1.5,
+            0,
+            3,
             0.05
           ),
         ],
@@ -217,15 +217,15 @@ export const tuningTabs = [
       {
         title: "Shell",
         controls: [
-          rangeField("layout.shellWidth", "Shell width", "--shell-width", "px", 960, 1440, 10),
-          rangeField("layout.shellGutter", "Shell gutter", "--shell-gutter", "rem", 0.5, 2.5, 0.05),
+          rangeField("layout.shellWidth", "Shell width", "--shell-width", "px", 720, 1920, 10),
+          rangeField("layout.shellGutter", "Shell gutter", "--shell-gutter", "rem", 0, 4, 0.05),
           rangeField(
             "layout.appMainBottom",
             "App bottom padding",
             "--app-main-padding-bottom",
             "rem",
-            2,
-            6,
+            0,
+            10,
             0.1
           ),
         ],
@@ -238,19 +238,19 @@ export const tuningTabs = [
             "Section spacing",
             "--section-margin-top",
             "rem",
-            1,
-            4,
+            0,
+            6,
             0.05
           ),
-          rangeField("layout.sectionPadding", "Section padding", "--section-padding", "rem", 2, 5, 0.05),
-          rangeField("layout.sectionRadius", "Section radius", "--radius-xl", "px", 20, 48, 1),
+          rangeField("layout.sectionPadding", "Section padding", "--section-padding", "rem", 0.75, 8, 0.05),
+          rangeField("layout.sectionRadius", "Section radius", "--radius-xl", "px", 0, 72, 1),
           rangeField(
             "layout.sectionHeaderMaxWidth",
             "Section header width",
             "--section-header-max-width",
             "px",
-            520,
-            900,
+            320,
+            2000,
             10
           ),
           rangeField(
@@ -258,8 +258,8 @@ export const tuningTabs = [
             "Section intro width",
             "--section-intro-max-width",
             "px",
-            480,
-            900,
+            320,
+            2000,
             10
           ),
         ],
@@ -267,14 +267,14 @@ export const tuningTabs = [
       {
         title: "Grid Rhythm",
         controls: [
-          rangeField("layout.gridGap", "Grid gap", "--grid-gap", "rem", 0.6, 2, 0.05),
+          rangeField("layout.gridGap", "Grid gap", "--grid-gap", "rem", 0, 4, 0.05),
           rangeField(
             "layout.contactGridGap",
             "Contact grid gap",
             "--contact-grid-gap",
             "rem",
-            0.6,
-            2,
+            0,
+            4,
             0.05
           ),
         ],
@@ -295,32 +295,32 @@ export const tuningTabs = [
             "Gap Below Header",
             "--header-content-gap",
             "rem",
-            4,
-            9,
+            0,
+            8,
             0.1,
-            "Spacing between the header bar and the first content block."
+            "Spacing between the header bar and the first content block. Defaults to the section spacing rhythm."
           ),
-          rangeField("header.topSpacing", "Top spacing", "--nav-top-spacing", "rem", 0, 2, 0.05),
-          rangeField("header.innerPaddingX", "Inner padding X", "--nav-inner-padding-x", "rem", 0.5, 1.5, 0.05),
-          rangeField("header.innerPaddingY", "Inner padding Y", "--nav-inner-padding-y", "rem", 0.5, 1.5, 0.05),
-          rangeField("header.radius", "Nav radius", "--nav-radius", "px", 20, 60, 1),
+          rangeField("header.topSpacing", "Top spacing", "--nav-top-spacing", "rem", 0, 4, 0.05),
+          rangeField("header.innerPaddingX", "Inner padding X", "--nav-inner-padding-x", "rem", 0.25, 3, 0.05),
+          rangeField("header.innerPaddingY", "Inner padding Y", "--nav-inner-padding-y", "rem", 0.25, 3, 0.05),
+          rangeField("header.radius", "Nav radius", "--nav-radius", "px", 0, 999, 1),
           rangeField(
             "header.backgroundAlpha",
             "Background alpha",
             "--nav-background-alpha",
             "",
-            0.4,
+            0,
             1,
             0.01
           ),
-          rangeField("header.blur", "Blur", "--nav-blur", "px", 0, 40, 1),
+          rangeField("header.blur", "Blur", "--nav-blur", "px", 0, 80, 1),
           rangeField(
             "header.borderOpacity",
             "Border opacity",
             "--nav-border-opacity",
             "",
             0,
-            0.4,
+            0.8,
             0.01
           ),
         ],
@@ -333,27 +333,18 @@ export const tuningTabs = [
             "Brand title scale",
             "--nav-brand-title-scale",
             "",
-            0.85,
-            1.2,
+            0.6,
+            1.8,
             0.01
           ),
-          rangeField(
-            "header.brandMetaScale",
-            "Brand meta scale",
-            "--nav-brand-meta-scale",
-            "",
-            0.7,
-            1.05,
-            0.01
-          ),
-          rangeField("header.navGap", "Nav gap", "--nav-link-gap", "rem", 0.2, 1.5, 0.05),
+          rangeField("header.navGap", "Nav gap", "--nav-link-gap", "rem", 0, 3, 0.05),
           rangeField(
             "header.navPaddingX",
             "Nav link padding X",
             "--nav-link-padding-x",
             "rem",
-            0.6,
-            1.4,
+            0.2,
+            2.4,
             0.05
           ),
           rangeField(
@@ -361,8 +352,8 @@ export const tuningTabs = [
             "Nav link padding Y",
             "--nav-link-padding-y",
             "rem",
-            0.45,
-            1.1,
+            0.2,
+            2.4,
             0.05
           ),
           rangeField(
@@ -370,8 +361,8 @@ export const tuningTabs = [
             "Toggle padding X",
             "--nav-toggle-padding-x",
             "rem",
-            0.6,
-            1.4,
+            0.2,
+            2.4,
             0.05
           ),
           rangeField(
@@ -379,8 +370,8 @@ export const tuningTabs = [
             "Toggle padding Y",
             "--nav-toggle-padding-y",
             "rem",
-            0.45,
-            1.1,
+            0.2,
+            2.4,
             0.05
           ),
         ],
@@ -395,25 +386,25 @@ export const tuningTabs = [
       {
         title: "Content",
         controls: [
-          rangeField("hero.contentPadding", "Content padding", "--hero-content-padding", "rem", 2, 5, 0.05),
-          rangeField("hero.contentRadius", "Content radius", "--hero-content-radius", "px", 24, 48, 1),
+          rangeField("hero.contentPadding", "Content padding", "--hero-content-padding", "rem", 0.75, 8, 0.05),
+          rangeField("hero.contentRadius", "Content radius", "--hero-content-radius", "px", 0, 72, 1),
           rangeField(
             "hero.contentMaxWidth",
             "Content width",
             "--hero-content-max-width",
             "px",
-            520,
-            900,
+            360,
+            1400,
             10
           ),
-          rangeField("hero.asideMinWidth", "Aside min width", "--hero-aside-min-width", "px", 220, 420, 4),
+          rangeField("hero.asideMinWidth", "Aside min width", "--hero-aside-min-width", "px", 160, 720, 4),
           rangeField(
             "hero.titleMaxWidth",
             "Headline width",
             "--hero-title-max-width",
             "ch",
-            8,
-            32,
+            6,
+            60,
             0.5
           ),
           rangeField(
@@ -421,8 +412,8 @@ export const tuningTabs = [
             "Intro width",
             "--hero-intro-max-width",
             "ch",
-            40,
-            80,
+            24,
+            120,
             1
           ),
           rangeField(
@@ -430,8 +421,8 @@ export const tuningTabs = [
             "Positioning width",
             "--hero-positioning-max-width",
             "ch",
-            40,
-            80,
+            24,
+            120,
             1
           ),
         ],
@@ -439,20 +430,20 @@ export const tuningTabs = [
       {
         title: "Rhythm",
         controls: [
-          rangeField("hero.actionsGap", "CTA gap", "--hero-actions-gap", "rem", 0.5, 1.5, 0.05),
-          rangeField("hero.quickLinkGap", "Quick-link gap", "--hero-quick-link-gap", "rem", 0.5, 1.5, 0.05),
-          rangeField("hero.asideGap", "Aside gap", "--hero-aside-gap", "rem", 1, 2.5, 0.05),
-          rangeField("hero.panelPadding", "Panel padding", "--hero-panel-padding", "rem", 1, 2.5, 0.05),
+          rangeField("hero.actionsGap", "CTA gap", "--hero-actions-gap", "rem", 0, 3, 0.05),
+          rangeField("hero.quickLinkGap", "Quick-link gap", "--hero-quick-link-gap", "rem", 0, 3, 0.05),
+          rangeField("hero.asideGap", "Aside gap", "--hero-aside-gap", "rem", 0, 5, 0.05),
+          rangeField("hero.panelPadding", "Panel padding", "--hero-panel-padding", "rem", 0.5, 4, 0.05),
           rangeField(
             "hero.spotlightPadding",
             "Spotlight padding",
             "--hero-spotlight-padding",
             "rem",
-            1,
-            2.5,
+            0.5,
+            4,
             0.05
           ),
-          rangeField("hero.panelGap", "Panel gap", "--hero-panel-gap", "rem", 0.5, 1.5, 0.05),
+          rangeField("hero.panelGap", "Panel gap", "--hero-panel-gap", "rem", 0, 3, 0.05),
         ],
       },
     ],
@@ -465,43 +456,43 @@ export const tuningTabs = [
       {
         title: "Card Shell",
         controls: [
-          rangeField("projectGrid.gap", "Grid gap", "--project-grid-gap", "rem", 0.6, 2, 0.05),
-          rangeField("projectGrid.cardRadius", "Card radius", "--project-card-radius", "px", 18, 36, 1),
-          rangeField("projectGrid.cardPadding", "Card padding", "--project-card-padding", "rem", 1, 2.5, 0.05),
+          rangeField("projectGrid.gap", "Grid gap", "--project-grid-gap", "rem", 0, 4, 0.05),
+          rangeField("projectGrid.cardRadius", "Card radius", "--project-card-radius", "px", 0, 60, 1),
+          rangeField("projectGrid.cardPadding", "Card padding", "--project-card-padding", "rem", 0.5, 4, 0.05),
           rangeField(
             "projectGrid.visualMinHeight",
             "Visual height",
             "--project-card-visual-min-height",
             "px",
-            200,
-            360,
+            120,
+            640,
             4
           ),
-          rangeField("projectGrid.bodyGap", "Body gap", "--project-card-body-gap", "rem", 0.6, 1.8, 0.05),
+          rangeField("projectGrid.bodyGap", "Body gap", "--project-card-body-gap", "rem", 0, 3, 0.05),
         ],
       },
       {
         title: "Copy and Hover",
         controls: [
-          rangeField("projectGrid.copyTitleGap", "Title gap", "--project-card-copy-title-gap", "rem", 0.2, 1, 0.05),
+          rangeField("projectGrid.copyTitleGap", "Title gap", "--project-card-copy-title-gap", "rem", 0, 2, 0.05),
           rangeField(
             "projectGrid.copyParagraphGap",
             "Paragraph gap",
             "--project-card-copy-paragraph-gap",
             "rem",
-            0.5,
-            1.5,
+            0,
+            3,
             0.05
           ),
-          rangeField("projectGrid.metaGap", "Meta gap", "--project-card-meta-gap", "rem", 0.4, 1.2, 0.05),
-          rangeField("projectGrid.tagGap", "Tag gap", "--project-card-tag-gap", "rem", 0.4, 1.2, 0.05),
+          rangeField("projectGrid.metaGap", "Meta gap", "--project-card-meta-gap", "rem", 0, 2.5, 0.05),
+          rangeField("projectGrid.tagGap", "Tag gap", "--project-card-tag-gap", "rem", 0, 2.5, 0.05),
           rangeField(
             "projectGrid.hoverLift",
             "Hover lift",
             "--project-card-hover-lift",
             "px",
             0,
-            8,
+            16,
             0.25
           ),
           rangeField(
@@ -509,8 +500,8 @@ export const tuningTabs = [
             "Hover scale",
             "--project-card-hover-scale",
             "",
-            1,
-            1.05,
+            0.96,
+            1.12,
             0.001
           ),
           rangeField(
@@ -519,7 +510,7 @@ export const tuningTabs = [
             "--project-card-shadow-alpha",
             "",
             0,
-            0.6,
+            1,
             0.01
           ),
         ],
@@ -539,23 +530,23 @@ export const tuningTabs = [
             "Hero padding",
             "--case-study-hero-padding",
             "rem",
-            2,
-            5,
+            0.75,
+            8,
             0.05
           ),
-          rangeField("caseStudy.gridGap", "Hero gap", "--case-study-hero-gap", "rem", 1, 2.5, 0.05),
+          rangeField("caseStudy.gridGap", "Hero gap", "--case-study-hero-gap", "rem", 0, 5, 0.05),
           rangeField(
             "caseStudy.contentMaxWidth",
             "Content width",
             "--case-study-content-max-width",
             "px",
-            520,
-            900,
+            360,
+            1600,
             10
           ),
-          rangeField("caseStudy.metaMinWidth", "Meta min width", "--case-study-meta-min-width", "px", 220, 360, 4),
-          rangeField("caseStudy.summaryMaxWidth", "Summary width", "--case-study-summary-max-width", "ch", 42, 72, 1),
-          rangeField("caseStudy.metaGap", "Meta gap", "--case-study-meta-gap", "rem", 0.6, 1.5, 0.05),
+          rangeField("caseStudy.metaMinWidth", "Meta min width", "--case-study-meta-min-width", "px", 160, 620, 4),
+          rangeField("caseStudy.summaryMaxWidth", "Summary width", "--case-study-summary-max-width", "ch", 24, 180, 1),
+          rangeField("caseStudy.metaGap", "Meta gap", "--case-study-meta-gap", "rem", 0, 3, 0.05),
         ],
       },
       {
@@ -566,8 +557,17 @@ export const tuningTabs = [
             "Detail padding",
             "--detail-card-padding",
             "rem",
-            1,
-            2,
+            0.5,
+            4,
+            0.05
+          ),
+          rangeField(
+            "caseStudy.detailItemPaddingY",
+            "Detail vertical padding",
+            "--detail-list-item-padding-y",
+            "rem",
+            0.25,
+            3,
             0.05
           ),
           rangeField(
@@ -575,8 +575,8 @@ export const tuningTabs = [
             "Detail grid gap",
             "--detail-grid-gap",
             "rem",
-            0.6,
-            2,
+            0,
+            4,
             0.05
           ),
           rangeField(
@@ -584,12 +584,12 @@ export const tuningTabs = [
             "Related grid gap",
             "--related-grid-gap",
             "rem",
-            0.6,
-            2,
+            0,
+            4,
             0.05
           ),
-          rangeField("caseStudy.calloutPadding", "Callout padding", "--flagship-callout-padding", "rem", 1.2, 3, 0.05),
-          rangeField("caseStudy.calloutRadius", "Callout radius", "--flagship-callout-radius", "px", 20, 44, 1),
+          rangeField("caseStudy.calloutPadding", "Callout padding", "--flagship-callout-padding", "rem", 0.5, 5, 0.05),
+          rangeField("caseStudy.calloutRadius", "Callout radius", "--flagship-callout-radius", "px", 0, 72, 1),
         ],
       },
     ],
@@ -602,14 +602,14 @@ export const tuningTabs = [
       {
         title: "Gallery",
         controls: [
-          rangeField("media.galleryGap", "Gallery gap", "--media-gallery-gap", "rem", 0.5, 1.5, 0.05),
+          rangeField("media.galleryGap", "Gallery gap", "--media-gallery-gap", "rem", 0, 3, 0.05),
           rangeField(
             "media.galleryStageMinHeight",
             "Gallery height",
             "--media-gallery-stage-min-height",
             "px",
-            320,
-            620,
+            220,
+            960,
             4
           ),
           rangeField(
@@ -617,8 +617,8 @@ export const tuningTabs = [
             "Summary min width",
             "--media-summary-min-width",
             "px",
-            220,
-            420,
+            160,
+            640,
             4
           ),
           rangeField(
@@ -626,8 +626,8 @@ export const tuningTabs = [
             "Summary padding",
             "--media-gallery-summary-padding",
             "rem",
-            1,
-            2.5,
+            0.5,
+            4,
             0.05
           ),
           rangeField(
@@ -635,8 +635,8 @@ export const tuningTabs = [
             "Controls gap",
             "--media-gallery-controls-gap",
             "rem",
-            0.5,
-            1.5,
+            0,
+            3,
             0.05
           ),
           rangeField(
@@ -644,8 +644,8 @@ export const tuningTabs = [
             "Caption gap",
             "--media-caption-gap",
             "rem",
-            0.3,
-            1.2,
+            0,
+            2,
             0.05
           ),
           rangeField(
@@ -653,13 +653,13 @@ export const tuningTabs = [
             "Divider spacing",
             "--media-divider-spacing",
             "rem",
-            0.5,
-            2,
+            0,
+            4,
             0.05
           ),
-          rangeField("media.framePadding", "Frame padding", "--media-frame-padding", "rem", 1, 3, 0.05),
-          rangeField("media.frameRadius", "Frame radius", "--media-frame-radius", "px", 16, 36, 1),
-          rangeField("media.frameMinHeight", "Frame height", "--media-frame-min-height", "px", 320, 560, 4),
+          rangeField("media.framePadding", "Frame padding", "--media-frame-padding", "rem", 0, 5, 0.05),
+          rangeField("media.frameRadius", "Frame radius", "--media-frame-radius", "px", 0, 60, 1),
+          rangeField("media.frameMinHeight", "Frame height", "--media-frame-min-height", "px", 180, 900, 4),
         ],
       },
       {
@@ -670,8 +670,8 @@ export const tuningTabs = [
             "Slideshow height",
             "--feature-stage-min-height",
             "px",
-            420,
-            760,
+            240,
+            1100,
             4
           ),
           rangeField(
@@ -679,8 +679,8 @@ export const tuningTabs = [
             "Slideshow radius",
             "--feature-stage-radius",
             "px",
-            20,
-            44,
+            0,
+            72,
             1
           ),
           rangeField(
@@ -688,18 +688,18 @@ export const tuningTabs = [
             "Slideshow padding",
             "--feature-stage-padding",
             "rem",
-            0.75,
-            1.75,
+            0,
+            3,
             0.05
           ),
-          rangeField("media.railGap", "Rail gap", "--feature-rail-gap", "rem", 0.5, 1.5, 0.05),
+          rangeField("media.railGap", "Rail gap", "--feature-rail-gap", "rem", 0, 3, 0.05),
           rangeField(
             "media.railPadding",
             "Rail padding",
             "--feature-rail-padding",
             "rem",
-            0.6,
-            1.4,
+            0,
+            2.5,
             0.05
           ),
           rangeField(
@@ -707,8 +707,8 @@ export const tuningTabs = [
             "Rail item width",
             "--feature-rail-item-min-width",
             "px",
-            64,
-            140,
+            48,
+            220,
             2
           ),
           rangeField(
@@ -716,8 +716,8 @@ export const tuningTabs = [
             "Rail item padding",
             "--feature-rail-item-padding",
             "rem",
-            0.6,
-            1.4,
+            0.25,
+            2.5,
             0.05
           ),
         ],
@@ -731,7 +731,7 @@ export const tuningTabs = [
             "--media-shadow-alpha",
             "",
             0,
-            0.45,
+            1,
             0.01
           ),
           rangeField(
@@ -739,8 +739,8 @@ export const tuningTabs = [
             "Contain radius",
             "--media-contain-radius",
             "px",
-            16,
-            36,
+            0,
+            60,
             1
           ),
         ],
@@ -760,8 +760,8 @@ export const tuningTabs = [
             "Duration",
             "--motion-duration",
             "ms",
-            80,
-            360,
+            0,
+            1000,
             5
           ),
           selectField("motion.ease", "Easing", "--motion-ease", motionEaseOptions),
@@ -771,7 +771,7 @@ export const tuningTabs = [
             "--motion-interactive-lift",
             "px",
             0,
-            6,
+            16,
             0.25
           ),
           rangeField(
@@ -779,8 +779,8 @@ export const tuningTabs = [
             "Interactive scale",
             "--motion-interactive-scale",
             "",
-            1,
-            1.04,
+            0.95,
+            1.12,
             0.001
           ),
           toggleField("motion.reducedMotion", "Reduced motion override"),
@@ -809,17 +809,17 @@ export const tuningTabs = [
             "--debug-grid-opacity",
             "",
             0,
-            0.18,
+            0.5,
             0.005
           ),
-          rangeField("debug.gridSize", "Grid size", "--debug-grid-size", "px", 32, 120, 2),
+          rangeField("debug.gridSize", "Grid size", "--debug-grid-size", "px", 8, 240, 2),
           rangeField(
             "debug.guideOpacity",
             "Guide opacity",
             "--debug-guide-opacity",
             "",
             0,
-            0.5,
+            1,
             0.01
           ),
           rangeField(
@@ -828,10 +828,10 @@ export const tuningTabs = [
             "--debug-outline-opacity",
             "",
             0,
-            0.5,
+            1,
             0.01
           ),
-          rangeField("debug.outlineWidth", "Outline width", "--debug-outline-width", "px", 1, 4, 0.5),
+          rangeField("debug.outlineWidth", "Outline width", "--debug-outline-width", "px", 0.5, 8, 0.5),
         ],
       },
     ],

@@ -1,3 +1,5 @@
+import InteractiveWireSurface from "./InteractiveWireSurface";
+
 function ActionTile({ item, navigate }) {
   if (item.kind === "internal" && item.target) {
     return (
@@ -23,8 +25,8 @@ function ActionTile({ item, navigate }) {
 export default function Hero({ actionLinks, content, navigate }) {
   return (
     <section className="hero shell" id="overview">
-      <div className="hero__content">
-        <p className="section-eyebrow">{content.eyebrow}</p>
+      <div className="hero__content hero__content--surface">
+        <InteractiveWireSurface accent="#8fb7ff" variant="hero" />
         <h1 className="hero__title">{content.title}</h1>
         <p className="hero__intro">{content.intro}</p>
         <p className="hero__positioning">{content.positioning}</p>
@@ -63,7 +65,8 @@ export default function Hero({ actionLinks, content, navigate }) {
           </ul>
         </div>
 
-        <div className="hero-panel hero-panel--spotlight">
+        <div className="hero-panel hero-panel--spotlight hero-panel--surface">
+          <InteractiveWireSurface accent="#f2b76a" variant="compact" />
           <p className="hero-panel__eyebrow">{content.spotlight.eyebrow}</p>
           <h2>{content.spotlight.title}</h2>
           <p>{content.spotlight.summary}</p>

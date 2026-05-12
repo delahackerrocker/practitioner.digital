@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import ProjectCard from "../components/ProjectCard";
+import ProjectGrid from "../components/ProjectGrid";
 import Section from "../components/Section";
 import {
   callOfDutyCaseStudies,
@@ -55,11 +55,7 @@ export default function Home({ navigate }) {
           </div>
         </div>
 
-        <div className="project-grid">
-          {callOfDutyCaseStudies.map((project) => (
-            <ProjectCard key={project.slug} navigate={navigate} project={project} />
-          ))}
-        </div>
+        <ProjectGrid navigate={navigate} projects={callOfDutyCaseStudies} />
       </Section>
 
       <Section
@@ -86,17 +82,22 @@ export default function Home({ navigate }) {
       >
         <div className="case-study-prompt">
           <p>
-            Start with Call of Duty for player-facing flows, feedback systems, social UX, and
-            combat communication, then use the rest of the portfolio to see how that same hybrid
-            approach carries into XR tools and original IP.
+            The hub connects the major proof points: extraction rewards, interaction feedback,
+            visual-system guidance, squad continuity, stealth readability, and production-ready
+            decks from five shipped releases.
           </p>
-          <button
-            className="button button--primary"
-            onClick={() => navigate(caseStudyPrompt.action.target)}
-            type="button"
+          <div
+            className="case-study-prompt__action"
+            style={{ "--project-image": `url(${callOfDutyHub.cardImage})` }}
           >
-            {caseStudyPrompt.action.label}
-          </button>
+            <button
+              className="button button--primary"
+              onClick={() => navigate(caseStudyPrompt.action.target)}
+              type="button"
+            >
+              {caseStudyPrompt.action.label}
+            </button>
+          </div>
         </div>
       </Section>
 
