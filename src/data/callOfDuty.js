@@ -385,13 +385,13 @@ export const callOfDutyHub = {
   context:
     "The hub frames the Call of Duty work at a product level, then routes directly into the strongest artifact-led case studies.",
   challenge: [
-    "Present a broad body of franchise work without collapsing everything into one undifferentiated page.",
-    "Make the strongest case studies easier to scan, compare, and revisit individually.",
+    "Separate five different proof points: Exfil AAR, BO6 keypad, Warzone / Cold War guidance, Play Again With Team, and BO6 stealth readability.",
+    "Help recruiters and hiring managers scan role, project type, timeframe, and media evidence before opening a deeper case study.",
   ],
   approach: [
-    "Organized the strongest artifacts into five dedicated case studies with tailored media treatment.",
-    "Kept the hub concise so it frames the body of work without repeating the full case-study material.",
-    "Moved PDF decks from static attachments to in-site slideshows rendered page by page.",
+    "Grouped the hub around shipped interaction problems: rewards, feedback, visual systems, squad continuity, and stealth-state communication.",
+    "Kept the hub short, then moved detailed evidence into dedicated pages with slideshows, videos, and inspectable diagrams.",
+    "Used consistent metadata and card structure so very different artifacts still feel comparable.",
   ],
   outcome: [
     "Makes a broad body of franchise work easier to scan and compare.",

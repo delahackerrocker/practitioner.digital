@@ -64,8 +64,8 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Problem"
-        intro="The franchise work spans multiple releases and interaction types, so the hub clarifies scope before handing off to individual artifacts."
-        title="Portfolio Information Architecture"
+        intro="The hub has to turn franchise-scale UI/UX work into a quick, credible path: what shipped, what each artifact proves, and where to go next."
+        title="Make Five Shipped Artifacts Easy to Read"
       >
         <DetailList items={project.challenge} />
       </Section>
@@ -73,8 +73,8 @@ export default function CallOfDutyHubPage({ navigate, project }) {
       <Section
         className="section--compact"
         eyebrow="Approach"
-        intro="The hub keeps the overview concise, then routes into artifact-led pages where decks, video, and diagrams carry the detailed evidence."
-        title="Cluster Structure"
+        intro="Each card routes to the artifact format that best explains the work: full deck slideshows, motion clips, flow diagrams, and focused stills."
+        title="Artifact-Led Case Study System"
       >
         <DetailList items={project.approach} />
       </Section>
