@@ -19,7 +19,7 @@ export const portfolioWork = [
     tags: ["Game UX", "Technical Design", "Live Service"],
     href: "/work/call-of-duty",
     cta: "Read the Full Case →",
-    image: "/assets/work/call-of-duty.jpg",
+    image: "/assets/projects/call-of-duty/raven/weapon-selection.webp",
     imageAlt: "Warzone weapon-selection interface from the Raven Chapter 2 style guide",
     wide: true,
   },
