@@ -1,7 +1,7 @@
 import { portfolioWork } from "./portfolioWork.js";
 
 export const referenceSite = {
-  brand: { initials: "SD", name: "Steven de la Torre" },
+  brand: { initials: "SD", name: "Steven de la Torre", givenName: "Steven", familyName: "de la Torre" },
   navigation: [
     { label: "Work", href: "/work" },
     { label: "About", href: "/about" },

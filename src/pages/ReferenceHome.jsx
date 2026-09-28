@@ -20,6 +20,15 @@ export default function ReferenceHome({ navigate }) {
         <SpecTable title="Builder Spec" rows={homePage.spec} />
       </section>
       <Marquee items={homePage.capabilities} />
+      <section className="section shell" id="work">
+        <SectionIntro eyebrow="Featured Work" />
+        <div className="work-grid">{homePage.featuredStudies.map((project) => <WorkCard key={project.title} project={project} navigate={navigate} />)}</div>
+        <HardButton href="/work" navigate={navigate} tone="plain">See All Work and Experiments →</HardButton>
+      </section>
+      <section className="section shell">
+        <SectionIntro eyebrow="How I Work" title="What Working With Me Looks Like." />
+        <ProcessGrid items={homePage.process} />
+      </section>
       <section className="section section--proof shell">
         <SectionIntro eyebrow="Proof, Not Adjectives" />
         <MetricGrid items={homePage.proof} />
@@ -29,11 +38,6 @@ export default function ReferenceHome({ navigate }) {
         <SectionIntro eyebrow="Typical Engagements" title="How You Can Hire Me." />
         <EngagementGrid items={homePage.engagements} />
         <HardButton href={referenceSite.primaryCta.href} navigate={navigate}>Book a 30-Min Project Call →</HardButton>
-      </section>
-      <section className="section shell" id="work">
-        <SectionIntro eyebrow="Featured Work" />
-        <div className="work-grid">{homePage.featuredStudies.map((project) => <WorkCard key={project.title} project={project} navigate={navigate} />)}</div>
-        <HardButton href="/work" navigate={navigate} tone="plain">See All Work and Experiments →</HardButton>
       </section>
       <section className="statement-section"><div className="shell">
         <SectionIntro eyebrow="What I Actually Do" title="I Turn Fuzzy Ideas Into Things People Can Use, Play, and Understand." />
@@ -53,10 +57,6 @@ export default function ReferenceHome({ navigate }) {
           cta={{ href: "/about", label: "Read the Full Story →" }}
           navigate={navigate}
         />
-      </section>
-      <section className="section shell">
-        <SectionIntro eyebrow="How I Work" title="What Working With Me Looks Like." />
-        <ProcessGrid items={homePage.process} />
       </section>
       <PageCta
         title="Have Something Strange, Useful, or Stuck?"

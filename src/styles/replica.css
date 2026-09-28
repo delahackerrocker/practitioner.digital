@@ -41,8 +41,9 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
 .site-header { position: relative; z-index: 20; border-bottom: var(--rule); background: #fff; color: #050505; }
 .site-header__inner { width: calc(100% - (2 * var(--gutter))); min-height: 68px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .brand { display: inline-flex; align-items: center; gap: .65rem; font-weight: 800; text-transform: uppercase; }
-.brand__mark { display: grid; place-items: center; width: 34px; height: 34px; background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: .78rem; }
+.brand__mark { display: grid; place-items: center; width: 34px; height: 34px; background: var(--cyan); color: var(--ink); font-family: var(--mono); font-size: .78rem; }
 .brand__name { font-size: .95rem; }
+.brand__name > span { white-space: nowrap; }
 .primary-nav { display: flex; align-items: center; gap: clamp(1.4rem, 3.4vw, 2.9rem); }
 .primary-nav > a:not(.hard-button) { font-family: var(--mono); font-size: .76rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 .primary-nav > a:not(.hard-button)::after { content: ""; display: block; height: 2px; margin-top: 3px; background: var(--cyan); transform: scaleX(0); transform-origin: left; transition: transform 160ms ease; }

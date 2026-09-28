@@ -25,7 +25,9 @@ export default function ReplicaHeader({ navigate, pathname }) {
       <div className="site-header__inner">
         <SiteLink className="brand" href="/" navigate={navigate} aria-label="Home">
           <span className="brand__mark">{referenceSite.brand.initials}</span>
-          <span className="brand__name">{referenceSite.brand.name}</span>
+          <span className="brand__name">
+            <span>{referenceSite.brand.givenName}</span>{" "}<span>{referenceSite.brand.familyName}</span>
+          </span>
         </SiteLink>
 
         <button
