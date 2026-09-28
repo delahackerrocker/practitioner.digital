@@ -182,6 +182,23 @@ export function StackGrid({ groups }) {
   ))}</div>;
 }
 
+export function WorkCard({ project, navigate }) {
+  return (
+    <SiteLink className={`work-card${project.wide ? " work-card--wide" : ""}`} href={project.href} navigate={navigate}>
+      <div className="work-card__image">
+        <img src={project.image} alt={project.imageAlt} />
+      </div>
+      <div className="work-card__content">
+        <p className="work-card__meta">{project.meta}</p>
+        <h3>{project.title}</h3>
+        <p>{project.summary}</p>
+        <ul className="tag-list">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
+        <strong>{project.cta}</strong>
+      </div>
+    </SiteLink>
+  );
+}
+
 export function PageCta({ eyebrow = "Let’s Talk", title, body, cta, secondaryCta, navigate }) {
   return (
     <section className="page-cta">

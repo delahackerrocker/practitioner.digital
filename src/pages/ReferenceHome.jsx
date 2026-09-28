@@ -1,6 +1,6 @@
 import { homePage, referenceSite } from "../data/referenceContent";
 import {
-  CaseStudyCard, EngagementGrid, HardButton, Kicker, Marquee, MetricGrid, PageCta,
+  WorkCard, EngagementGrid, HardButton, Kicker, Marquee, MetricGrid, PageCta,
   ProcessGrid, ProductCard, ProfileBlock, SectionIntro, SpecTable, WorkRow,
 } from "../components/ReplicaPrimitives";
 
@@ -31,8 +31,8 @@ export default function ReferenceHome({ navigate }) {
         <HardButton href={referenceSite.primaryCta.href} navigate={navigate}>Book a 30-Min Project Call →</HardButton>
       </section>
       <section className="section shell" id="work">
-        <SectionIntro eyebrow="Selected Case Studies" />
-        <div className="case-grid">{homePage.featuredStudies.map((study) => <CaseStudyCard key={study.slug} study={study} navigate={navigate} />)}</div>
+        <SectionIntro eyebrow="Featured Work" />
+        <div className="work-grid">{homePage.featuredStudies.map((project) => <WorkCard key={project.title} project={project} navigate={navigate} />)}</div>
         <HardButton href="/work" navigate={navigate} tone="plain">See All Work and Experiments →</HardButton>
       </section>
       <section className="statement-section"><div className="shell">

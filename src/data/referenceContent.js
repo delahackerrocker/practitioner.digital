@@ -1,4 +1,4 @@
-import { nationwideStudy } from "./nationwide";
+import { portfolioWork } from "./portfolioWork.js";
 
 export const referenceSite = {
   brand: { initials: "SD", name: "Steven de la Torre" },
@@ -46,25 +46,7 @@ const products = [
   },
 ];
 
-const featuredStudies = [
-  nationwideStudy,
-  {
-    slug: "call-of-duty",
-    index: "02",
-    meta: "Five Releases · AAA / Live Service",
-    title: "Player-Facing Systems for Call of Duty",
-    summary: "Weapon icons, onboarding and first-time-user experience, post-match communication, interface flows, and technical design inside one of the largest live game ecosystems in the world.",
-    metric: "UX + Systems",
-  },
-  {
-    slug: "gr1m01re",
-    index: "03",
-    meta: "GR1M01RE · Unity 6.5",
-    title: "Building a Tactical RPG From Intent to Playable Systems",
-    summary: "A city-scale indie RPG combining overhead tactics, over-the-shoulder action, guns, magic, melee, hacking, procedural spaces, and custom development tools.",
-    metric: "Design → Build",
-  },
-];
+const featuredStudies = portfolioWork.slice(0, 3);
 
 const engagements = [
   { title: "Build Your AI App", bullets: ["Turn an idea into a working product prototype", "Define the UX, interaction model, and technical path", "Build the highest-risk user journey first", "Leave your team a system it can understand and continue"] },
@@ -117,7 +99,7 @@ export const workPage = {
   title: "Selected Work and Experiments.",
   intro: "Player-facing game systems, original worlds, agentic tools, web platforms, and focused interaction experiments.",
   products,
-  studies: featuredStudies,
+  work: portfolioWork,
 };
 
 export const aboutPage = {

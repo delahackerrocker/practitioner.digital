@@ -8,14 +8,21 @@ import ReferenceHome from "./pages/ReferenceHome";
 import ReferenceServices from "./pages/ReferenceServices";
 import ReferenceWork from "./pages/ReferenceWork";
 import NationwideCaseStudy from "./pages/NationwideCaseStudy";
+import VisualCaseStudy from "./pages/VisualCaseStudy";
+import { accurateIt } from "./data/accurateIt";
 
 const pageRoutes = {
+  "/work/accurate-it": { component: AccurateItCaseStudy, title: "Accurate IT — Steven de la Torre" },
   "/work/nationwide-arena": { component: NationwideCaseStudy, title: "Nationwide Arena — Steven de la Torre" },
   "/": { component: ReferenceHome, title: "Steven de la Torre — UX Designer, Game Developer, and Agentic Builder" },
   "/work": { component: ReferenceWork, title: "Work — Steven de la Torre" },
   "/about": { component: ReferenceAbout, title: "About — Steven de la Torre" },
   "/services": { component: ReferenceServices, title: "Services — Steven de la Torre" },
 };
+
+function AccurateItCaseStudy({ navigate }) {
+  return <VisualCaseStudy study={accurateIt} navigate={navigate} />;
+}
 
 const caseStudyRoutes = ["/work/call-of-duty", "/work/gr1m01re"];
 

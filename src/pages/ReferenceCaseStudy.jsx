@@ -1,3 +1,5 @@
+import RavenGallery from "./RavenGallery";
+import { StudyImage } from "./VisualCaseStudy";
 import SiteLink from "../components/SiteLink";
 import { MetricGrid, PageCta, ProcessGrid, StackGrid } from "../components/ReplicaPrimitives";
 import { referenceSite } from "../data/referenceContent";
@@ -13,9 +15,11 @@ export default function ReferenceCaseStudy({ study, navigate }) {
         <MetricGrid items={study.metrics} compact />
       </header>
       <div className="case-study-body shell">
+        {study.slug === "call-of-duty" && <StudyImage eager image={{src: "/assets/projects/call-of-duty/raven/weapon-selection.webp", alt: "Warzone weapon selection with a weapon list, detailed model, and shared-content branding", caption: "Raven Team Reference · Chapter 2 Style Guide, Page 19"}} />}
         {study.sections.map((section) => (
           <section key={section.title}><h2>{section.title}</h2>{section.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>
         ))}
+        {study.slug === "call-of-duty" && <RavenGallery />}
         <section><h2>How It Went</h2><ProcessGrid items={study.process} /></section>
         <section><h2>Stack</h2><StackGrid groups={[{ title: "Tools and Technologies", items: study.stack }]} /></section>
       </div>

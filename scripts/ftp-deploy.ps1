@@ -130,27 +130,32 @@ function Send-FtpFile {
   )
 
   $uploadUri = "$baseUri/$RemotePath"
-  $startInfo = [System.Diagnostics.ProcessStartInfo]::new()
-  $startInfo.FileName = "curl.exe"
-  $startInfo.Arguments = "--config - --ssl-reqd --ftp-create-dirs --silent --show-error --fail --upload-file `"$LocalPath`" `"$uploadUri`""
-  $startInfo.UseShellExecute = $false
-  $startInfo.CreateNoWindow = $true
-  $startInfo.RedirectStandardInput = $true
-  $startInfo.RedirectStandardOutput = $true
-  $startInfo.RedirectStandardError = $true
-  $startInfo.StandardInputEncoding = [System.Text.UTF8Encoding]::new($false)
+  $configPath = [System.IO.Path]::GetTempFileName()
+  $configLine = "user = `"$($profile.username):$password`"`n"
+  [System.IO.File]::WriteAllText($configPath, $configLine, [System.Text.UTF8Encoding]::new($false))
 
-  $process = [System.Diagnostics.Process]::Start($startInfo)
-  $process.StandardInput.WriteLine("user = `"$($profile.username):$password`"")
-  $process.StandardInput.Close()
-  $standardOutput = $process.StandardOutput.ReadToEnd()
-  $standardError = $process.StandardError.ReadToEnd()
-  $process.WaitForExit()
+  try {
+    $startInfo = [System.Diagnostics.ProcessStartInfo]::new()
+    $startInfo.FileName = "curl.exe"
+    $startInfo.Arguments = "--config `"$configPath`" --ssl-reqd --ftp-create-dirs --silent --show-error --fail --upload-file `"$LocalPath`" `"$uploadUri`""
+    $startInfo.UseShellExecute = $false
+    $startInfo.CreateNoWindow = $true
+    $startInfo.RedirectStandardOutput = $true
+    $startInfo.RedirectStandardError = $true
+    $process = [System.Diagnostics.Process]::Start($startInfo)
+    $standardOutput = $process.StandardOutput.ReadToEnd()
+    $standardError = $process.StandardError.ReadToEnd()
+    $process.WaitForExit()
 
-  if ($process.ExitCode -ne 0) {
-    throw "curl upload failed for $RemotePath (exit $($process.ExitCode)): $standardError"
+    if ($process.ExitCode -ne 0) {
+      throw "curl upload failed for $RemotePath (exit $($process.ExitCode)): $standardError"
+    }
+    if ($standardOutput) { Write-Verbose $standardOutput }
   }
-  if ($standardOutput) { Write-Verbose $standardOutput }
+  finally {
+    Remove-Item -LiteralPath $configPath -Force -ErrorAction SilentlyContinue
+  }
+
   Write-Output "Uploaded $RemotePath"
 }
 
