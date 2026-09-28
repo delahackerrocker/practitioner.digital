@@ -120,6 +120,11 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
 .case-card > div { align-self: end; display: flex; align-items: end; justify-content: space-between; margin-top: 2rem; }
 .case-card strong { font-size: 1.5rem; }
 .case-card span { font-family: var(--mono); font-size: .72rem; text-transform: uppercase; }
+.case-card--visual { grid-column: 1 / -1; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); column-gap: 2rem; }
+.case-card--visual > .case-card__image { grid-column: 2; grid-row: 1 / 5; align-self: center; width: 100%; height: auto; border: var(--hairline); }
+.case-card--visual > p, .case-card--visual > h3, .case-card--visual > div { grid-column: 1; }
+.case-card--visual h3 { font-size: 2.5rem; letter-spacing: 0; }
+.case-card--visual > div { gap: 1rem; flex-wrap: wrap; }
 
 .statement-section, .split-band { padding-block: var(--section-space); background: var(--cyan); border-block: var(--rule); }
 .statement-section .section-intro { max-width: 1000px; }
@@ -142,7 +147,6 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
 
 .section--profile { display: block; }
 .profile-block { width: 100%; }
-.about-hero__portrait { display: grid; place-items: center; min-height: 380px; background: var(--ink); color: var(--cyan); border: var(--rule); font-family: var(--heavy); font-size: 5rem; }
 .profile-block h2 { margin-top: 1.5rem; }
 .profile-block h2 span { display: block; }
 .profile-block .lede { max-width: 72ch; }
@@ -165,8 +169,10 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
 .page-cta .button-row { justify-content: flex-end; margin-top: 0; }
 .page-hero { min-height: 440px; display: grid; align-content: center; padding-block: 5rem; }
 .page-hero .section-intro { max-width: 920px; }
-.about-hero { display: grid; grid-template-columns: .65fr 1.35fr; align-items: center; gap: 4rem; padding-block: var(--section-space); }
-.about-hero__portrait { min-height: 480px; }
+.work-hero .section-intro { min-width: 0; max-width: 100%; }
+.about-hero { padding-block: var(--section-space); }
+.about-hero .section-intro { max-width: none; }
+.about-hero h1 { font-size: 5rem; letter-spacing: 0; line-height: 1.05; text-wrap: balance; }
 .prose-section { max-width: 840px; }
 .prose-section p { margin-top: 1.4rem; font-size: 1.1rem; }
 .principle-grid, .audience-grid, .topic-grid, .quote-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 3rem; border: var(--rule); }
@@ -226,7 +232,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
   .engagement-grid, .process-grid { grid-template-columns: repeat(2, 1fr); }
   .engagement-card:nth-child(2n), .process-grid > li:nth-child(2n) { border-right: 0; }
   .engagement-card, .process-grid > li { border-bottom: var(--hairline); }
-  .about-hero { grid-template-columns: 1fr; }
+  .about-hero h1 { font-size: 3.5rem; }
   .stack-grid { grid-template-columns: repeat(3, 1fr); }
   .stack-grid section { border-bottom: var(--hairline); }
   .split-band__grid { grid-template-columns: 1fr 1fr; }
@@ -235,6 +241,10 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
 }
 
 @media (max-width: 720px) {
+  .work-hero h1 { font-size: 2rem; letter-spacing: 0; }
+  .case-card--visual { grid-template-columns: minmax(0, 1fr); }
+  .case-card--visual > .case-card__image { grid-column: 1; grid-row: auto; margin-bottom: 1.5rem; }
+  .case-card--visual h3 { font-size: 1.7rem; }
   :root { --gutter: 1rem; --section-space: 4.5rem; }
   h1 { font-size: clamp(2.65rem, 12.5vw, 3.15rem); }
   .brand__name { font-size: .82rem; }
@@ -255,8 +265,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
   .page-cta .shell, .free-panel, .site-footer__lead, .footer-follow { align-items: flex-start; flex-direction: column; }
   .page-cta .button-row { justify-content: flex-start; }
   .split-band article { padding: 1.5rem 0 0; border-left: 0; border-top: var(--rule); }
-  .about-hero { gap: 2rem; }
-  .about-hero__portrait { min-height: 340px; }
+  .about-hero h1 { font-size: 2.1rem; }
   .site-footer__grid { grid-template-columns: 1fr; gap: 2rem; }
   .site-footer__bottom { flex-direction: column; }
 }

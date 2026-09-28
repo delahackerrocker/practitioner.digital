@@ -1,4 +1,6 @@
 import fs from "node:fs";
+import assert from "node:assert/strict";
+import { nationwideAsset, nationwideStudy } from "../src/data/nationwide.js";
 
 const requiredFiles = [
   "src/data/referenceContent.js",
@@ -12,6 +14,9 @@ const requiredFiles = [
   "src/pages/ReferenceServices.jsx",
   "src/pages/ReferenceCaseStudy.jsx",
   "src/styles/replica.css",
+  "src/data/nationwide.js",
+  "src/pages/NationwideCaseStudy.jsx",
+  "src/styles/nationwide.css",
 ];
 
 const missing = requiredFiles.filter((file) => !fs.existsSync(file));
@@ -38,6 +43,7 @@ for (const route of [
   "/services",
   "/work/call-of-duty",
   "/work/gr1m01re",
+  "/work/nationwide-arena",
 ]) {
   if (!app.includes(route)) {
     throw new Error(`Missing route: ${route}`);
@@ -75,6 +81,13 @@ if (!primitives.includes("profile-block__actions")) {
 }
 
 const css = fs.readFileSync("src/styles/replica.css", "utf8");
+const about = fs.readFileSync("src/pages/ReferenceAbout.jsx", "utf8");
+if (about.includes("about-hero__portrait") || css.includes("about-hero__portrait")) {
+  throw new Error("The About hero must not reserve space for a placeholder portrait.");
+}
+if (!/\.about-hero \.section-intro\s*\{[^}]*max-width:\s*none/.test(css)) {
+  throw new Error("The About title should use the full content width.");
+}
 
 if (!/\.hero\s*\{[^}]*align-items:\s*center/.test(css)) {
   throw new Error("Homepage hero should vertically center the Builder Spec against the left content.");
@@ -89,4 +102,17 @@ for (const rule of ["@media (max-width: 960px)", "@media (max-width: 720px)", "p
   }
 }
 
-console.log("Replica structure and exclusions verified.");
+assert.deepEqual(nationwideStudy.platforms, ["Desktop Web", "Mobile Web", "iOS", "Android"]);
+assert.equal(nationwideStudy.mobileImage.label, "Mobile Web");
+assert.equal(nationwideStudy.href, "https://practitioner.digital/nationwide-arena/");
+const images = new Set([
+  nationwideStudy.image.src,
+  nationwideStudy.mobileImage.src,
+  ...nationwideStudy.features.map((feature) => nationwideAsset(feature.image)),
+]);
+for (const src of images) {
+  const bytes = fs.readFileSync(`public${src}`);
+  assert.equal(bytes.toString("ascii", 0, 4), "RIFF", `Invalid image: ${src}`);
+  assert.equal(bytes.toString("ascii", 8, 12), "WEBP", `Expected a WebP screenshot: ${src}`);
+}
+console.log("Replica structure, Nationwide content and screenshots, and exclusions verified.");

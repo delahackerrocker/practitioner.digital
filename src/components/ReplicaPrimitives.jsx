@@ -111,7 +111,8 @@ export function EngagementGrid({ items }) {
 
 export function CaseStudyCard({ study, navigate }) {
   return (
-    <SiteLink className="case-card" href={`/work/${study.slug}`} navigate={navigate}>
+    <SiteLink className={`case-card${study.image ? " case-card--visual" : ""}`} href={`/work/${study.slug}`} navigate={navigate}>
+      {study.image && <img className="case-card__image" src={study.image.src} alt={study.image.alt} width={study.image.width} height={study.image.height} loading="lazy" decoding="async" />}
       <p className="case-card__meta">Case Study {study.index} · {study.meta}</p>
       <h3>{study.title}</h3>
       <p>{study.summary}</p>

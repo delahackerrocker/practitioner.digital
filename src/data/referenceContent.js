@@ -1,3 +1,5 @@
+import { nationwideStudy } from "./nationwide";
+
 export const referenceSite = {
   brand: { initials: "SD", name: "Steven de la Torre" },
   navigation: [
@@ -45,9 +47,10 @@ const products = [
 ];
 
 const featuredStudies = [
+  nationwideStudy,
   {
     slug: "call-of-duty",
-    index: "01",
+    index: "02",
     meta: "Five Releases · AAA / Live Service",
     title: "Player-Facing Systems for Call of Duty",
     summary: "Weapon icons, onboarding and first-time-user experience, post-match communication, interface flows, and technical design inside one of the largest live game ecosystems in the world.",
@@ -55,7 +58,7 @@ const featuredStudies = [
   },
   {
     slug: "gr1m01re",
-    index: "02",
+    index: "03",
     meta: "GR1M01RE · Unity 6.5",
     title: "Building a Tactical RPG From Intent to Playable Systems",
     summary: "A city-scale indie RPG combining overhead tactics, over-the-shoulder action, guns, magic, melee, hacking, procedural spaces, and custom development tools.",
@@ -146,7 +149,7 @@ export const servicesPage = {
 export const referenceCaseStudies = [
   {
     slug: "call-of-duty",
-    index: "01",
+    index: "02",
     meta: "Five Releases · AAA / Live Service",
     title: "Player-Facing Systems for Call of Duty",
     summary: "Designing player-facing systems across the Modern Warfare and Warzone era, from onboarding and interface flows to technical design and post-match communication.",
@@ -171,7 +174,7 @@ export const referenceCaseStudies = [
   },
   {
     slug: "gr1m01re",
-    index: "02",
+    index: "03",
     meta: "GR1M01RE · Unity 6.5",
     title: "Building a Tactical RPG From Intent to Playable Systems",
     summary: "A city-scale indie RPG combining overhead tactics and direct action with guns, magic, melee, hacking, procedural spaces, and custom development tools.",

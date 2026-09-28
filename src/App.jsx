@@ -7,8 +7,10 @@ import ReferenceCaseStudy from "./pages/ReferenceCaseStudy";
 import ReferenceHome from "./pages/ReferenceHome";
 import ReferenceServices from "./pages/ReferenceServices";
 import ReferenceWork from "./pages/ReferenceWork";
+import NationwideCaseStudy from "./pages/NationwideCaseStudy";
 
 const pageRoutes = {
+  "/work/nationwide-arena": { component: NationwideCaseStudy, title: "Nationwide Arena — Steven de la Torre" },
   "/": { component: ReferenceHome, title: "Steven de la Torre — UX Designer, Game Developer, and Agentic Builder" },
   "/work": { component: ReferenceWork, title: "Work — Steven de la Torre" },
   "/about": { component: ReferenceAbout, title: "About — Steven de la Torre" },
