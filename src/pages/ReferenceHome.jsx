@@ -36,8 +36,8 @@ export default function ReferenceHome({ navigate }) {
       <section className="section section--proof shell">
         <SectionIntro eyebrow="Proof, Not Adjectives" />
         <MetricGrid items={homePage.proof} />
-        <p className="credential-strip">{homePage.credentials}</p>
       </section>
+      <Marquee items={homePage.credentials} />
       <section className="section section--ruled shell" id="services">
         <SectionIntro eyebrow="Typical Engagements" title="How You Can Hire Me." />
         <EngagementGrid items={homePage.engagements} />

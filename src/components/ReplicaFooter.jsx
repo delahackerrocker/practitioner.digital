@@ -5,7 +5,6 @@ import { HardButton } from "./ReplicaPrimitives";
 const projects = [
   { label: "Nationwide Arena", href: "/work/nationwide-arena" },
   { label: "GR1M01RE", href: "https://ko-fi.com/pract1t10ner", external: true },
-  { label: "TalentGarden", href: "/work" },
   { label: "Call of Duty Experience", href: "/work/call-of-duty" },
 ];
 
