@@ -25,6 +25,10 @@ export default function ReferenceHome({ navigate }) {
         <div className="work-grid">{homePage.featuredStudies.map((project) => <WorkCard key={project.title} project={project} navigate={navigate} />)}</div>
         <HardButton href="/work" navigate={navigate} tone="plain">See All Work and Experiments →</HardButton>
       </section>
+      <section className="statement-section"><div className="shell">
+        <SectionIntro eyebrow="What I Actually Do" title="I Turn Fuzzy Ideas Into Things People Can Use, Play, and Understand." />
+        <p className="statement-copy">The feature you can explain but cannot quite design. The prototype that technically works but feels wrong. The game system that exists in documents but not under a player’s thumbs. I find the experience at the center, build the riskiest part first, and carry it across the line without losing the reason it should exist.</p>
+      </div></section>
       <section className="section shell">
         <SectionIntro eyebrow="How I Work" title="What Working With Me Looks Like." />
         <ProcessGrid items={homePage.process} />
@@ -39,10 +43,6 @@ export default function ReferenceHome({ navigate }) {
         <EngagementGrid items={homePage.engagements} />
         <HardButton href={referenceSite.primaryCta.href} navigate={navigate}>Book a 30-Min Project Call →</HardButton>
       </section>
-      <section className="statement-section"><div className="shell">
-        <SectionIntro eyebrow="What I Actually Do" title="I Turn Fuzzy Ideas Into Things People Can Use, Play, and Understand." />
-        <p className="statement-copy">The feature you can explain but cannot quite design. The prototype that technically works but feels wrong. The game system that exists in documents but not under a player’s thumbs. I find the experience at the center, build the riskiest part first, and carry it across the line without losing the reason it should exist.</p>
-      </div></section>
       <section className="section shell">
         <SectionIntro eyebrow="Selected Work" />
         <div className="work-list">{homePage.selectedWork.map((item) => <WorkRow key={item.title} item={item} />)}</div>
