@@ -9,7 +9,7 @@
 .nationwide-platforms { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: var(--rule); }
 .nationwide-platforms li { padding-block: 1.25rem; font-family: var(--mono); font-size: .8rem; font-weight: 600; }
 .nationwide-showcase { padding-block: 2.5rem; background: #eef1f3; border-block: var(--hairline); }
-.nationwide-device-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .25fr); align-items: end; gap: 1.5rem; }
+.nationwide-device-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, .32fr); align-items: start; gap: 1.5rem; }
 .nationwide-screenshot { min-width: 0; }
 .nationwide-screenshot a { display: block; border: var(--hairline); background: #fff; }
 .nationwide-screenshot img { display: block; width: 100%; height: auto; }
@@ -19,8 +19,9 @@
 .nationwide-context p { font-size: 1.1rem; }
 .nationwide-note { margin-top: 1.25rem; color: #5b5b5b; }
 .nationwide-context .nationwide-note { font-size: .95rem; }
-.nationwide-feature { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.65fr); gap: 3rem; padding-block: 4rem; border-top: var(--rule); align-items: center; }
+.nationwide-feature { display: grid; grid-template-columns: 1fr; gap: 2rem; padding-block: 4rem; border-top: var(--rule); align-items: center; }
 .nationwide-feature h2 { margin-block: 1.25rem; font-size: 2rem; line-height: 1.15; letter-spacing: 0; text-wrap: balance; }
+.nationwide-feature__copy { max-width: 76ch; }
 .nationwide-feature__copy p { font-size: 1rem; }
 .nationwide-features { padding-bottom: 3rem; }
 .nationwide-study .page-cta h2 { font-size: 3rem; letter-spacing: 0; }
@@ -37,7 +38,7 @@
   .nationwide-study .page-cta .shell { align-items: flex-start; flex-direction: column; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .nationwide-hero { padding-top: 2rem; }
   .nationwide-hero > .kicker { margin-top: 2rem; font-size: .65rem; }
   .nationwide-hero h1 { font-size: 2.3rem; }
@@ -55,3 +56,23 @@
   .nationwide-study .page-cta h2 { font-size: 2rem; }
   .nationwide-study .page-cta .button-row { width: 100%; }
 }
+
+/* Match the iPhone hardware border used in the Storm Commander study. */
+.nationwide-screenshot--mobile { position: relative; }
+.nationwide-screenshot--mobile a {
+  padding: clamp(4px, .55vw, 8px);
+  border: 2px solid #62666b;
+  border-radius: clamp(24px, 3vw, 42px);
+  background: #08090b;
+  box-shadow: 0 0 0 1px #15171a, inset 0 0 0 1px #a0a3a8, 0 12px 30px #0003;
+}
+.nationwide-screenshot--mobile img { border-radius: clamp(18px, 2.4vw, 33px); }
+.nationwide-screenshot--mobile::before, .nationwide-screenshot--mobile::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: #53565b;
+  border-radius: 2px;
+}
+.nationwide-screenshot--mobile::before { left: -3px; top: 21%; height: 12%; }
+.nationwide-screenshot--mobile::after { right: -3px; top: 28%; height: 9%; }

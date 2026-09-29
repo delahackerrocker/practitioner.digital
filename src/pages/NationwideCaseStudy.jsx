@@ -56,7 +56,10 @@ export default function NationwideCaseStudy({ navigate }) {
               <p>{feature.body}</p>
               <p className="nationwide-note">{feature.detail}</p>
             </div>
-            <Screenshot image={{ src: nationwideAsset(feature.image), alt: feature.alt, width: 1440, height: 1050 }} label={feature.caption} />
+            <div className="nationwide-device-pair" aria-label={`${feature.label}: desktop and mobile screenshots`}>
+              <Screenshot image={{ src: nationwideAsset(feature.image), alt: feature.alt, width: 1440, height: 1050 }} label={feature.caption} />
+              <Screenshot image={feature.mobileImage} label="Mobile Web" className="nationwide-screenshot--mobile" />
+            </div>
           </section>
         ))}
       </div>
