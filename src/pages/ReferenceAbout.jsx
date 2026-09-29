@@ -16,9 +16,9 @@ export default function ReferenceAbout({ navigate }) {
         <div className="principle-grid">{aboutPage.principles.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.body}</p></article>)}</div>
       </section>
       <section className="section shell">
-        <SectionIntro eyebrow="Stack" />
+        <SectionIntro eyebrow="Tools of the Trade" />
         <StackGrid groups={aboutPage.stack} />
-        <p className="credential-strip">Accessible Player Experience Trained · Cross-Disciplinary by Default · Building Since Age 14</p>
+        <p className="credential-strip">Accessible Player Experience Trained · Design and Code · Building Since Age 14</p>
       </section>
       <PageCta title="Have Something Strange, Useful, or Stuck?" cta={referenceSite.primaryCta} navigate={navigate} />
     </>

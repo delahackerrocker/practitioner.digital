@@ -5,7 +5,7 @@ import { HardButton } from "./ReplicaPrimitives";
 const projects = [
   { label: "Nationwide Arena", href: "/work/nationwide-arena" },
   { label: "GR1M01RE", href: "https://ko-fi.com/pract1t10ner", external: true },
-  { label: "Call of Duty Experience", href: "/work/call-of-duty" },
+  { label: "Call of Duty", href: "/work/call-of-duty" },
 ];
 
 export default function ReplicaFooter({ navigate }) {
@@ -14,13 +14,13 @@ export default function ReplicaFooter({ navigate }) {
       <div className="site-footer__lead shell">
         <div>
           <p className="footer-brand">Steven de la Torre</p>
-          <p>UX designer, game developer, and agentic builder. I take ideas that aren’t quite figured out and turn them into things people can use, play, and understand.</p>
+          <p>I design and build games, websites, and apps. Bring the idea, the rough sketch, or the thing that’s giving you trouble. We’ll figure out the next step.</p>
         </div>
-        <HardButton href={referenceSite.primaryCta.href} navigate={navigate}>Book a 30-Min Project Call →</HardButton>
+        <HardButton href={referenceSite.primaryCta.href} navigate={navigate}>Let’s Talk for 30 Minutes →</HardButton>
       </div>
 
       <div className="footer-follow shell">
-        <div><p className="footer-label">Follow the Build</p><p>Build updates, worldbuilding, systems, and a look inside GR1M01RE now and then — when there’s something worth showing.</p></div>
+        <div><p className="footer-label">Follow the Build</p><p>Game progress, things I’m trying, and a look inside GR1M01RE when there’s something worth showing.</p></div>
         <a href="https://ko-fi.com/pract1t10ner" target="_blank" rel="noreferrer">Follow on Ko-fi →</a>
       </div>
 

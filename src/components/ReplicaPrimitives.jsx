@@ -116,7 +116,7 @@ export function CaseStudyCard({ study, navigate }) {
       <p className="case-card__meta">Case Study {study.index} · {study.meta}</p>
       <h3>{study.title}</h3>
       <p>{study.summary}</p>
-      <div><strong>{study.metric}</strong><span>Read the Full Case →</span></div>
+      <div><strong>{study.metric}</strong><span>See the Project →</span></div>
     </SiteLink>
   );
 }

@@ -21,7 +21,7 @@ export default function ReferenceCaseStudy({ study, navigate }) {
         ))}
         {study.slug === "call-of-duty" && <RavenGallery />}
         <section><h2>How It Went</h2><ProcessGrid items={study.process} /></section>
-        <section><h2>Stack</h2><StackGrid groups={[{ title: "Tools and Technologies", items: study.stack }]} /></section>
+        <section><h2>Tools and Skills</h2><StackGrid groups={[{ title: "What I Worked With", items: study.stack }]} /></section>
       </div>
       <PageCta title="Working on Something Similar?" cta={referenceSite.primaryCta} navigate={navigate} />
     </article>

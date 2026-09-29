@@ -6,10 +6,10 @@ export default function ReferenceServices({ navigate }) {
     <>
       <section className="page-hero shell">
         <SectionIntro eyebrow={servicesPage.eyebrow} title={servicesPage.title} intro={servicesPage.intro} as="h1" />
-        <div className="button-row"><HardButton href={referenceSite.primaryCta.href} navigate={navigate}>Book a 30-Min Project Call →</HardButton></div>
+        <div className="button-row"><HardButton href={referenceSite.primaryCta.href} navigate={navigate}>Let’s Talk for 30 Minutes →</HardButton></div>
       </section>
       <section className="section shell">
-        <SectionIntro eyebrow="Typical Engagements" title="Design, Build, or Unblock the Hard Part." />
+        <SectionIntro eyebrow="Ways I Can Help" title="Start Something. Fix Something. Get It Moving." />
         <EngagementGrid items={servicesPage.engagements} />
       </section>
       <section className="section shell">
@@ -18,7 +18,7 @@ export default function ReferenceServices({ navigate }) {
       </section>
       <PageCta
         title="Have Something Strange, Useful, or Stuck?"
-        body="Bring me the messy idea. We’ll find the real problem and what a useful first version looks like."
+        body="Tell me what you’ve got, what you need, and what’s giving you trouble. We’ll work out where to start."
         cta={referenceSite.primaryCta}
         secondaryCta={{ label: "Or Send a Message →", href: `mailto:${referenceSite.email}` }}
         navigate={navigate}

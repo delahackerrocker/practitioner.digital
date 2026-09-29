@@ -16,7 +16,7 @@ const pageRoutes = {
   "/work/storm-commander": { component: StormCommanderCaseStudy, title: "Storm Commander — Steven de la Torre" },
   "/work/accurate-it": { component: AccurateItCaseStudy, title: "Accurate IT — Steven de la Torre" },
   "/work/nationwide-arena": { component: NationwideCaseStudy, title: "Nationwide Arena — Steven de la Torre" },
-  "/": { component: ReferenceHome, title: "Steven de la Torre — UX Designer, Game Developer, and Agentic Builder" },
+  "/": { component: ReferenceHome, title: "Steven de la Torre — UX Designer, Game Developer, and AI Builder" },
   "/work": { component: ReferenceWork, title: "Work — Steven de la Torre" },
   "/about": { component: ReferenceAbout, title: "About — Steven de la Torre" },
   "/services": { component: ReferenceServices, title: "Services — Steven de la Torre" },

@@ -25,7 +25,7 @@ export default function NationwideCaseStudy({ navigate }) {
         <p className="nationwide-hero__headline">A Better Night at the Arena.</p>
         <div className="nationwide-hero__intro">
           <p className="lede">{study.summary}</p>
-          <HardButton href={study.href}>Explore the Live App ↗</HardButton>
+          <HardButton href={study.href}>Try the App ↗</HardButton>
         </div>
         <ul className="nationwide-platforms" aria-label="Project platforms">
           {study.platforms.map((platform) => <li key={platform}>{platform}</li>)}
@@ -40,9 +40,9 @@ export default function NationwideCaseStudy({ navigate }) {
       </section>
 
       <section className="nationwide-context shell">
-        <div><Kicker>The Experience</Kicker><h2>From Planning Ahead to Finding Your Seat.</h2></div>
+        <div><Kicker>The Experience</Kicker><h2>You Came for the Show. Find Your Seat.</h2></div>
         <div>
-          <p>A visitor’s questions change throughout the night. What’s on? Where should I park? Which section is mine? Where can I get help? This project brings those moments into one visitor guide, with versions for desktop web, mobile web, iOS, and Android.</p>
+          <p>Where do I park? Which section is mine? Where’s the food? This guide puts those answers together so you can get on with your night. I’m building it for desktop web, mobile web, iOS, and Android.</p>
           <p className="nationwide-note">An independent prototype, not an official Nationwide Arena app. Screens shown here are from the web version.</p>
         </div>
       </section>
@@ -63,7 +63,7 @@ export default function NationwideCaseStudy({ navigate }) {
           </section>
         ))}
       </div>
-      <PageCta title="Try the Visitor Guide." body="Explore the map, plan a visit, and see the web experience in action." cta={{ href: study.href, label: "Open Nationwide Arena ↗" }} secondaryCta={referenceSite.primaryCta} navigate={navigate} />
+      <PageCta title="Try the Visitor Guide." body="Pick a section, check the calendar, and have a look around." cta={{ href: study.href, label: "Open Nationwide Arena ↗" }} secondaryCta={referenceSite.primaryCta} navigate={navigate} />
     </article>
   );
 }
