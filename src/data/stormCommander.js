@@ -65,6 +65,14 @@ export const stormCommander = {
         image("ios-mission", "iPhone mission panel identifies the Robocorp queen as the destruction target", "Mobile · Destroy the Marked Target", true),
       ],
     },
+    {
+      label: "Difficulty", title: "Pick Your Kind of Trouble.",
+      body: ["Not every Pirate captain wants the same kind of trouble. Standard keeps the challenge steady. Commander Styles gives the opposition a little more personality: Rebels are gentler, Robocorp steps things up, and Imperials make you work a bit harder. Those commanders read the room, too—protecting marked ships and fleet value, then turning hunter when you’re trying to survive or slip away.", "Adaptive adds a gentle climb to those commander styles: a small step up after a win, a bigger breather after a loss, and a ceiling that keeps the challenge from running away. The aim is a good scrap and the urge to play one more. Your choice is saved, and changes wait until the next match, so the battle in front of you stays on the terms you started with."],
+      images: [
+        image("desktop-difficulty", "Desktop difficulty panel showing Standard, Commander Styles, and Adaptive, with Commander Styles selected", "Desktop Web · Commander Styles"),
+        image("ios-difficulty", "Native iPhone difficulty panel with Adaptive selected and an explanation of gradual difficulty changes", "Mobile · Adaptive Difficulty", true),
+      ],
+    },
   ],
   closeTitle: "Your Fleet Is Waiting, Commander.",
   closeIntro: "The radio is about to crackle, the enemy has an opinion, and those orange ships need orders. Jump into the browser prototype and see what your next mission throws at you.",
