@@ -15,7 +15,7 @@ export const stormCommander = {
   tags: ["Game Design", "Interaction Design", "React", "Tactical Systems", "Responsive Web", "iOS / Capacitor"],
   hero: [
     image("desktop-battle", "Pirate and Imperial fleets on a six-by-six board with commander panels, starfield, and an extraction objective", "Desktop Web · Pirate vs. Imperial"),
-    image("ios-battle", "Native iPhone battle showing Pirate and Imperial ships, a turn notice, compact comms, and survival objective", "iOS Simulator · Pirate vs. Imperial", true),
+    image("ios-battle", "Native iPhone battle showing Pirate and Imperial ships, a turn notice, compact comms, and survival objective", "Mobile · Pirate vs. Imperial", true),
   ],
   context: {
     title: "Chess Went to Space. The Pirates Took Over.",
@@ -30,7 +30,7 @@ export const stormCommander = {
       body: ["The orange Pirate crew gets top billing, but the title screen gives all four factions their moment in the spotlight. Bold colors, paired commanders, and a little pulp sci-fi bravado set the tone before a single ship moves. The artwork gets its own portrait composition on iPhone, so the crews still make a proper entrance on a smaller screen."],
       images: [
         image("desktop-title", "Orange Pirate faction title screen with both commanders and a small Press to Play prompt", "Desktop Web · Pirate Title Screen"),
-        image("ios-title", "Blue Robocorp portrait title screen in the native iPhone app with both commanders visible", "iOS Simulator · Robocorp Portrait Title", true),
+        image("ios-title", "Blue Robocorp portrait title screen in the native iPhone app with both commanders visible", "Mobile · Robocorp Portrait Title", true),
       ],
     },
     {
@@ -38,7 +38,7 @@ export const stormCommander = {
       body: ["Before the shooting starts, your commander comes over the radio with the job: get a ship out, hold the line, or make something on the other side disappear. Written dialogue gives the orders an 80s action-movie streak, while a familiar face and a burst of radio static make it feel like your crew is checking in.", "The battle waits while the commanders have their say. Read every word or tap through once the connection is established; there’s a brief pause after Play to keep an eager thumb from skipping the opening line."],
       images: [
         image("desktop-radio-pirate", "Captain Lilith Haraway introduces an extraction mission in the right-side Pirate radio panel", "Desktop Web · Pirate Briefing"),
-        image("ios-radio-pirate", "Prank Sumatra delivers a survival mission briefing in the native iPhone radio layout", "iOS Simulator · Pirate Briefing", true),
+        image("ios-radio-pirate", "Prank Sumatra delivers a survival mission briefing in the native iPhone radio layout", "Mobile · Pirate Briefing", true),
       ],
     },
     {
@@ -46,7 +46,7 @@ export const stormCommander = {
       body: ["Your Pirate commander has barely finished the briefing when the other side cuts in from the left, full of threats and the sort of confidence that makes you want to prove someone wrong. Before the first move, both sides have a face—and a little attitude.", "Once the exchange is over, the portraits stay with their fleets. Captures bring short laser volleys, crunchy arcade-style explosions, and fragments that drift away with the stars. Even on a tiny board, a ship going down gets its moment."],
       images: [
         image("desktop-radio-enemy", "Imperial commander sends a hostile transmission from the left side of the desktop screen", "Desktop Web · Hostile Channel"),
-        image("ios-radio-enemy", "Admiral/Bishop John Trace delivers an Imperial taunt in the native iPhone radio panel", "iOS Simulator · Hostile Channel", true),
+        image("ios-radio-enemy", "Admiral/Bishop John Trace delivers an Imperial taunt in the native iPhone radio panel", "Mobile · Hostile Channel", true),
       ],
     },
     {
@@ -54,7 +54,7 @@ export const stormCommander = {
       body: ["Tap a Pirate ship and the board shows you its options. Movement hints mark the open routes, capture markers pick out opportunities, and the comms panel gives you the ship’s class and movement pattern. The question becomes deliciously simple: which opening is worth taking?", "“Your move commander!” hands you the spotlight; “Enemy is moving!” tells you to watch the other fleet. On iPhone, the notice blinks over the board, then gets out of the way as soon as you touch the game area. The ships, their colors, and their silhouettes do the rest."],
       images: [
         image("desktop-selection", "Selected Pirate rook with orange movement hints, a movement diagram, and player turn feedback", "Desktop Web · Rook Movement Hints"),
-        image("ios-selection", "Selected Pirate queen with legal destinations and a capture hint on the iPhone board", "iOS Simulator · Queen Movement Hints", true),
+        image("ios-selection", "Selected Pirate queen with legal destinations and a capture hint on the iPhone board", "Mobile · Queen Movement Hints", true),
       ],
     },
     {
@@ -62,7 +62,7 @@ export const stormCommander = {
       body: ["Some missions call for a marked enemy ship to go up in smoke. Others ask you to hold out for a set number of turns, reach an extraction square, or capture enough enemy ship value. That change of orders can turn an inviting attack into a distraction: sometimes the ship you need most is the one that can get away.", "Need a reminder while the enemy is breathing down your neck? Mission brings the objective and progress back into view. Win or lose, Next Mission deals out another randomized encounter—a fresh board, a fresh problem, and another chance to get the crew through it."],
       images: [
         image("desktop-mission", "Desktop mission panel showing an extraction objective, faction pairing, and Battle control", "Desktop Web · Reach the Extraction Square"),
-        image("ios-mission", "iPhone mission panel identifies the Robocorp queen as the destruction target", "iOS Simulator · Destroy the Marked Target", true),
+        image("ios-mission", "iPhone mission panel identifies the Robocorp queen as the destruction target", "Mobile · Destroy the Marked Target", true),
       ],
     },
   ],
