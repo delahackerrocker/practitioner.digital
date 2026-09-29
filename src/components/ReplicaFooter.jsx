@@ -14,13 +14,13 @@ export default function ReplicaFooter({ navigate }) {
       <div className="site-footer__lead shell">
         <div>
           <p className="footer-brand">Steven de la Torre</p>
-          <p>UX designer, game developer, and agentic builder. I turn ambiguous interactive ideas into things people can use, play, and understand.</p>
+          <p>UX designer, game developer, and agentic builder. I take ideas that aren’t quite figured out and turn them into things people can use, play, and understand.</p>
         </div>
         <HardButton href={referenceSite.primaryCta.href} navigate={navigate}>Book a 30-Min Project Call →</HardButton>
       </div>
 
       <div className="footer-follow shell">
-        <div><p className="footer-label">Follow the Build</p><p>Development updates, worldbuilding, systems, and the occasional glimpse inside GR1M01RE — only when there is something worth showing.</p></div>
+        <div><p className="footer-label">Follow the Build</p><p>Build updates, worldbuilding, systems, and a look inside GR1M01RE now and then — when there’s something worth showing.</p></div>
         <a href="https://ko-fi.com/pract1t10ner" target="_blank" rel="noreferrer">Follow on Ko-fi →</a>
       </div>
 

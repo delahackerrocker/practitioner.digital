@@ -93,7 +93,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
 .section-intro .lede { color: #242424; }
 .section--current-builds .section-intro { max-width: none; }
 .metric-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 3rem; border: var(--rule); }
-.metric-card { min-height: 250px; padding: 1.25rem; border-right: var(--hairline); }
+.metric-card { min-width: 0; min-height: 250px; padding: 1.25rem; border-right: var(--hairline); }
 .metric-card:last-child { border-right: 0; }
 .metric-card dt, .metric-card small { font-family: var(--mono); font-size: calc(.68rem - 1pt); letter-spacing: .08em; text-transform: uppercase; }
 .metric-card dd { width: 100%; margin-top: 1.5rem; overflow-wrap: normal; font-size: 2rem; font-weight: 900; letter-spacing: -.035em; line-height: 1; white-space: nowrap; }
@@ -213,6 +213,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 800; }
 .site-footer__lead p:last-child { max-width: 54ch; margin-top: .5rem; color: #c9c9c9; }
 .footer-brand { font-size: 1.4rem; font-weight: 800; }
 .site-footer .hard-button { color: var(--ink); }
+.site-footer .hard-button:hover { background: var(--paper); color: var(--ink); }
 .footer-follow { display: flex; align-items: center; justify-content: space-between; gap: 3rem; padding-block: 2rem; border-bottom: 1px solid #555; }
 .footer-follow div { max-width: 62ch; }
 .footer-follow div p:last-child { margin-top: .5rem; color: #c9c9c9; }

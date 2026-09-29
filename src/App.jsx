@@ -10,8 +10,10 @@ import ReferenceWork from "./pages/ReferenceWork";
 import NationwideCaseStudy from "./pages/NationwideCaseStudy";
 import VisualCaseStudy from "./pages/VisualCaseStudy";
 import { accurateIt } from "./data/accurateIt";
+import { stormCommander } from "./data/stormCommander";
 
 const pageRoutes = {
+  "/work/storm-commander": { component: StormCommanderCaseStudy, title: "Storm Commander — Steven de la Torre" },
   "/work/accurate-it": { component: AccurateItCaseStudy, title: "Accurate IT — Steven de la Torre" },
   "/work/nationwide-arena": { component: NationwideCaseStudy, title: "Nationwide Arena — Steven de la Torre" },
   "/": { component: ReferenceHome, title: "Steven de la Torre — UX Designer, Game Developer, and Agentic Builder" },
@@ -22,6 +24,10 @@ const pageRoutes = {
 
 function AccurateItCaseStudy({ navigate }) {
   return <VisualCaseStudy study={accurateIt} navigate={navigate} />;
+}
+
+function StormCommanderCaseStudy({ navigate }) {
+  return <VisualCaseStudy study={stormCommander} navigate={navigate} />;
 }
 
 const caseStudyRoutes = ["/work/call-of-duty", "/work/gr1m01re"];

@@ -27,7 +27,7 @@ export default function ReferenceHome({ navigate }) {
       </section>
       <section className="statement-section"><div className="shell">
         <SectionIntro eyebrow="What I Actually Do" title="I Turn Fuzzy Ideas Into Things People Can Use, Play, and Understand." />
-        <p className="statement-copy">The feature you can explain but cannot quite design. The prototype that technically works but feels wrong. The game system that exists in documents but not under a player’s thumbs. I find the experience at the center, build the riskiest part first, and carry it across the line without losing the reason it should exist.</p>
+        <p className="statement-copy">The feature you can explain but can’t quite design. The prototype that works but feels wrong. The game system that’s still sitting in a document. I figure out what it needs to feel like, build the part most likely to go sideways first, and work through the rest without losing the point of the thing.</p>
       </div></section>
       <section className="section shell">
         <SectionIntro eyebrow="How I Work" title="What Working With Me Looks Like." />
@@ -60,7 +60,7 @@ export default function ReferenceHome({ navigate }) {
       </section>
       <PageCta
         title="Have Something Strange, Useful, or Stuck?"
-        body="Bring me the messy idea. We will spend 30 minutes finding the real problem, what a useful first version looks like, and whether I am the right person to help design or build it. No pitch deck required."
+        body="Bring me the messy idea. We’ll spend 30 minutes figuring out what’s getting in the way, what a useful first version could look like, and whether I’m the right person to help design or build it. No pitch deck required."
         cta={referenceSite.primaryCta}
         secondaryCta={{ label: "Or Send a Message →", href: `mailto:${referenceSite.email}` }}
         navigate={navigate}
