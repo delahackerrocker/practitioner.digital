@@ -5,6 +5,7 @@ const image = (name, alt, caption, portrait = false) => ({
 
 export const stormCommander = {
   slug: "storm-commander",
+  iphoneFrames: true,
   meta: "Independent Game Prototype · Tactical Space Encounters",
   title: "Storm Commander",
   tagline: "A Pirate Fleet. A Small Board. A Different Mission Every Time.",

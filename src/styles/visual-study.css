@@ -62,3 +62,23 @@
   .study-platform-pair { grid-template-columns: 1fr; gap: 2rem; }
   .study-platform-pair .study-image--portrait { width: min(80%, 280px); }
 }
+
+/* Native screenshots already include the Dynamic Island and system status bar. */
+.study-image--iphone { position: relative; }
+.study-image--iphone a {
+  padding: clamp(4px, .55vw, 8px);
+  border: 2px solid #62666b;
+  border-radius: clamp(24px, 3vw, 42px);
+  background: #08090b;
+  box-shadow: 0 0 0 1px #15171a, inset 0 0 0 1px #a0a3a8, 0 12px 30px #0003;
+}
+.study-image--iphone img { border-radius: clamp(18px, 2.4vw, 33px); }
+.study-image--iphone::before, .study-image--iphone::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: #53565b;
+  border-radius: 2px;
+}
+.study-image--iphone::before { left: -3px; top: 21%; height: 12%; }
+.study-image--iphone::after { right: -3px; top: 28%; height: 9%; }

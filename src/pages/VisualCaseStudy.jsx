@@ -2,9 +2,9 @@ import SiteLink from "../components/SiteLink";
 import { PageCta } from "../components/ReplicaPrimitives";
 import { referenceSite } from "../data/referenceContent";
 
-export function StudyImage({ image, eager = false }) {
+export function StudyImage({ image, eager = false, iphone = false }) {
   return (
-    <figure className={`study-image${image.portrait ? " study-image--portrait" : ""}`}>
+    <figure className={`study-image${image.portrait ? " study-image--portrait" : ""}${iphone ? " study-image--iphone" : ""}`}>
       <a href={image.src} target="_blank" rel="noreferrer" aria-label={`Open full-size screenshot: ${image.caption}`}>
         <img src={image.src} alt={image.alt} width={image.width} height={image.height} loading={eager ? "eager" : "lazy"} />
       </a>
@@ -25,7 +25,7 @@ export default function VisualCaseStudy({ study, navigate }) {
         <ul className="tag-list" aria-label="Project focus">{study.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
       </header>
       <section className="study-overview shell" aria-label="Desktop and mobile screenshots">
-        {study.hero.map(image => <StudyImage key={image.src} image={image} eager />)}
+        {study.hero.map(image => <StudyImage key={image.src} image={image} eager iphone={study.iphoneFrames && image.portrait} />)}
       </section>
       <section className="study-context shell">
         <div><p className="eyebrow">The Experience</p><h2>{study.context.title}</h2></div>
@@ -37,7 +37,7 @@ export default function VisualCaseStudy({ study, navigate }) {
             <div className="study-use-case__copy"><p className="eyebrow">{String(index + 1).padStart(2, "0")} / {section.label}</p><h2 id={`${study.slug}-${index}`}>{section.title}</h2>{section.body.map(text => <p key={text}>{text}</p>)}</div>
             {section.images ? (
               <div className="study-platform-pair" aria-label={`${section.label}: desktop and iOS screenshots`}>
-                {section.images.map(image => <StudyImage key={image.src} image={image} />)}
+                {section.images.map(image => <StudyImage key={image.src} image={image} iphone={study.iphoneFrames && image.portrait} />)}
               </div>
             ) : <StudyImage image={section.image} />}
           </section>
