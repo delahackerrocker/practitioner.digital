@@ -6,10 +6,10 @@ const image = (name, alt, caption, portrait = false) => ({
 export const stormCommander = {
   slug: "storm-commander",
   iphoneFrames: true,
-  meta: "Independent Game Prototype · Tactical Space Encounters",
+  meta: "Independent Game Prototype · Turn-Based Space Battles",
   title: "Storm Commander",
   tagline: "Small Fleet. Big Trouble.",
-  summary: "A hostile fleet, a handful of ships, and a plan that might just work. Storm Commander puts you in charge of the orange Pirate crew for bite-sized tactical encounters against Imperial, Robocorp, and Rebel forces. Read the board, pick your moment, and give the other commander something to complain about.",
+  summary: "You’ve got a few ships and an enemy fleet in the way. Lead the orange Pirate crew in quick, turn-based battles against Imperial, Robocorp, and Rebel forces. Pick your moves, finish the mission, and try to bring a few ships home.",
   href: "https://practitioner.digital/storm_commander/",
   cta: "Play Storm Commander",
   tags: ["Game Design", "Interaction Design", "React", "Tactical Systems", "Responsive Web", "iOS / Capacitor"],
@@ -20,14 +20,14 @@ export const stormCommander = {
   context: {
     title: "Chess Went to Space. The Pirates Took Over.",
     body: [
-      "What began as a chess experiment has grown into a scrappy little space-tactics game with a taste for trouble. Randomized fleets face off on 5×5, 6×6, or 7×7 boards, where a few squares can separate a clean getaway from a very bad day. Four mission types keep the orders changing, and the opposing fleet is always looking for a capture.",
-      "I’m building the prototype around that mix of deliberate moves and Saturday-matinee swagger: larger-than-life commanders, crackling radio cues, arcade-style laser volleys, and wreckage tumbling into the starfield. Each mission is a standalone skirmish, ready for another roll of the dice when it ends. The screenshots below show the current desktop game alongside the native iPhone build in the iOS simulator.",
+      "This started as a chess experiment. Now it’s a space game with Pirate crews, enemy commanders, and ships that blow up. Each battle gives you a random fleet on a 5×5, 6×6, or 7×7 board. There are four mission types, so wiping out the other team isn’t always the job.",
+      "I wanted something you could think through but still have fun with: cheesy commander banter, radio static, lasers, and chunks of wrecked ships floating off into space. Each mission is a short, separate battle. These screenshots show the desktop game and the iPhone app running in the iOS simulator.",
     ],
   },
   sections: [
     {
       label: "Identity", title: "A Crew Worth Getting Into Trouble With.",
-      body: ["The orange Pirate crew gets top billing, but the title screen gives all four factions their moment in the spotlight. Bold colors, paired commanders, and a little pulp sci-fi bravado set the tone before a single ship moves. The artwork gets its own portrait composition on iPhone, so the crews still make a proper entrance on a smaller screen."],
+      body: ["You play as the orange Pirate crew, but all four factions show up on the title screen. Each has its own colors and pair of commanders. The phone version uses taller artwork so everyone fits without getting cropped out."],
       images: [
         image("desktop-title", "Orange Pirate faction title screen with both commanders and a small Press to Play prompt", "Desktop Web · Pirate Title Screen"),
         image("ios-title", "Blue Robocorp portrait title screen in the native iPhone app with both commanders visible", "Mobile · Robocorp Portrait Title", true),
@@ -35,7 +35,7 @@ export const stormCommander = {
     },
     {
       label: "Briefing", title: "Your Commander Has a Plan. Probably.",
-      body: ["Before the shooting starts, your commander comes over the radio with the job: get a ship out, hold the line, or make something on the other side disappear. Written dialogue gives the orders an 80s action-movie streak, while a familiar face and a burst of radio static make it feel like your crew is checking in.", "The battle waits while the commanders have their say. Read every word or tap through once the connection is established; there’s a brief pause after Play to keep an eager thumb from skipping the opening line."],
+      body: ["Your commander starts each battle with the job: get a ship out, survive, or blow something up. The radio chatter has a little 80s action-movie cheese. That’s on purpose.", "The game waits until the briefing is done. Read it or tap through. A short pause after you hit Play keeps you from accidentally skipping the first line."],
       images: [
         image("desktop-radio-pirate", "Captain Lilith Haraway introduces an extraction mission in the right-side Pirate radio panel", "Desktop Web · Pirate Briefing"),
         image("ios-radio-pirate", "Prank Sumatra delivers a survival mission briefing in the native iPhone radio layout", "Mobile · Pirate Briefing", true),
@@ -43,7 +43,7 @@ export const stormCommander = {
     },
     {
       label: "Opposition", title: "The Enemy Has Your Frequency.",
-      body: ["Your Pirate commander has barely finished the briefing when the other side cuts in from the left, full of threats and the sort of confidence that makes you want to prove someone wrong. Before the first move, both sides have a face—and a little attitude.", "Once the exchange is over, the portraits stay with their fleets. Captures bring short laser volleys, crunchy arcade-style explosions, and fragments that drift away with the stars. Even on a tiny board, a ship going down gets its moment."],
+      body: ["Then the enemy commander cuts in to talk trash. Now you know who you’re fighting, and they’ve given you a reason to shoot back.", "Both commanders stay on screen during the fight. Take a ship and you get lasers, an explosion, and a few pieces flying off into space. Blowing stuff up should feel good."],
       images: [
         image("desktop-radio-enemy", "Imperial commander sends a hostile transmission from the left side of the desktop screen", "Desktop Web · Hostile Channel"),
         image("ios-radio-enemy", "Admiral/Bishop John Trace delivers an Imperial taunt in the native iPhone radio panel", "Mobile · Hostile Channel", true),
@@ -51,7 +51,7 @@ export const stormCommander = {
     },
     {
       label: "Decisions", title: "Pick Your Ship. Find Your Opening.",
-      body: ["Tap a Pirate ship and the board shows you its options. Movement hints mark the open routes, capture markers pick out opportunities, and the comms panel gives you the ship’s class and movement pattern. The question becomes deliciously simple: which opening is worth taking?", "“Your move commander!” hands you the spotlight; “Enemy is moving!” tells you to watch the other fleet. On iPhone, the notice blinks over the board, then gets out of the way as soon as you touch the game area. The ships, their colors, and their silhouettes do the rest."],
+      body: ["Tap one of your ships to see where it can move and which enemies it can take. The info panel shows the ship type and how it moves. Then it’s up to you: take the shot or stay out of trouble.", "“Your move commander!” and “Enemy is moving!” let you know whose turn it is. On iPhone, the message flashes over the board and clears when you touch the game area."],
       images: [
         image("desktop-selection", "Selected Pirate rook with orange movement hints, a movement diagram, and player turn feedback", "Desktop Web · Rook Movement Hints"),
         image("ios-selection", "Selected Pirate queen with legal destinations and a capture hint on the iPhone board", "Mobile · Queen Movement Hints", true),
@@ -59,7 +59,7 @@ export const stormCommander = {
     },
     {
       label: "Objectives", title: "Sometimes the Smart Move Is to Run.",
-      body: ["Some missions call for a marked enemy ship to go up in smoke. Others ask you to hold out for a set number of turns, reach an extraction square, or capture enough enemy ship value. That change of orders can turn an inviting attack into a distraction: sometimes the ship you need most is the one that can get away.", "Need a reminder while the enemy is breathing down your neck? Mission brings the objective and progress back into view. Win or lose, Next Mission deals out another randomized encounter—a fresh board, a fresh problem, and another chance to get the crew through it."],
+      body: ["You might need to destroy one marked ship, survive a few turns, reach an exit, or take enough points’ worth of enemy ships. Check the mission before you go charging in. Sometimes getting out alive is the whole point.", "Tap Mission to check the goal and your progress. When the battle ends, hit Next Mission for a new board and another shot at it."],
       images: [
         image("desktop-mission", "Desktop mission panel showing an extraction objective, faction pairing, and Battle control", "Desktop Web · Reach the Extraction Square"),
         image("ios-mission", "iPhone mission panel identifies the Robocorp queen as the destruction target", "Mobile · Destroy the Marked Target", true),
@@ -67,7 +67,7 @@ export const stormCommander = {
     },
     {
       label: "Difficulty", title: "Pick Your Kind of Trouble.",
-      body: ["Not every Pirate captain wants the same kind of trouble. Standard keeps the challenge steady. Commander Styles gives the opposition a little more personality: Rebels are gentler, Robocorp steps things up, and Imperials make you work a bit harder. Those commanders read the room, too—protecting marked ships and fleet value, then turning hunter when you’re trying to survive or slip away.", "Adaptive adds a gentle climb to those commander styles: a small step up after a win, a bigger breather after a loss, and a ceiling that keeps the challenge from running away. The aim is a good scrap and the urge to play one more. Your choice is saved, and changes wait until the next match, so the battle in front of you stays on the terms you started with."],
+      body: ["Standard keeps the difficulty steady. Commander Styles changes it by enemy: Rebels go easier on you, Robocorp puts up more of a fight, and Imperials are the toughest. They also play to the mission, protecting targets or chasing you down when you’re trying to escape.", "Adaptive uses those same enemy styles, then gets a little harder when you win and backs off more when you lose. There’s a limit to how hard it gets. Your setting is saved, and any change starts with the next battle."],
       images: [
         image("desktop-difficulty", "Desktop difficulty panel showing Standard, Commander Styles, and Adaptive, with Commander Styles selected", "Desktop Web · Commander Styles"),
         image("ios-difficulty", "Native iPhone difficulty panel with Adaptive selected and an explanation of gradual difficulty changes", "Mobile · Adaptive Difficulty", true),
@@ -75,5 +75,5 @@ export const stormCommander = {
     },
   ],
   closeTitle: "Your Fleet Is Waiting, Commander.",
-  closeIntro: "The radio is about to crackle, the enemy has an opinion, and those orange ships need orders. Jump into the browser prototype and see what your next mission throws at you.",
+  closeIntro: "Pick a ship, make a move, and see how long your plan holds up. Play the prototype right in your browser.",
 };
