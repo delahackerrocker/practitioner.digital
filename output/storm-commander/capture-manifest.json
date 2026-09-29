@@ -1,0 +1,80 @@
+{
+  "captured": "2026-09-28",
+  "desktopSource": "https://practitioner.digital/storm_commander/",
+  "iosSource": "iPhone 17 simulator, iOS 26.5, native Capacitor app 1.01 (9); rebuilt successfully with XcodeBuildMCP",
+  "notes": "Native radio and title screenshots are unaltered frames from a simulator recording; battle, selection, and mission use native simulator captures. All images are full-frame, converted to WebP without cropping or retouching.",
+  "images": [
+    {
+      "name": "desktop-battle",
+      "width": 1440,
+      "height": 1000,
+      "source": "desktop-battle.png"
+    },
+    {
+      "name": "desktop-title",
+      "width": 1440,
+      "height": 1000,
+      "source": "desktop-title.png"
+    },
+    {
+      "name": "desktop-radio-pirate",
+      "width": 1440,
+      "height": 1000,
+      "source": "desktop-radio-pirate.png"
+    },
+    {
+      "name": "desktop-radio-enemy",
+      "width": 1440,
+      "height": 1000,
+      "source": "desktop-radio-enemy.png"
+    },
+    {
+      "name": "desktop-selection",
+      "width": 1440,
+      "height": 1000,
+      "source": "desktop-selection.png"
+    },
+    {
+      "name": "desktop-mission",
+      "width": 1440,
+      "height": 1000,
+      "source": "desktop-mission.png"
+    },
+    {
+      "name": "ios-battle",
+      "width": 1206,
+      "height": 2622,
+      "source": "ios-battle.png"
+    },
+    {
+      "name": "ios-title",
+      "width": 1206,
+      "height": 2622,
+      "source": "ios-title.png"
+    },
+    {
+      "name": "ios-radio-pirate",
+      "width": 1206,
+      "height": 2622,
+      "source": "ios-radio-pirate.png"
+    },
+    {
+      "name": "ios-radio-enemy",
+      "width": 1206,
+      "height": 2622,
+      "source": "ios-radio-enemy.png"
+    },
+    {
+      "name": "ios-selection",
+      "width": 1206,
+      "height": 2622,
+      "source": "ios-selection.png"
+    },
+    {
+      "name": "ios-mission",
+      "width": 1206,
+      "height": 2622,
+      "source": "ios-mission.png"
+    }
+  ]
+}

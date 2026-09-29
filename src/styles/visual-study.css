@@ -52,3 +52,13 @@
   .work-card--wide { grid-column: auto; grid-template-columns: 1fr; }
   .work-card--wide .work-card__image { min-height: 0; aspect-ratio: 16 / 10; border-right: 0; border-bottom: var(--rule); }
 }
+
+/* Full-size desktop/iOS comparisons keep both layouts legible. */
+.study-use-case--paired { grid-template-columns: 1fr; gap: 2rem; }
+.study-use-case--paired .study-use-case__copy { max-width: 76ch; }
+.study-platform-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, .32fr); gap: 1.5rem; align-items: start; }
+.study-platform-pair .study-image--portrait { width: 100%; max-width: 340px; }
+@media (max-width: 720px) {
+  .study-platform-pair { grid-template-columns: 1fr; gap: 2rem; }
+  .study-platform-pair .study-image--portrait { width: min(80%, 280px); }
+}

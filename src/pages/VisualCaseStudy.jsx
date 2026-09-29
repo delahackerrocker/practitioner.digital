@@ -33,9 +33,13 @@ export default function VisualCaseStudy({ study, navigate }) {
       </section>
       <div className="shell">
         {study.sections.map((section, index) => (
-          <section className="study-use-case" key={section.title} aria-labelledby={`${study.slug}-${index}`}>
+          <section className={`study-use-case${section.images ? " study-use-case--paired" : ""}`} key={section.title} aria-labelledby={`${study.slug}-${index}`}>
             <div className="study-use-case__copy"><p className="eyebrow">{String(index + 1).padStart(2, "0")} / {section.label}</p><h2 id={`${study.slug}-${index}`}>{section.title}</h2>{section.body.map(text => <p key={text}>{text}</p>)}</div>
-            <StudyImage image={section.image} />
+            {section.images ? (
+              <div className="study-platform-pair" aria-label={`${section.label}: desktop and iOS screenshots`}>
+                {section.images.map(image => <StudyImage key={image.src} image={image} />)}
+              </div>
+            ) : <StudyImage image={section.image} />}
           </section>
         ))}
       </div>
