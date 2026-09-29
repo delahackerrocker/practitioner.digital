@@ -63,7 +63,7 @@ const process = [
 ];
 
 export const homePage = {
-  eyebrow: "UX Designer · Game Developer · AI Builder",
+  eyebrow: "UX Designer · Game Developer · Programmer",
   headline: ["You Have Something in Your Head.", "I Make It Real."],
   intro: "I design and build games, websites, and apps. I’ve worked on Call of Duty, built tools for clients, and made plenty of my own stuff. Got an idea that needs sorting out? That’s my kind of job.",
   spec: [["Based", "Columbus, Ohio"], ["Location", "Remote · US / Worldwide"], ["Work", "Contract · Part-time · Full-time"], ["Tools", "Unity · C# · React · AI"], ["Status", "Available"]],
@@ -88,7 +88,7 @@ export const homePage = {
   products,
   profile: {
     eyebrow: "Who You’d Be Working With",
-    title: ["I’m Steven de la Torre", "UX Designer, Game Developer, and AI Builder."],
+    title: ["I’m Steven de la Torre", "UX Designer, Game Developer, and Programmer."],
     body: "I’m in Columbus, Ohio. I spent years working on Call of Duty, with earlier projects for Google, the NBA, and the U.S. Air Force. These days I’m building an indie RPG, websites, and tools that use AI to help get work done. I like a messy starting point. We can figure it out and build from there.",
   },
   process,
